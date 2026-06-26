@@ -1,0 +1,96 @@
+name: 🔒 Security report
+description: Report a security vulnerability in a skill. This template creates a PUBLIC issue — for sensitive reports, use the private disclosure channel in the Security policy instead.
+title: "[Security] "
+labels: ["type: security", "area: skills", "severity: needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > ⚠️ **STOP — read this first.**
+        >
+        > If the vulnerability is **not yet patched** and **actively exploitable**, do NOT file a public issue. Use the [private disclosure channel](https://github.com/tryfractal/registry/security/policy) and email `team@tryfractal.co`. We will respond within 48 hours and coordinate disclosure.
+        >
+        > This public template is for **already-fixed** issues, **low-severity findings** (e.g. informational, hardening), or **discussions about security practices**.
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - "Informational — no impact, but worth documenting"
+        - "Low — limited impact, hard to exploit"
+        - "Medium — significant impact, requires user action to exploit"
+        - "High — severe impact, exploitable by remote attacker"
+        - "Critical — RCE, privilege escalation, data breach"
+      default: 0
+
+  - type: input
+    id: skill_name
+    attributes:
+      label: Affected skill
+      placeholder: browser
+    validations:
+      required: true
+
+  - type: input
+    id: affected_versions
+    attributes:
+      label: Affected version(s)
+      description: Semver range or list of versions where the issue exists. Use `*` if all versions.
+      placeholder: "<=0.1.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Vulnerability description
+      description: What is the issue? What is the impact?
+    validations:
+      required: true
+      min_length: 30
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction steps
+      description: How to reproduce. Be specific. If the repro is dangerous, mark it `private` in the comments.
+    validations:
+      required: false
+
+  - type: textarea
+    id: mitigation
+    attributes:
+      label: Known mitigation or workaround
+      description: Anything users can do today to reduce risk.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: disclosure
+    attributes:
+      label: Disclosure preference
+      options:
+        - "Public — fix and publish CVE / GHSA together"
+        - "Coordinated — work with maintainers on timeline before public"
+        - "Already disclosed — link to the existing advisory"
+      default: 0
+
+  - type: input
+    id: reporter
+    attributes:
+      label: Your name / handle (for credit)
+      description: Optional. Leave blank to be anonymous.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: "I have read the [Security policy](https://github.com/tryfractal/registry/security/policy)"
+        - label: "I have NOT tested the vulnerability against production systems I do not own"
+        - label: "I understand that public disclosure before a fix may put users at risk"

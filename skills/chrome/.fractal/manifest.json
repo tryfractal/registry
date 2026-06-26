@@ -1,0 +1,45 @@
+{
+  "name": "chrome",
+  "version": "0.1.0",
+  "description": "Drive the user's real Chrome browser from the agent via the mcp-chrome extension-based MCP server — reuse login state, manage tabs, monitor network, search history, manage bookmarks, with a built-in semantic tab search.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/chrome",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/chrome",
+  "license": "MIT",
+  "keywords": [
+    "chrome",
+    "browser",
+    "mcp",
+    "extension",
+    "automation",
+    "tabs",
+    "bookmarks",
+    "history",
+    "network",
+    "semantic-search",
+    "hangwin"
+  ],
+  "interface": {
+    "displayName": "Chrome (mcp-chrome)",
+    "shortDescription": "Drive the user's real Chrome — tabs, history, bookmarks, network.",
+    "longDescription": "The Chrome skill wraps hangwin/mcp-chrome, an extension-based MCP server that connects to the user's actual Chrome browser (not a spawned headless instance). It exposes 24 tools: tab and window management, screenshots, network capture via webRequest and the DevTools Debugger API, semantic search across open tabs (SIMD-accelerated vector index), page content extraction, click and fill interactions, browsing history search, and bookmark CRUD. Pure local — no data leaves the machine. Reuses the user's existing login state, cookies, and extensions. Best when login state matters more than a clean scripted environment.",
+    "developerName": "Fractal Team",
+    "category": "Development",
+    "capabilities": ["Read", "Write", "Execute", "Network"],
+    "websiteURL": "https://github.com/hangwin/mcp-chrome",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Use the Chrome skill when the task requires the user's real Chrome session — their login state, bookmarks, or browsing history.",
+      "Prefer `search_tabs_content` to find content across open tabs instead of opening them one by one.",
+      "Confirm with the user before any bulk modification of bookmarks, history, or open tabs."
+    ],
+    "brandColor": "#4285F4",
+    "logo": "https://svgl.app/library/chrome.svg"
+  }
+}

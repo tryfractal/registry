@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Fractal Discord
+    url: https://discord.gg/tryfractal
+    about: Ask the community for help, share what you're building, or get feedback on a skill idea.
+  - name: 📖 Fractal Documentation
+    url: https://docs.tryfractal.co
+    about: Read the full docs on how to author, install, and manage skills.
+  - name: 🌐 Fractal Marketplace
+    url: https://tryfractal.co/marketplace
+    about: Browse published skills and find the one you need.
+  - name: 🔒 Security disclosure
+    url: https://github.com/tryfractal/registry/security/policy
+    about: Report a vulnerability privately — do NOT open a public issue.

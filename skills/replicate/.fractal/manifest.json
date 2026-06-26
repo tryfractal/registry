@@ -1,0 +1,50 @@
+{
+  "name": "replicate",
+  "version": "0.1.0",
+  "description": "Run and integrate cloud machine learning models through the Replicate platform — search the model catalog, create and poll predictions, cancel stuck jobs, and chain image, video, audio, and language models together via a single MCP toolset.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/replicate",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/replicate",
+  "license": "MIT",
+  "keywords": [
+    "replicate",
+    "machine-learning",
+    "ml",
+    "ai",
+    "image-generation",
+    "text-to-image",
+    "video-generation",
+    "audio",
+    "speech-to-text",
+    "stable-diffusion",
+    "flux",
+    "whisper",
+    "model-api",
+    "mcp",
+    "predictions",
+    "inference"
+  ],
+  "interface": {
+    "displayName": "Replicate",
+    "shortDescription": "Run cloud ML models (image, video, audio, language) through the Replicate platform.",
+    "longDescription": "The Replicate skill exposes the community `mcp-replicate` MCP server as a single Fractal toolset. It lets the agent discover models via semantic search, inspect input/output schemas and version hashes, create long-running predictions, poll them to completion, cancel stuck runs, and chain multiple models together — all powered by the public Replicate catalog of open-source ML models. Requires a `REPLICATE_API_TOKEN` from replicate.com/account/api-tokens. Billed by GPU seconds, not by API call, so the skill includes rules to cancel unneeded predictions and avoid retry storms.",
+    "developerName": "Fractal Team",
+    "category": "AI",
+    "capabilities": ["Read", "Write", "Execute", "Network"],
+    "websiteURL": "https://replicate.com",
+    "privacyPolicyURL": "https://replicate.com/privacy",
+    "termsOfServiceURL": "https://replicate.com/terms",
+    "defaultPrompt": [
+      "Use the Replicate skill whenever the task involves running a hosted machine learning model — image generation, upscaling, background removal, speech-to-text, text-to-video, or any model from the public Replicate catalog.",
+      "Always call `get_model` first to retrieve the exact version hash and input schema before creating a prediction, and pass that hash (not the model name) so the result is reproducible.",
+      "Prefer `create_and_poll_prediction` for short jobs and the non-blocking `create_prediction` + `get_prediction` loop for long-running ones. Cancel predictions you no longer need — Replicate bills by GPU seconds."
+    ],
+    "brandColor": "#000000",
+    "logo": "https://svgl.app/library/replicate_light.svg"
+  }
+}

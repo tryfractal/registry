@@ -1,0 +1,20 @@
+# CODEOWNERS
+# Fractal team reviews every PR in the registry.
+# TODO: as community contributions grow, migrate to a hybrid model:
+#   - Official skills (`fractal/`, `browser/`): @tryfractal/fractal-team
+#   - Community skills (`skills/*/author != "Fractal"`): author + @tryfractal/fractal-team
+#   See CONTRIBUTING.md > Ways to contribute for the current model.
+
+# Default owner for everything in the repository.
+/* @tryfractal/fractal-team
+
+# Issue templates and governance files.
+/.github/ @tryfractal/fractal-team
+/AGENTS.md @tryfractal/fractal-team
+/README.md @tryfractal/fractal-team
+/CHANGELOG.md @tryfractal/fractal-team
+/LICENSE @tryfractal/fractal-team
+
+# Official skills.
+/skills/fractal/ @tryfractal/fractal-team
+/skills/browser/ @tryfractal/fractal-team

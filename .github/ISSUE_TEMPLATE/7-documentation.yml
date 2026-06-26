@@ -1,0 +1,59 @@
+name: 📖 Documentation
+description: Fix or improve the registry's docs — README, AGENTS.md, CONTRIBUTING.md, or a skill's SKILL.md.
+title: "[Docs] "
+labels: ["type: docs", "area: docs"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for **prose** fixes. For code/bug fixes in skills, use Bug report. For structural changes to the registry, open a PR and link it here.
+
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where is the issue?
+      options:
+        - "README.md (root)"
+        - "AGENTS.md (root)"
+        - "CONTRIBUTING.md"
+        - "A skill's SKILL.md (specify which)"
+        - "A skill's manifest (wrong field, missing example)"
+        - "Other"
+      default: 0
+
+  - type: input
+    id: where_other
+    attributes:
+      label: If "A skill's SKILL.md" or "Other", specify the file/URL
+      placeholder: skills/fractal/SKILL.md
+    validations:
+      required: false
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of issue?
+      options:
+        - "Typo / grammar"
+        - "Outdated info (e.g. wrong command, version, link)"
+        - "Missing info (a question I had isn't answered)"
+        - "Confusing / unclear (hard to follow)"
+        - "Broken link"
+      default: 2
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the issue
+    validations:
+      required: true
+      min_length: 20
+
+  - type: textarea
+    id: suggested_fix
+    attributes:
+      label: Suggested fix (optional)
+    validations:
+      required: false

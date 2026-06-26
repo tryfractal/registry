@@ -1,0 +1,46 @@
+{
+  "name": "resend",
+  "version": "0.1.0",
+  "description": "Full Resend email platform via the official resend-mcp server — send transactional and marketing email, manage contacts / segments / topics / custom properties, run broadcast campaigns, configure sender domains, API keys, and webhooks, and read inbound email.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/resend",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/resend",
+  "license": "MIT",
+  "keywords": [
+    "resend",
+    "email",
+    "transactional",
+    "marketing",
+    "broadcast",
+    "contacts",
+    "segments",
+    "webhooks",
+    "mcp",
+    "newsletter",
+    "smtp-alternative"
+  ],
+  "interface": {
+    "displayName": "Resend",
+    "shortDescription": "Send email and run campaigns via the official Resend MCP server.",
+    "longDescription": "The Resend skill wraps resend-mcp, the official Model Context Protocol server published by the Resend team. It exposes the full Resend platform as MCP tools: send transactional and marketing email (HTML, plain text, attachments, CC/BCC, reply-to, tags, scheduled delivery), batch send, list / get / cancel / update emails, manage contacts with custom properties and CSV imports, audience segments, subscription topics, broadcast campaigns with scheduling and personalization, sender domains with verification, API keys, webhooks for delivery events, and inbound email with attachment download. Requires a Resend API key (RESEND_API_KEY) and a verified sending domain. Pairs naturally with the chrome skill to verify rendered emails in the user's real browser, or with playwright to drive signup flows end-to-end after creating an audience.",
+    "developerName": "Fractal Team",
+    "category": "Communication",
+    "capabilities": ["Read", "Write", "Network", "Persist"],
+    "websiteURL": "https://resend.com",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Use the Resend skill for any email task — transactional sends, batch campaigns, contact management, broadcast scheduling, sender domain configuration, or webhook setup.",
+      "Always confirm with the user (show the payload, ask for a yes) before calling `send` or `batch send` — both are non-undoable and deliver to real recipients.",
+      "Honour topic subscriptions and report suppression as a normal outcome, not a failure.",
+      "For >1000 recipients, create a Broadcast instead of a single batch send — broadcasts can be scheduled, paused, and analytics-tracked."
+    ],
+    "brandColor": "#000000",
+    "logo": "https://svgl.app/library/resend-icon-black.svg"
+  }
+}

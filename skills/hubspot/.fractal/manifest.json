@@ -1,0 +1,47 @@
+{
+  "name": "hubspot",
+  "version": "0.1.0",
+  "description": "Connect any agent to a live HubSpot CRM through the official HubSpot MCP server. Read and write contacts, companies, deals, tickets, leads, engagements, products, quotes, invoices, orders, subscriptions, and segments — plus read-only access to campaigns, landing pages, blog posts, users, and pipelines.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/hubspot",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/hubspot",
+  "license": "MIT",
+  "keywords": [
+    "hubspot",
+    "crm",
+    "sales",
+    "marketing",
+    "contacts",
+    "companies",
+    "deals",
+    "tickets",
+    "engagements",
+    "mcp",
+    "pipeline",
+    "leads",
+    "campaigns"
+  ],
+  "interface": {
+    "displayName": "HubSpot",
+    "shortDescription": "Read and write your HubSpot CRM through the official HubSpot MCP server.",
+    "longDescription": "The HubSpot skill exposes the official @hubspot/mcp-server as a single Fractal toolset. It gives the agent read/write access to the full HubSpot CRM object graph (contacts, companies, deals, tickets, leads, products, line items, quotes, invoices, orders, carts, subscriptions, and segments) plus engagement tools (calls, emails, meetings, notes, tasks) and read-only access to marketing, content, and organizational data (campaigns, landing pages, website pages, blog posts, users, teams, pipelines, custom properties, and associations). Authentication is performed by injecting a `HUBSPOT_ACCESS_TOKEN` personal access token from a HubSpot user-level app. Sensitive data properties (including PHI / Highly Sensitive Data) are always redacted by the upstream server.",
+    "developerName": "Fractal Team",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write", "Network", "Persist"],
+    "websiteURL": "https://www.hubspot.com/",
+    "privacyPolicyURL": "https://legal.hubspot.com/privacy-policy",
+    "termsOfServiceURL": "https://legal.hubspot.com/terms-of-service",
+    "defaultPrompt": [
+      "Use the HubSpot skill whenever the user asks to query, create, update, or delete CRM records — contacts, companies, deals, tickets, leads, products, quotes, invoices, orders, subscriptions, or segments.",
+      "Pass the explicit `objectType` and `id` when fetching a single record, and use the search endpoint for 'find by name or email' requests.",
+      "Pass `HUBSPOT_ACCESS_TOKEN` via the environment before launching the toolset. Never echo, log, or return the token."
+    ],
+    "brandColor": "#FF7A59",
+    "logo": "https://www.hubspot.com/favicon.ico"
+  }
+}

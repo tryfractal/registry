@@ -1,0 +1,51 @@
+{
+  "name": "zapier",
+  "version": "0.1.0",
+  "description": "Connect to 9000+ apps and 30000+ actions through the Zapier MCP server — send Slack messages, create Sheets rows, manage Jira/Asana tasks, update HubSpot deals, post Discord messages, and more, all through natural language.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/zapier",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/zapier",
+  "license": "MIT",
+  "keywords": [
+    "zapier",
+    "mcp",
+    "automation",
+    "integrations",
+    "no-code",
+    "workflow",
+    "slack",
+    "gmail",
+    "sheets",
+    "jira",
+    "asana",
+    "hubspot",
+    "discord",
+    "github",
+    "linear",
+    "notion"
+  ],
+  "interface": {
+    "displayName": "Zapier",
+    "shortDescription": "Connect to 9000+ apps through the Zapier MCP server.",
+    "longDescription": "The Zapier skill connects the agent to Zapier's ecosystem of 9000+ apps and 30000+ actions through the Zapier MCP server. Each tool in the server corresponds to a Zapier action configured at mcp.zapier.com — pick the app, connect your account, and the agent can call it directly. No custom API integration code is needed. Supports all major apps: Slack, Gmail, Google Sheets, Jira, Asana, HubSpot, Discord, GitHub, Linear, Notion, and thousands more. The actual available tools depend on what the user configured.",
+    "developerName": "Fractal Team",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write", "Execute", "Network"],
+    "websiteURL": "https://zapier.com",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Use Zapier when the user wants to interact with any of the 9000+ integrated apps without writing custom API code.",
+      "Ask what tools the user has configured in their Zapier MCP server before attempting to call any action.",
+      "Chain multiple Zapier actions when the task involves a sequence of operations across different apps.",
+      "Handle permission errors gracefully — suggest re-authenticating the connected app at mcp.zapier.com."
+    ],
+    "brandColor": "#FF4A00",
+    "logo": "https://svgl.app/library/zapier.svg"
+  }
+}

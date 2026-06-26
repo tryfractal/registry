@@ -1,0 +1,47 @@
+{
+  "name": "playwright",
+  "version": "0.2.0",
+  "description": "Browser automation powered by the official Microsoft Playwright MCP server — navigate, click, type, fill forms, scrape, mock network, and inspect accessibility trees in Chromium, Firefox, WebKit, Chrome, or Edge.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/playwright",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/playwright",
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "playwright",
+    "browser",
+    "automation",
+    "scraping",
+    "mcp",
+    "web",
+    "e2e",
+    "testing",
+    "navigation",
+    "accessibility",
+    "chromium",
+    "firefox",
+    "webkit"
+  ],
+  "interface": {
+    "displayName": "Playwright",
+    "shortDescription": "Drive any browser with the Microsoft Playwright MCP server.",
+    "longDescription": "The Playwright skill exposes the official @playwright/mcp server as a single Fractal toolset. It uses Playwright's accessibility tree (not pixel screenshots) so it works with text-only models and produces deterministic, structured browser interactions. Drives Chromium, Firefox, WebKit, or installed Chrome / Edge. Ships with the devtools, network, storage, and config capability groups enabled out of the box; add `vision`, `pdf`, or `testing` to the toolset args to enable coordinate-based mouse interaction, PDF export, or test-style assertions. Replaces the previous `browser` skill.",
+    "developerName": "Fractal Team",
+    "category": "Development",
+    "capabilities": ["Read", "Write", "Execute", "Network"],
+    "websiteURL": "https://playwright.dev",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Use the Playwright skill whenever the task involves navigating, clicking, filling forms, scraping, or inspecting any web page.",
+      "Prefer `browser_snapshot` over `browser_take_screenshot` — the accessibility snapshot gives stable element refs you can act on.",
+      "Mock APIs with `browser_route` (network capability) instead of recompiling the app under test."
+    ],
+    "brandColor": "#2EAD33",
+    "logo": "https://svgl.app/library/playwright.svg"
+  }
+}

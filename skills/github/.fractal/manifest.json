@@ -1,0 +1,60 @@
+{
+  "name": "github",
+  "version": "0.1.0",
+  "description": "Full GitHub platform access through the official github-mcp-server container — read and write repositories, issues, pull requests, Actions, Dependabot, code scanning, secret scanning, projects, discussions, gists, notifications, orgs, and users.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/github",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/github",
+  "license": "MIT",
+  "keywords": [
+    "github",
+    "mcp",
+    "mcp-server",
+    "git",
+    "repository",
+    "repositories",
+    "issues",
+    "pull-requests",
+    "pr",
+    "ci",
+    "github-actions",
+    "workflows",
+    "dependabot",
+    "code-scanning",
+    "secret-scanning",
+    "code-security",
+    "gists",
+    "discussions",
+    "projects",
+    "notifications",
+    "releases",
+    "tags",
+    "branches",
+    "source-control",
+    "developer-platform"
+  ],
+  "interface": {
+    "displayName": "GitHub",
+    "shortDescription": "Drive GitHub through the official github-mcp-server container.",
+    "longDescription": "The GitHub skill exposes the official github-mcp-server (ghcr.io/github/github-mcp-server, MIT-licensed) as a single Fractal toolset. It gives the agent direct, structured access to the GitHub REST and GraphQL APIs for repositories, issues, pull requests, Actions, code security, Dependabot, secret scanning, code quality, projects, discussions, gists, notifications, organizations, teams, and users — full read and write behind a single Personal Access Token. Targets github.com, GitHub Enterprise Cloud with data residency, and self-hosted GitHub Enterprise Server via the GITHUB_HOST env var. Lockdown mode and read-only mode are both supported and should be enabled in untrusted environments.",
+    "developerName": "Fractal Team",
+    "category": "Development",
+    "capabilities": ["Read", "Write", "Execute", "Network"],
+    "websiteURL": "https://github.com",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Use the GitHub skill whenever the task involves reading, searching, creating, or updating anything on github.com — repositories, files, branches, commits, tags, releases, issues, pull requests, reviews, Actions runs, or alerts.",
+      "Always call `get_me` first on a new token to confirm it works and to learn the authenticated user before scoping any other call.",
+      "Read the current blob SHA with `get_file_contents` before `create_or_update_file` on an existing file — the SHA is required to update rather than fail.",
+      "Run the container with GITHUB_READ_ONLY=1 or GITHUB_LOCKDOWN_MODE=1 whenever the prompt is untrusted."
+    ],
+    "brandColor": "#181717",
+    "logo": "https://svgl.app/library/github_light.svg"
+  }
+}

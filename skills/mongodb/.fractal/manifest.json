@@ -1,0 +1,44 @@
+{
+  "name": "mongodb",
+  "version": "0.1.0",
+  "description": "Connect to MongoDB databases and MongoDB Atlas clusters from the agent through the official MongoDB MCP server. Run find / aggregate / count queries, insert and update documents, introspect schemas and indexes, manage Atlas clusters, projects, users, and access lists, load the sample dataset, and search the MongoDB knowledge base.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/mongodb",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/mongodb",
+  "license": "Apache-2.0",
+  "keywords": [
+    "mongodb",
+    "atlas",
+    "mcp",
+    "database",
+    "nosql",
+    "document",
+    "aggregation",
+    "bson",
+    "mongodb-atlas",
+    "mongodb-mcp-server"
+  ],
+  "interface": {
+    "displayName": "MongoDB",
+    "shortDescription": "Drive MongoDB and Atlas from the agent via the official MongoDB MCP server.",
+    "longDescription": "The MongoDB skill exposes the official `mongodb-mcp-server` as a single Fractal toolset. It connects to any local mongod / Docker instance or any Atlas cluster using a standard connection string, and optionally to the Atlas admin API using Service Account credentials. The toolset ships in read-only mode by default and exposes the full database surface (find, aggregate, count, explain, insert / update / delete, schema & index introspection, EJSON export) plus the Atlas admin surface (list / create / inspect / upgrade / pause clusters, manage projects, database users, IP access lists, stream processing workspaces, and load the sample dataset) plus the MongoDB Assistant knowledge base. Destructive tools (drop-database, drop-collection, delete-many, atlas-create-db-user, atlas-create-access-list, etc.) are gated behind user confirmation via MCP elicitation.",
+    "developerName": "Fractal Team",
+    "category": "Data",
+    "capabilities": ["Read", "Write", "Execute", "Network", "Persist"],
+    "websiteURL": "https://www.mongodb.com/",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Use the MongoDB skill whenever the task involves querying, inserting, updating, or deleting documents in a MongoDB collection or managing MongoDB Atlas resources.",
+      "Run the server in read-only mode (MDB_MCP_READ_ONLY=true) unless the user has explicitly asked for writes — destructive tools require user confirmation via elicitation.",
+      "Pass connection strings and Atlas API credentials as environment variables (MDB_MCP_CONNECTION_STRING, MDB_MCP_API_CLIENT_ID, MDB_MCP_API_CLIENT_SECRET) — never as command-line arguments."
+    ],
+    "brandColor": "#00684A",
+    "logo": "https://svgl.app/library/mongodb-icon-light.svg"
+  }
+}

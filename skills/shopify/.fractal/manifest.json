@@ -1,0 +1,47 @@
+{
+  "name": "shopify",
+  "version": "0.2.0",
+  "description": "Manage Shopify store data via the shopify-mcp server (geli2001/shopify-mcp) — 31 tools for products, customers, orders, metafields, inventory, tags, and draft orders through the Admin GraphQL API. Replaces the old @shopify/dev-mcp documentation-only skill.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/shopify",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/shopify",
+  "license": "MIT",
+  "keywords": [
+    "shopify",
+    "ecommerce",
+    "products",
+    "customers",
+    "orders",
+    "inventory",
+    "metafields",
+    "admin-api",
+    "graphql",
+    "mcp",
+    "store-management",
+    "fulfillment"
+  ],
+  "interface": {
+    "displayName": "Shopify",
+    "shortDescription": "Full Shopify store management via MCP — products, customers, orders, inventory, and metafields.",
+    "longDescription": "The Shopify skill wraps shopify-mcp by geli2001, which provides 31 tools for direct Shopify store management through the Admin GraphQL API. Manage products (CRUD + variants + options), customers (CRUD + merge + addresses), orders (smart lookup, cancel, close/open, mark as paid, fulfill, refund, draft orders), metafields (get/set/delete on any resource), inventory (set absolute quantities at locations), and tags (add/remove on any resource). All list queries support cursor-based pagination, sorting, and Shopify query syntax filtering. Requires a Shopify custom app with Admin API scopes and either OAuth client credentials or a legacy access token.",
+    "developerName": "Fractal Team",
+    "category": "Development",
+    "capabilities": ["Read", "Write", "Execute", "Network"],
+    "websiteURL": "https://www.shopify.com/",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Use the Shopify skill for any store management task — products, customers, orders, inventory, metafields, and tags.",
+      "Confirm before destructive operations: delete-product, delete-customer, order-cancel, and refund-create are irreversible.",
+      "Use get-product-by-id before manage-product-options or manage-product-variants to get the product GID.",
+      "Check get-metafields before set-metafields to avoid overwriting values you want to keep."
+    ],
+    "brandColor": "#95BF47",
+    "logo": "https://svgl.app/library/shopify.svg"
+  }
+}

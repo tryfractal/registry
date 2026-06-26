@@ -1,0 +1,135 @@
+name: 🆕 New skill submission
+description: Submit a PR with a new skill to be published in the registry. Read CONTRIBUTING.md first.
+title: "[New Skill] "
+labels: ["type: new-skill", "area: skills", "status: needs-review"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This template is for **external contributors** publishing a new skill. If you're on the Fractal team, open a PR directly and link to it.
+
+        Before opening:
+        1. Read [`CONTRIBUTING.md`](https://github.com/tryfractal/registry/blob/main/.github/CONTRIBUTING.md)
+        2. Read [`AGENTS.md`](https://github.com/tryfractal/registry/blob/main/AGENTS.md) section **II. CONSUMER GUIDE**
+        3. Make sure your skill folder has both `SKILL.md` and `.fractal/manifest.json`
+        4. Validate the manifest locally (link to a script in CONTRIBUTING.md)
+        5. Open a PR and paste the URL below
+
+  - type: input
+    id: skill_name
+    attributes:
+      label: Skill name (folder name)
+      description: Lowercase, hyphens only. Must be unique. Will be the URL slug on the marketplace.
+      placeholder: my-awesome-skill
+    validations:
+      required: true
+      max_length: 64
+
+  - type: input
+    id: pr_url
+    attributes:
+      label: Pull request URL
+      placeholder: https://github.com/tryfractal/registry/pull/123
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - "Productivity"
+        - "Development"
+        - "Communication"
+        - "Data"
+        - "Design"
+        - "DevOps"
+        - "AI"
+        - "Research"
+      default: 0
+
+  - type: dropdown
+    id: toolset_kind
+    attributes:
+      label: Primary toolset type
+      description: Pick the canonical folder pattern your skill will use.
+      options:
+        - "MCP Server (`toolsets/mcp/`)"
+        - "OpenAPI (`toolsets/api/`)"
+        - "CLI (`toolsets/cli/`)"
+        - "Custom tools (one folder per entity)"
+      default: 0
+
+  - type: checkboxes
+    id: capabilities
+    attributes:
+      label: Capabilities the skill will have
+      options:
+        - label: "Read"
+        - label: "Write"
+        - label: "Execute"
+        - label: "Network"
+        - label: "Persist (collection)"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What does this skill do?
+      description: One paragraph, written for the marketplace card. Keep it imperative, trigger-rich, and under 1024 characters.
+    validations:
+      required: true
+      min_length: 50
+      max_length: 1024
+
+  - type: input
+    id: author
+    attributes:
+      label: Author name (display)
+      placeholder: Jane Doe
+    validations:
+      required: true
+
+  - type: input
+    id: author_contact
+    attributes:
+      label: Author email or handle
+      description: Used only for follow-up questions about the submission.
+      placeholder: jane@example.com
+    validations:
+      required: true
+
+  - type: dropdown
+    id: license
+    attributes:
+      label: License
+      description: The license under which you submit your skill. See CONTRIBUTING.md for the full list.
+      options:
+        - "MIT"
+        - "Apache-2.0"
+        - "BSD-3-Clause"
+        - "ISC"
+        - "SEE LICENSE IN LICENSE (Fractal team only)"
+        - "Other (specify in PR description)"
+      default: 0
+
+  - type: input
+    id: logo_url
+    attributes:
+      label: Logo URL (absolute)
+      description: An absolute URL to a PNG/SVG/JPG (or any other hosted image) that will be shown in the marketplace card. Use SVGL when it already has a good match, otherwise any stable public image URL is fine.
+      placeholder: https://example.com/logo.png
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: "I have read and agree to [`CONTRIBUTING.md`](https://github.com/tryfractal/registry/blob/main/.github/CONTRIBUTING.md)"
+        - label: "My `SKILL.md` follows the YAML frontmatter format described in AGENTS.md"
+        - label: "My `.fractal/manifest.json` passes local validation (see CONTRIBUTING.md)"
+        - label: "I own the rights to the code/logo I am submitting, or I have permission to redistribute them"
+        - label: "I understand my PR will be reviewed by the Fractal team and may be rejected"

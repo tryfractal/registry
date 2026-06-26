@@ -1,0 +1,100 @@
+name: 💡 Request a new skill
+description: Suggest a skill that doesn't exist yet in the registry. Anyone can ask — no coding required.
+title: "[Skill Request] "
+labels: ["type: request", "area: skills"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest a new skill! 🎉
+        Fill in what you know — leave blank what you don't. The Fractal team will triage and either build it, find a contributor, or mark it `wontfix` with an explanation.
+
+  - type: input
+    id: skill_name
+    attributes:
+      label: Skill name (suggestion)
+      description: What would you call this skill? Use lowercase-with-hyphens, e.g. `github`, `notion-importer`, `youtube-transcripts`.
+      placeholder: my-cool-skill
+    validations:
+      required: true
+      max_length: 64
+
+  - type: textarea
+    id: what_it_does
+    attributes:
+      label: What should this skill do?
+      description: Describe the skill in plain language. What problem does it solve? Who would use it?
+      placeholder: |
+        Example: "Connect my Linear workspace so I can read and create issues from inside Fractal. Should let me filter by status and assign to teammates."
+    validations:
+      required: true
+      min_length: 30
+
+  - type: input
+    id: similar_tools
+    attributes:
+      label: Similar tools or services
+      description: List the products/APIs this skill should integrate with (one per line).
+      placeholder: |
+        Linear
+        GitHub Projects
+    validations:
+      required: false
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Best-fit category
+      description: Pick the category that fits the skill. If unsure, leave "Not sure" and we'll decide.
+      options:
+        - "Not sure"
+        - "Productivity"
+        - "Development"
+        - "Communication"
+        - "Data"
+        - "Design"
+        - "DevOps"
+        - "AI"
+        - "Research"
+      default: 0
+
+  - type: checkboxes
+    id: capabilities
+    attributes:
+      label: Capabilities needed
+      description: Check every capability this skill would need. (For reference, these match the `interface.capabilities` field in the manifest.)
+      options:
+        - label: "Read — fetch data from the service"
+        - label: "Write — create or modify data on the service"
+        - label: "Execute — run side-effecting operations (delete, deploy, etc.)"
+        - label: "Network — call external APIs"
+        - label: "Persist — store structured data in a collection"
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: How urgent is this for you?
+      options:
+        - "Just an idea — no rush"
+        - "Would be useful this month"
+        - "I'm blocked on this — need it ASAP"
+      default: 0
+
+  - type: input
+    id: contact
+    attributes:
+      label: How can we reach you? (optional)
+      description: Email or Discord handle. Only used if we have follow-up questions.
+      placeholder: felipe@example.com
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: contributions
+    attributes:
+      label: Willing to help?
+      options:
+        - label: "I'm willing to test a beta version when ready"
+        - label: "I might be able to help build this (I'll comment on the issue)"

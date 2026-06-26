@@ -1,0 +1,46 @@
+{
+  "name": "algolia",
+  "version": "0.1.0",
+  "description": "Algolia search and index management powered by the official algolia/mcp server — run queries, list indices, read and update index settings, batch upsert/delete records, manage A/B tests, inspect analytics, configure query suggestions, recommendations, and federated collections, and read usage metrics.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/algolia",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/algolia",
+  "license": "MIT",
+  "keywords": [
+    "algolia",
+    "search",
+    "full-text-search",
+    "index",
+    "ranking",
+    "faceting",
+    "recommendations",
+    "ab-testing",
+    "analytics",
+    "mcp",
+    "discovery",
+    "query-suggestions"
+  ],
+  "interface": {
+    "displayName": "Algolia",
+    "shortDescription": "Query, configure, and manage Algolia indexes through the official algolia/mcp server.",
+    "longDescription": "The Algolia skill exposes the official algolia/mcp server (github.com/algolia/mcp) as a single Fractal toolset. It wraps Algolia's REST APIs behind a stable tool surface so the agent can run full-text searches, list indices, read and write index settings (searchable attributes, ranking, faceting, custom ranking, synonyms, rules), batch upsert and delete records, copy / move / delete indexes, run A/B tests, inspect search analytics, configure query suggestions and recommendation models, set up federated collections, monitor index health, and read usage metrics. All 10 tool groups (search, search_read, search_write, analytics, abtesting, collections, monitoring, querysuggestions, recommend, usage) are enabled by default; restrict to a subset via the MCP_ENABLED_TOOLS env var for a read-only setup.",
+    "developerName": "Fractal Team",
+    "category": "Development",
+    "capabilities": ["Read", "Write", "Execute", "Network"],
+    "websiteURL": "https://www.algolia.com/",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Use the Algolia skill whenever the task involves querying, configuring, or managing an Algolia index — searches, settings, records, A/B tests, analytics, recommendations, or usage.",
+      "Prefer `partial_update_objects` over `save_objects` for field-level patches so unset attributes are not clobbered.",
+      "Restrict to read-only mode (MCP_ENABLED_TOOLS=search_read,analytics,usage) whenever the agent is exploring data and should not mutate state."
+    ],
+    "brandColor": "#003DFF",
+    "logo": "https://svgl.app/library/algolia.svg"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "airtable",
+  "version": "0.1.0",
+  "description": "Read and write operational data in Airtable — query, search, create, update, and delete records; manage tables, fields, and record comments; automate any routine Airtable workflow.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/airtable",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/airtable",
+  "license": "MIT",
+  "keywords": [
+    "airtable",
+    "mcp",
+    "database",
+    "crm",
+    "no-code",
+    "spreadsheet",
+    "records",
+    "workflow",
+    "automation",
+    "operations",
+    "project-management",
+    "content-calendar",
+    "tracker",
+    "back-office"
+  ],
+  "interface": {
+    "displayName": "Airtable",
+    "shortDescription": "Read and write Airtable bases, tables, fields, records, and comments through an MCP server.",
+    "longDescription": "The Airtable skill exposes the airtable-mcp-server by domdomegg as a single Fractal toolset. It speaks the official Airtable Web API using a Personal Access Token, so every tool call is a real Airtable operation. Use it to discover bases and schemas, list / search / create / update / delete records, manage tables and fields, and post or read record comments. Perfect for CRMs, project trackers, content calendars, applicant pipelines, and lightweight back-office apps. Authenticate by setting AIRTABLE_API_KEY in the workspace environment.",
+    "developerName": "Fractal Team",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write", "Execute", "Network", "Persist"],
+    "websiteURL": "https://www.airtable.com",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Use the Airtable skill whenever the task involves querying, searching, creating, updating, or deleting records in an Airtable base.",
+      "Always discover the schema first — call list_bases → list_tables → describe_table before reading or writing records.",
+      "Prefer server-side filterByFormula in list_records over fetching every record and filtering locally."
+    ],
+    "brandColor": "#FFB400",
+    "logo": "https://airtable.com/favicon.ico"
+  }
+}

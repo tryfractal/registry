@@ -1,0 +1,46 @@
+{
+  "name": "gitlab",
+  "version": "0.1.0",
+  "description": "Official GitLab MCP server — drive gitlab.com or a self-hosted GitLab instance from the agent: list and search projects, read and push files, manage branches, open merge requests, file and triage issues, and fork repositories. Authenticated with a personal access token; no extra installs required.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/gitlab",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/gitlab",
+  "license": "MIT",
+  "keywords": [
+    "gitlab",
+    "git",
+    "mcp",
+    "merge-request",
+    "issue-tracker",
+    "ci-cd",
+    "devops",
+    "repository",
+    "source-control",
+    "self-hosted",
+    "api",
+    "scm"
+  ],
+  "interface": {
+    "displayName": "GitLab",
+    "shortDescription": "Drive any GitLab instance (cloud or self-hosted) through the official MCP server.",
+    "longDescription": "The GitLab skill exposes the official `@modelcontextprotocol/server-gitlab` server as a single Fractal toolset. It speaks the GitLab REST API directly, so the agent can list and search projects, read and push files, manage branches, open and review merge requests, file and triage issues, fork repositories, and run any other action the GitLab API supports — all from structured tool calls. Connects to gitlab.com by default, or to any self-hosted GitLab instance by setting `GITLAB_API_URL`. Authenticated with a personal access token passed through `GITLAB_PERSONAL_ACCESS_TOKEN`; supports both the `npx` install (zero-config) and the `mcp/gitlab` Docker image. MIT-licensed upstream.",
+    "developerName": "Fractal Team",
+    "category": "Development",
+    "capabilities": ["Read", "Write", "Execute", "Network"],
+    "websiteURL": "https://about.gitlab.com",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Use the GitLab skill whenever the task involves listing, searching, reading, writing, or merging anything on a GitLab project — including self-hosted instances.",
+      "Always pass the project as a numeric `project_id` or a URL-encoded `group%2Fproject` path; never pass a raw URL.",
+      "For multi-file changes, prefer `push_files` (single commit) over looping `create_or_update_file`."
+    ],
+    "brandColor": "#FC6D26",
+    "logo": "https://svgl.app/library/gitlab.svg"
+  }
+}

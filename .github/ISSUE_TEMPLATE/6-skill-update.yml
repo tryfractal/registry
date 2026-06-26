@@ -1,0 +1,71 @@
+name: 🔄 Skill update (version bump)
+description: Bump the version, fix a manifest field, or roll out a non-breaking change to an existing skill.
+title: "[Update] "
+labels: ["type: update", "area: skills"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for **non-breaking** version bumps and small manifest edits. For breaking changes, use the Skill improvement template and check "Yes — would need a major version bump".
+
+  - type: input
+    id: skill_name
+    attributes:
+      label: Which skill?
+      placeholder: fractal
+    validations:
+      required: true
+
+  - type: input
+    id: current_version
+    attributes:
+      label: Current version
+      placeholder: 0.1.0
+    validations:
+      required: true
+
+  - type: input
+    id: new_version
+    attributes:
+      label: New version
+      placeholder: 0.1.1
+    validations:
+      required: true
+
+  - type: dropdown
+    id: change_type
+    attributes:
+      label: Change type
+      options:
+        - "Patch — bug fix or non-breaking edit"
+        - "Minor — new backward-compatible feature"
+        - "Major — breaking change (rare; usually a separate improvement issue)"
+      default: 0
+
+  - type: textarea
+    id: what_changed
+    attributes:
+      label: What changed?
+      description: Summary of the diff. Bullet list preferred.
+    validations:
+      required: true
+      min_length: 20
+
+  - type: input
+    id: pr_url
+    attributes:
+      label: PR URL (if already open)
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: "I bumped the `version` field in `.fractal/manifest.json`"
+        - label: "I updated `CHANGELOG.md` (or added an entry to the skill's references if you use a different convention)"
+        - label: "I verified the change against the manifest schema in `AGENTS.md` > Technical Reference"
+        - label: "This is NOT a breaking change (or I filed a separate improvement issue for the breaking change)"

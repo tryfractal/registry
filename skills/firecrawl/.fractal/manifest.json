@@ -1,0 +1,51 @@
+{
+  "name": "firecrawl",
+  "version": "0.1.0",
+  "description": "Web crawling and extraction powered by the official Firecrawl MCP server — scrape any URL, crawl whole sites, map URL discovery, run web search, extract structured data with an LLM, drive a headless browser with interact, launch autonomous deep-research agents, and monitor pages for changes. Replaces the need for custom scrapers, proxy rotation, and headless browser orchestration.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/firecrawl",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/firecrawl",
+  "license": "MIT",
+  "keywords": [
+    "firecrawl",
+    "web-scraping",
+    "web-crawler",
+    "crawling",
+    "extraction",
+    "structured-data",
+    "json",
+    "markdown",
+    "search",
+    "deep-research",
+    "agent",
+    "monitoring",
+    "change-detection",
+    "mcp",
+    "ai-ready-data",
+    "mcp-server",
+    "model-context-protocol"
+  ],
+  "interface": {
+    "displayName": "Firecrawl",
+    "shortDescription": "Turn any website into clean Markdown or structured JSON with the official Firecrawl MCP server.",
+    "longDescription": "The Firecrawl skill exposes the official firecrawl-mcp server as a single Fractal toolset. It turns the live web into clean, AI-ready data without you having to manage proxies, headless browsers, or anti-bot infrastructure. Scrape any URL into Markdown, HTML, structured JSON (with a schema), screenshots, or a branding profile. Batch-scrape lists of known URLs in parallel. Map a site to discover every URL on a domain, or crawl a section with depth and page limits. Run web search and optionally inline-scrape the result pages. Use LLM-powered extraction to pull typed fields from one or many URLs. Drive a real headless browser with `interact` when you need clicks, typing, or login. Launch an autonomous deep-research agent that browses, searches, and synthesizes answers across multiple sources. Set up recurring monitors that diff each result against the last snapshot and notify by webhook or email. Authenticated via FIRECRAWL_API_KEY; supports self-hosted Firecrawl via FIRECRAWL_API_URL.",
+    "developerName": "Fractal Team",
+    "category": "Data",
+    "capabilities": ["Read", "Write", "Execute", "Network"],
+    "websiteURL": "https://www.firecrawl.dev/",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Use the Firecrawl skill whenever the task involves scraping a web page, crawling a site, extracting structured data from URLs, or running deep research across the web.",
+      "Prefer JSON format with a schema on `scrape` and `batch_scrape` over Markdown — pull only the fields you need and reach for Markdown only when the task requires the full page.",
+      "Always poll async jobs (`crawl`, `batch_scrape`, `agent`) with the matching `_status` tool until status is `completed` or `failed`."
+    ],
+    "brandColor": "#FF6B35",
+    "logo": "https://svgl.app/library/firecrawl.svg"
+  }
+}

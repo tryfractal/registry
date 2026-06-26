@@ -1,0 +1,46 @@
+{
+  "name": "meilisearch",
+  "version": "0.1.0",
+  "description": "Drive any Meilisearch instance (local Docker, self-hosted, or Meilisearch Cloud) from the agent through the official meilisearch-mcp server — manage indices, add and update documents, run typo-tolerant and hybrid (keyword + vector) searches, tune ranking and typo tolerance, manage API keys, and monitor indexing tasks.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/meilisearch",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/meilisearch",
+  "license": "MIT",
+  "keywords": [
+    "meilisearch",
+    "search",
+    "search-engine",
+    "full-text-search",
+    "typo-tolerance",
+    "hybrid-search",
+    "vector-search",
+    "rag",
+    "mcp",
+    "index",
+    "api",
+    "semantic-search"
+  ],
+  "interface": {
+    "displayName": "Meilisearch",
+    "shortDescription": "Drive any Meilisearch instance through the official MCP server.",
+    "longDescription": "The Meilisearch skill exposes the official `meilisearch-mcp` server (PyPI) as a single Fractal toolset. It gives the agent full control over a Meilisearch instance — index creation, deletion, and metrics; bulk document import and retrieval; typo-tolerant and hybrid (keyword + vector) search with filters, facets, and sorting; ranking rules, searchable / filterable / sortable attributes, typo tolerance, and embedder configuration; API key management with granular permissions; task monitoring (enqueue / processing / succeeded / failed / canceled); and system health, version, and statistics. Connects to local Docker, self-hosted, or Meilisearch Cloud instances, and can switch between them at runtime via `update-connection-settings`. Production deployments must set `MEILI_MASTER_KEY`.",
+    "developerName": "Fractal Team",
+    "category": "Data",
+    "capabilities": ["Read", "Write", "Execute", "Network", "Persist"],
+    "websiteURL": "https://www.meilisearch.com",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Use the Meilisearch skill whenever the user wants to search, index, or manage data in Meilisearch — local, self-hosted, or Cloud.",
+      "Always confirm the active instance with `get-connection-settings` (or switch with `update-connection-settings`) before the first read or write of a session.",
+      "Batch document writes in a single `add-documents` call and poll the returned `taskUid` with `get-task` before reading the data back."
+    ],
+    "brandColor": "#FF5CAA",
+    "logo": "https://www.meilisearch.com/logo.png"
+  }
+}

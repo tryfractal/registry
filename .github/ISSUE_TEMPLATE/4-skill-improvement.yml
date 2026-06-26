@@ -1,0 +1,83 @@
+name: ✨ Skill improvement
+description: Suggest an improvement to an existing skill — new feature, better error message, performance fix, UX change.
+title: "[Improvement] "
+labels: ["type: enhancement", "area: skills"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for non-bug changes to existing skills. For bugs, use the Bug report template. For new skills, use Skill request or New skill submission.
+
+  - type: dropdown
+    id: skill_name
+    attributes:
+      label: Which skill?
+      options:
+        - "fractal"
+        - "browser"
+        - "Other (specify in summary)"
+      default: 0
+
+  - type: input
+    id: skill_name_other
+    attributes:
+      label: If "Other", which skill?
+      placeholder: my-cool-skill
+    validations:
+      required: false
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Improvement summary
+      description: One-paragraph description of the change.
+    validations:
+      required: true
+      min_length: 20
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why is this needed?
+      description: What problem does it solve? Who's affected? Use case?
+    validations:
+      required: true
+      min_length: 30
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - "Small — typo, comment, one-liner fix"
+        - "Medium — new field, new error message, new tool argument"
+        - "Large — new toolset, new collection, new view"
+      default: 1
+
+  - type: dropdown
+    id: breaking
+    attributes:
+      label: Is this a breaking change?
+      description: Does it change the existing public API, manifest schema, or remove a feature?
+      options:
+        - "No — additive or internal"
+        - "Yes — would need a major version bump"
+      default: 0
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed implementation (optional)
+      description: If you have a concrete proposal — code snippets, manifest diff, link to a branch — paste here.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: willing
+    attributes:
+      label: Contribution
+      options:
+        - label: "I'm willing to submit a PR for this"
+        - label: "I just want to discuss before someone else picks it up"

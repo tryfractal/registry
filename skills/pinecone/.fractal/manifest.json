@@ -1,0 +1,44 @@
+{
+  "name": "pinecone",
+  "version": "0.1.0",
+  "description": "Vector database access powered by the official Pinecone Developer MCP server — search Pinecone documentation, manage serverless indexes with integrated inference, upsert and semantically search records, rerank results, and run cascading queries across multiple indexes.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/pinecone",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/pinecone",
+  "license": "Apache-2.0",
+  "keywords": [
+    "pinecone",
+    "vector-database",
+    "vector-search",
+    "semantic-search",
+    "embeddings",
+    "rag",
+    "retrieval-augmented-generation",
+    "rerank",
+    "serverless",
+    "mcp"
+  ],
+  "interface": {
+    "displayName": "Pinecone",
+    "shortDescription": "Query and manage Pinecone vector indexes from the agent via the official MCP server.",
+    "longDescription": "The Pinecone skill exposes the official @pinecone-database/mcp server as a single Fractal toolset. It gives the agent first-class access to both the Pinecone documentation and the user's own serverless indexes with integrated inference. Capabilities include: searching the official Pinecone docs, listing and describing indexes, creating new indexes with a built-in embedding model (e.g. multilingual-e5-large, llama-text-embed-v2), upserting plain-text records, running semantic search with metadata filtering, reranking results with a dedicated reranker, and running cascading queries across multiple indexes with automatic deduplication. The single required configuration is PINECONE_API_KEY. Only indexes with integrated inference are supported; plain raw-vector serverless indexes, the Pinecone Assistant MCP, and the standalone embeddings API are out of scope for this server.",
+    "developerName": "Fractal Team",
+    "category": "Data",
+    "capabilities": ["Read", "Write", "Execute", "Network", "Persist"],
+    "websiteURL": "https://www.pinecone.io/",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Use the Pinecone skill whenever the task involves querying, indexing, or managing data in a Pinecone vector database.",
+      "Always call `search-docs` first for any Pinecone-specific question — the official documentation is the source of truth.",
+      "Send plain text to upsert-records and search-records on indexes created with create-index-for-model — the integrated-inference pipeline owns embedding."
+    ],
+    "brandColor": "#0D0D0D",
+    "logo": "https://www.pinecone.io/favicon.ico"
+  }
+}

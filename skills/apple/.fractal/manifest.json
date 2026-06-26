@@ -1,0 +1,47 @@
+{
+  "name": "apple",
+  "version": "0.1.0",
+  "description": "Control native macOS apps — Messages, Mail, Notes, Calendar, Reminders, Contacts, Maps — via AppleScript through the apple-mcp server. 8 tools, no API keys needed.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/apple",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/apple",
+  "license": "MIT",
+  "keywords": [
+    "apple",
+    "macos",
+    "messages",
+    "imessage",
+    "mail",
+    "notes",
+    "calendar",
+    "reminders",
+    "contacts",
+    "maps",
+    "applescript",
+    "mcp"
+  ],
+  "interface": {
+    "displayName": "Apple",
+    "shortDescription": "Control macOS Messages, Mail, Notes, Calendar, Reminders, Contacts, and Maps via AppleScript.",
+    "longDescription": "The Apple skill wraps jxnl/apple-mcp (forked from supermemoryai/apple-mcp), a Bun-based MCP server that uses AppleScript to drive Apple's native macOS applications. Exposes 8 tools: contacts (search by name), notes (search, list, create), messages (send, read, schedule, unread), mail (unread, search, send with attachments/cc/bcc, mailboxes, accounts), reminders (list, search, open, create, listById), calendar (search, open, list, create events with location/notes/allday), webSearch (DuckDuckGo), and maps (search, save, drop pins, directions, guides). No API keys or environment variables required — inherits the user's iCloud session. Requires bun on PATH + macOS accessibility permissions for the terminal app running the MCP server.",
+    "developerName": "Fractal Team",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write", "Execute"],
+    "websiteURL": "https://github.com/jxnl/apple-mcp",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Use the Apple skill to interact with native macOS apps — Messages, Mail, Notes, Calendar, Reminders, Contacts, and Maps.",
+      "Before any send operation (messages/mail/calendar), confirm the content and recipient with the user.",
+      "Start with read operations (unread messages, upcoming events, recent notes) before making changes.",
+      "For messages, always resolve a contact name to a phone number using the contacts tool before trying to send."
+    ],
+    "brandColor": "#A2AAAD",
+    "logo": "https://svgl.app/library/apple.svg"
+  }
+}

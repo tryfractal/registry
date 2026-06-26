@@ -1,0 +1,54 @@
+{
+  "name": "mailgun",
+  "version": "0.1.0",
+  "description": "Send, route, and analyze email through Mailgun's transactional email platform via the official mailgun-mcp-server. Send transactional mail, manage domains, mailing lists, templates, webhooks, and inbound routes, query deliverability statistics, and review suppressions and dedicated IP pools.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/mailgun",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/mailgun",
+  "license": "MIT",
+  "keywords": [
+    "mailgun",
+    "email",
+    "transactional",
+    "smtp",
+    "deliverability",
+    "domains",
+    "dns",
+    "dkim",
+    "spf",
+    "mailing-list",
+    "templates",
+    "webhooks",
+    "inbound-routing",
+    "suppressions",
+    "bounces",
+    "unsubscribes",
+    "complaints",
+    "analytics",
+    "stats",
+    "mcp"
+  ],
+  "interface": {
+    "displayName": "Mailgun",
+    "shortDescription": "Send transactional email and manage deliverability through the official Mailgun MCP server.",
+    "longDescription": "The Mailgun skill exposes the official `mailgun-mcp-server` (`@mailgun/mcp-server`, Apache 2.0) as a single Fractal toolset. It gives the agent a workflow-oriented interface for sending transactional email, retrieving and resending stored messages, verifying domain DNS, managing click / open / unsubscribe tracking, creating and updating event webhooks and inbound routes, managing mailing lists and members, authoring versioned email templates, querying per-message logs and aggregate sending statistics (by domain, tag, provider, device, country), reviewing bounces / unsubscribes / complaints / allowlist entries, classifying bounces, and inspecting dedicated IP pool configuration. The server authenticates with a `MAILGUN_API_KEY` environment variable that is read by the local server process only and is never exposed to the model. By default every product tag (`send`, `validate`, `optimize`, `inspect`) is registered; pass `--tags <list>` or set `MAILGUN_MCP_TAGS` to scope the toolset to a subset. The server exposes no delete operations by design, which limits the blast radius of prompt-injection-driven mutations.",
+    "developerName": "Fractal Team",
+    "category": "Communication",
+    "capabilities": ["Read", "Write", "Network"],
+    "websiteURL": "https://www.mailgun.com/",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Use the Mailgun skill whenever the task involves sending transactional email, checking deliverability, managing domains, mailing lists, templates, webhooks, or inbound routes, or reviewing bounces, unsubscribes, and complaints.",
+      "Verify the sending domain (SPF / DKIM / MX) with the domain-verification tool before sending any production email.",
+      "Match `MAILGUN_API_REGION` (`us` or `eu`) to the region of the API key, and scope the toolset with `--tags` or `MAILGUN_MCP_TAGS` when the workflow only needs a subset of capability groups."
+    ],
+    "brandColor": "#F03C42",
+    "logo": "https://www.mailgun.com/favicon.ico"
+  }
+}

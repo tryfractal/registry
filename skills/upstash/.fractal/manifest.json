@@ -1,0 +1,48 @@
+{
+  "name": "upstash",
+  "version": "0.1.0",
+  "description": "Manage Upstash resources from the agent through the official @upstash/mcp-server — provision, scale, back up, and delete Upstash Redis databases; run Redis commands (strings, hashes, lists, sets, sorted sets, JSON, streams, pub/sub); create and query Upstash Vector indexes; publish, schedule, and inspect QStash messages and the DLQ; manage Upstash Workflow runs; spin up, snapshot, and clone Upstash Box sandboxes; and pull account and billing info.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/upstash",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/upstash",
+  "license": "MIT",
+  "keywords": [
+    "upstash",
+    "redis",
+    "serverless",
+    "vector",
+    "vector-search",
+    "qstash",
+    "workflow",
+    "message-queue",
+    "webhooks",
+    "box",
+    "sandbox",
+    "mcp",
+    "database",
+    "cache"
+  ],
+  "interface": {
+    "displayName": "Upstash",
+    "shortDescription": "Drive Upstash Redis, Vector, QStash, Workflow, and Box through the official MCP server.",
+    "longDescription": "The Upstash skill exposes the official `@upstash/mcp-server` (from the `upstash/mcp-server` GitHub repository) as a single Fractal toolset. It authenticates with the account email and an Upstash API key (read-only keys are supported and automatically disable every mutating tool) and surfaces the full Upstash console surface as MCP tools: Redis database lifecycle and per-database data primitives, Upstash Vector index management and similarity search, QStash publish / schedule / logs / DLQ, Upstash Workflow run lifecycle, Upstash Box sandbox lifecycle with snapshot + fan-out cloning, and account / billing introspection. A separate Box API key unlocks the Box tools.",
+    "developerName": "Fractal Team",
+    "category": "Data",
+    "capabilities": ["Read", "Write", "Execute", "Network", "Persist"],
+    "websiteURL": "https://upstash.com",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Use the Upstash skill whenever the task involves provisioning, scaling, backing up, or inspecting an Upstash Redis database; running Redis commands; managing an Upstash Vector index or running a vector search; publishing, scheduling, or debugging QStash messages and webhooks; managing Upstash Workflow runs; or spinning up, snapshotting, or cloning an Upstash Box sandbox.",
+      "Prefer a read-only Upstash API key for read-only tasks — the server automatically disables every mutating tool when started with one.",
+      "Confirm before any irreversible Upstash op (`redis_delete_database`, `vector_delete_index`, `vector_reset`, `qstash_delete_schedule`, `workflow_cancel_run`, `box_delete`) — they are not reversible and are billable."
+    ],
+    "brandColor": "#00E9A3",
+    "logo": "https://svgl.app/library/upstash.svg"
+  }
+}

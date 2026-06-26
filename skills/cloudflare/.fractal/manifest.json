@@ -1,0 +1,52 @@
+{
+  "name": "cloudflare",
+  "version": "0.1.0",
+  "description": "Operate the entire Cloudflare platform — DNS, Workers, KV, R2, D1, Pages, Vectorize, AI Gateway, Stream, Images, Access, WAF, Load Balancers, and the GraphQL Analytics API — through the official remote MCP server.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/cloudflare",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/cloudflare",
+  "license": "MIT",
+  "keywords": [
+    "cloudflare",
+    "dns",
+    "cdn",
+    "workers",
+    "kv",
+    "r2",
+    "d1",
+    "pages",
+    "vectorize",
+    "ai-gateway",
+    "stream",
+    "images",
+    "access",
+    "waf",
+    "load-balancer",
+    "mcp",
+    "edge",
+    "serverless"
+  ],
+  "interface": {
+    "displayName": "Cloudflare",
+    "shortDescription": "Operate the Cloudflare platform through the official remote MCP server.",
+    "longDescription": "The Cloudflare skill exposes the official remote MCP server (https://mcp.cloudflare.com/mcp) as a single Fractal toolset. It uses Cloudflare's Code Mode pattern — three primitives (`docs`, `search`, `execute`) reach all ~2,500 API endpoints without inflating the agent's context window. Manage DNS records, deploy Workers, upload to R2, query D1 with SQL, write and read KV, deploy Pages projects, build Vectorize indexes, inspect Stream videos, derive Images variants, configure Access applications, manage WAF rules and Load Balancers, purge cache, and run GraphQL Analytics queries — all from the agent. Authenticate by OAuth (recommended) or by passing a Cloudflare API token as a Bearer header. Account tokens should include `Account.Resources: Read` so the server can auto-detect the account id.",
+    "developerName": "Fractal Team",
+    "category": "DevOps",
+    "capabilities": ["Read", "Write", "Execute", "Network", "Persist"],
+    "websiteURL": "https://www.cloudflare.com",
+    "privacyPolicyURL": "https://www.cloudflare.com/privacypolicy/",
+    "termsOfServiceURL": "https://www.cloudflare.com/terms/",
+    "defaultPrompt": [
+      "Use the Cloudflare skill whenever the task involves DNS records, Workers, KV, R2, D1, Pages, Vectorize, AI Gateway, Stream, Images, Access, WAF rules, Load Balancers, cache purges, or Cloudflare analytics.",
+      "Always start with the `docs` tool for 'how do I…' questions, then use `search` to discover the right API endpoint, then call it with `execute`.",
+      "Use a least-privilege Cloudflare API token — one scope per job — and rotate it frequently. Never log the raw token."
+    ],
+    "brandColor": "#F38020",
+    "logo": "https://svgl.app/library/cloudflare.svg"
+  }
+}

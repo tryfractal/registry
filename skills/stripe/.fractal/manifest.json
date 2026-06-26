@@ -1,0 +1,48 @@
+{
+  "name": "stripe",
+  "version": "0.1.0",
+  "description": "Stripe payments platform powered by the official @stripe/mcp server — create customers, charge cards, refund payments, manage subscriptions and invoices, build Checkout sessions and payment links, look up products and prices, handle Connect accounts, reconcile balances, and search Stripe's documentation and knowledge base, all from the agent.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/stripe",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/stripe",
+  "license": "MIT",
+  "keywords": [
+    "stripe",
+    "payments",
+    "billing",
+    "subscriptions",
+    "invoices",
+    "checkout",
+    "refunds",
+    "connect",
+    "payouts",
+    "disputes",
+    "mcp",
+    "fintech",
+    "saas",
+    "ecommerce"
+  ],
+  "interface": {
+    "displayName": "Stripe",
+    "shortDescription": "Drive the Stripe payments platform with the official Stripe MCP server.",
+    "longDescription": "The Stripe skill exposes the official @stripe/mcp server as a single Fractal toolset. It gives the agent full read/write access to the Stripe API: customers, charges, payment intents, subscriptions, invoices, products, prices, coupons, checkout sessions, payment links, refunds, Connect accounts, transfers, payouts, balances, disputes, webhooks, reports, and reporting runs. The same toolset also searches Stripe's documentation and knowledge base (docs + support articles) and ships an implementation planner that walks the user through common Stripe integration patterns. Use a Stripe Restricted API Key (RAK) to scope the agent to exactly the resources it needs. Local stdio transport by default; Stripe's hosted server at https://mcp.stripe.com is also available.",
+    "developerName": "Fractal Team",
+    "category": "Finance",
+    "capabilities": ["Read", "Write", "Execute", "Network"],
+    "websiteURL": "https://stripe.com",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Use the Stripe skill whenever the task involves accepting payments, managing subscriptions, issuing refunds, generating invoices, building Checkout sessions or payment links, or querying anything on the Stripe API.",
+      "Use a Stripe Restricted API Key (RAK) with the minimum scopes the agent needs — never paste a full sk_live_ key into an agent runtime.",
+      "Confirm with the user before any money-moving write (charges, refunds, payouts, subscription cancellations) and prefer the typed tools (create_refund, get_stripe_account_info, stripe_report) over raw stripe_api_write."
+    ],
+    "brandColor": "#635BFF",
+    "logo": "https://svgl.app/library/stripe.svg"
+  }
+}

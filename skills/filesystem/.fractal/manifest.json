@@ -1,0 +1,43 @@
+{
+  "name": "filesystem",
+  "version": "0.1.0",
+  "description": "Secure, sandboxed file system operations via the official @modelcontextprotocol/server-filesystem MCP — read, write, edit, search, move, tree, and manage files within configurable allowed directories.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/filesystem",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/filesystem",
+  "license": "MIT",
+  "keywords": [
+    "filesystem",
+    "file-management",
+    "read-write",
+    "directory",
+    "mcp",
+    "sandbox",
+    "modelcontextprotocol",
+    "edit"
+  ],
+  "interface": {
+    "displayName": "Filesystem",
+    "shortDescription": "Sandboxed file read, write, edit, search, and directory management via MCP.",
+    "longDescription": "The Filesystem skill wraps the official @modelcontextprotocol/server-filesystem MCP server. It exposes 13 tools for reading, writing, editing, searching, moving, and managing files and directories within configurable, sandboxed directories. The server enforces directory access control through both command-line arguments and the dynamic MCP Roots protocol. Ideal for agent-driven file manipulation where safety matters.",
+    "developerName": "Fractal Team",
+    "category": "Development",
+    "capabilities": ["Read", "Write", "Execute"],
+    "websiteURL": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Use the Filesystem skill for any file read, write, edit, search, move, or directory management task.",
+      "Always call `list_allowed_directories` first to confirm the target path is within the server's sandbox.",
+      "Prefer `edit_file` with `dryRun: true` to preview changes before applying them.",
+      "Use `search_files` with glob patterns and `excludePatterns` to find files efficiently."
+    ],
+    "brandColor": "#4F46E5",
+    "logo": "https://github.com/modelcontextprotocol/servers/raw/main/src/filesystem/icon.png"
+  }
+}

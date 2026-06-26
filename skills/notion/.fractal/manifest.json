@@ -1,0 +1,46 @@
+{
+  "name": "notion",
+  "version": "0.1.0",
+  "description": "Read, search, create, and update Notion pages, databases, data sources, blocks, and comments through the official Notion MCP server. Exposes the full Notion API surface to the agent.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/notion",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/notion",
+  "license": "MIT",
+  "keywords": [
+    "notion",
+    "mcp",
+    "wiki",
+    "docs",
+    "pages",
+    "databases",
+    "data-sources",
+    "knowledge-base",
+    "notes",
+    "comments",
+    "blocks",
+    "productivity"
+  ],
+  "interface": {
+    "displayName": "Notion",
+    "shortDescription": "Drive any Notion workspace from the agent through the official Notion MCP server.",
+    "longDescription": "The Notion skill exposes the official @notionhq/notion-mcp-server as a single Fractal toolset. The server is the Notion team–maintained MCP wrapper for the Notion REST API and ships 22 tools covering search, users, page CRUD, block CRUD, data source CRUD, filtered queries, comments, and Markdown read/write of page content. Targets the 2025-09-03 Notion API (with 2026-03-03 used internally for the Markdown page endpoints). Authentication is driven by the NOTION_TOKEN env var; pages must be shared with the integration before the agent can read or write them.",
+    "developerName": "Fractal Team",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write", "Network"],
+    "websiteURL": "https://www.notion.com/",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Use the Notion skill whenever the task involves reading, searching, creating, or updating pages, databases, data sources, blocks, or comments inside a Notion workspace.",
+      "Resolve page and data source IDs with `API-post-search` filtered by `page` or `data_source` — never ask the user for raw UUIDs.",
+      "Prefer `API-retrieve-page-markdown` over walking block trees, and use `API-update-page-markdown` with `update_content` for targeted edits."
+    ],
+    "brandColor": "#000000",
+    "logo": "https://svgl.app/library/notion.svg"
+  }
+}

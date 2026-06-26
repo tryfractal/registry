@@ -1,0 +1,46 @@
+{
+  "name": "redis",
+  "version": "0.1.0",
+  "description": "Read and write a live Redis instance through the official redis-mcp-server — strings, hashes, lists, sets, sorted sets, JSON, streams, pub/sub, and vector search, against local, self-hosted, Redis Cloud, or Azure Managed Redis databases.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/redis",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/redis",
+  "license": "MIT",
+  "keywords": [
+    "redis",
+    "cache",
+    "key-value",
+    "session",
+    "queue",
+    "streams",
+    "pub-sub",
+    "vector-search",
+    "mcp",
+    "in-memory",
+    "database",
+    "nosql"
+  ],
+  "interface": {
+    "displayName": "Redis",
+    "shortDescription": "Drive a Redis instance through the official redis-mcp-server.",
+    "longDescription": "The Redis skill exposes the official `redis-mcp-server` (from `redis/mcp-redis` on GitHub, published on PyPI as `redis-mcp-server`) as a single Fractal toolset. It talks to any reachable Redis instance over the native RESP protocol using the `redis://` or `rediss://` URL scheme — local Docker, self-hosted cluster, Redis Cloud, or Azure Managed Redis with EntraID. The toolset surfaces typed tools for every Redis data type (strings, hashes, lists, sets, sorted sets, JSON documents, Redis Streams, and pub/sub channels), plus vector search, SCAN-based key discovery, TTL management, server introspection, and a natural-language lookup of the official Redis docs.",
+    "developerName": "Fractal Team",
+    "category": "Data",
+    "capabilities": ["Read", "Write", "Execute", "Network", "Persist"],
+    "websiteURL": "https://redis.io",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Use the Redis skill whenever the task involves caching, queueing, session storage, pub/sub, vector search, or any read/write against a live Redis instance.",
+      "Prefer the typed tool that matches the data shape — `hash` for objects, `list` for queues, `sorted set` for leaderboards, `JSON` for nested documents, `stream` for event logs.",
+      "Use `SCAN` (with a `MATCH` pattern) to enumerate keys; never call `KEYS *` on a production database."
+    ],
+    "brandColor": "#DC382D",
+    "logo": "https://svgl.app/library/redis.svg"
+  }
+}

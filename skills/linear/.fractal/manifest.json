@@ -1,0 +1,46 @@
+{
+  "name": "linear",
+  "version": "0.1.0",
+  "description": "Read, search, create, and update issues, projects, cycles, comments, labels, milestones, and initiatives in Linear through the official hosted Linear MCP server. Connects over Streamable HTTP with OAuth 2.1 by default, or via a Bearer token for headless and CI use.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/linear",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/linear",
+  "license": "MIT",
+  "keywords": [
+    "linear",
+    "issues",
+    "project-management",
+    "issue-tracker",
+    "ticketing",
+    "sprints",
+    "cycles",
+    "projects",
+    "mcp",
+    "product",
+    "agile",
+    "backlog"
+  ],
+  "interface": {
+    "displayName": "Linear",
+    "shortDescription": "Read and write issues, projects, and cycles in Linear via the official MCP server.",
+    "longDescription": "The Linear skill exposes Linear's official hosted MCP server (https://mcp.linear.app/mcp) as a single Fractal toolset. It uses Streamable HTTP transport and OAuth 2.1 with dynamic client registration by default, with an `Authorization: Bearer` fallback (LINEAR_API_KEY or LINEAR_OAUTH_TOKEN) for headless and CI environments. The toolset surfaces the full Linear GraphQL surface — issues, projects, cycles, labels, milestones, initiatives, comments, and attachments — for read, search, create, and update workflows against a live Linear workspace.",
+    "developerName": "Fractal Team",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write", "Network"],
+    "websiteURL": "https://linear.app",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Use the Linear skill whenever the task involves reading, searching, creating, or updating issues, projects, cycles, or comments in a Linear workspace.",
+      "Filter at the server — pass `assignee`, `state`, `team`, `label`, `project`, `cycle`, `priority`, or `query` to `list_issues` rather than fetching the full backlog.",
+      "Resolve human names to ids (list_users, list_teams, list_issue_statuses, list_labels) before calling create_issue or update_issue."
+    ],
+    "brandColor": "#5E6AD2",
+    "logo": "https://svgl.app/library/linear.svg"
+  }
+}

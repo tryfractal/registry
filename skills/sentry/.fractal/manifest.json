@@ -1,0 +1,47 @@
+{
+  "name": "sentry",
+  "version": "0.1.0",
+  "description": "Application monitoring, error tracking, and performance observability for production software through the official Model Context Protocol Sentry server. Look up issues by ID or URL, pull the most recent stacktrace, inspect error frequency and last-seen timestamps, and triage crashes and exceptions recorded by Sentry.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/sentry",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/sentry",
+  "license": "MIT",
+  "keywords": [
+    "sentry",
+    "error-tracking",
+    "crash-reporting",
+    "exception",
+    "stacktrace",
+    "observability",
+    "monitoring",
+    "mcp",
+    "issues",
+    "events",
+    "releases",
+    "performance",
+    "apm"
+  ],
+  "interface": {
+    "displayName": "Sentry",
+    "shortDescription": "Investigate production errors, crashes, and stacktraces from Sentry.",
+    "longDescription": "The Sentry skill exposes the official mcp-server-sentry reference server as a single Fractal toolset. It connects to the Sentry REST API with an auth token and gives the agent direct, structured access to Sentry issues and the events behind them. The toolset ships one read tool, `get_sentry_issue`, which fetches an issue by numeric ID or full sentry.io URL and returns its title, status, level, first/last-seen timestamps, event count, and the full formatted multi-exception stacktrace for the most recent event. Authentication is driven by the `SENTRY_AUTH_TOKEN` environment variable; self-hosted Sentry deployments override the host with `SENTRY_BASE_URL`. The underlying server is the Anthropic-maintained reference implementation, MIT-licensed, and the skill is published by the Fractal team for the registry.",
+    "developerName": "Fractal Team",
+    "category": "Development",
+    "capabilities": ["Read", "Network"],
+    "websiteURL": "https://sentry.io",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Use the Sentry skill whenever the task involves investigating a production error, crash, exception, or stacktrace that Sentry captured — including looking up an issue by ID or URL, reading its stacktrace, or triaging whether an error is still happening.",
+      "Read `SENTRY_AUTH_TOKEN` from the environment and never echo it back in tool output; a Sentry auth token grants the same read access as the user that minted it.",
+      "When the user hands you a Sentry URL, normalize it to the canonical `https://<org>.sentry.io/issues/<id>/` form (drop any `/events/<id>/` suffix) before passing it to `get_sentry_issue`."
+    ],
+    "brandColor": "#362D59",
+    "logo": "https://svgl.app/library/sentry.svg"
+  }
+}

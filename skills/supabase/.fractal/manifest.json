@@ -1,0 +1,47 @@
+{
+  "name": "supabase",
+  "version": "0.1.0",
+  "description": "Manage Supabase projects, Postgres databases, authentication, storage, edge functions, and realtime APIs through the official Supabase MCP server — list and mutate projects, run SQL, apply migrations, generate TypeScript types, deploy edge functions, read logs, and search the docs.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/supabase",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/supabase",
+  "license": "MIT",
+  "keywords": [
+    "supabase",
+    "postgres",
+    "postgresql",
+    "database",
+    "auth",
+    "storage",
+    "edge-functions",
+    "realtime",
+    "mcp",
+    "sql",
+    "migrations",
+    "backend-as-a-service",
+    "baas"
+  ],
+  "interface": {
+    "displayName": "Supabase",
+    "shortDescription": "Drive Supabase projects, Postgres, auth, storage, and edge functions via the official MCP server.",
+    "longDescription": "The Supabase skill exposes the official supabase-mcp server as a single Fractal toolset. It connects to the hosted Supabase MCP endpoint (OAuth 2.1) or a local Supabase CLI instance, and surfaces every operation the upstream server supports: project and organization management, database introspection (tables, extensions, migrations), SQL execution, TypeScript type generation from the database schema, edge function lifecycle, storage bucket and config management, database branching (experimental, paid plan), log retrieval by service, security and performance advisors, and live search across the official Supabase documentation. Defaults to project-scoped, read-only mode and is intended as a developer tool, not a customer-facing runtime.",
+    "developerName": "Fractal Team",
+    "category": "Development",
+    "capabilities": ["Read", "Write", "Execute", "Network"],
+    "websiteURL": "https://supabase.com/",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Use the Supabase skill whenever the task involves inspecting, querying, or mutating a Supabase project, Postgres database, storage bucket, or edge function.",
+      "Apply DDL through `apply_migration` (tracked) and DML through `execute_sql` (untracked). Never run destructive statements without explicit user confirmation.",
+      "Default to project-scoped, read-only mode (`?project_ref=<ref>&read_only=true`) and only enable the `storage` or `branching` feature groups when the user explicitly asks for them."
+    ],
+    "brandColor": "#3FCF8E",
+    "logo": "https://svgl.app/library/supabase.svg"
+  }
+}

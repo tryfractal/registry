@@ -1,0 +1,46 @@
+{
+  "name": "fractal",
+  "version": "0.1.0",
+  "description": "The Fractal Organic Operating System — persistent intelligence, adaptive workspace, agent orchestration, and real execution.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/fractal",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/fractal",
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "operating-system",
+    "ai",
+    "agents",
+    "memory",
+    "workspace",
+    "productivity",
+    "orchestration",
+    "aios"
+  ],
+  "interface": {
+    "displayName": "Fractal",
+    "shortDescription": "The Organic Operating System for AI agents.",
+    "longDescription": "Fractal is the first Organic Operating System. It turns AI from a reactive chat box into a continuous operational system: persistent memory, adaptive workspaces, agent orchestration, and real execution. Installing this skill makes the agent aware of the full Fractal runtime — instructions, skills, instructions registry, memory, and task lifecycle — so it can act as a first-class citizen inside any Fractal workspace.",
+    "developerName": "Fractal Team",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write",
+      "Execute"
+    ],
+    "websiteURL": "https://tryfractal.co",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Trigger the fractal skill on every conversation and use it as the native operating system for the agent.",
+      "Use Fractal memories, instructions, and skills registry to keep continuity across sessions and IDEs.",
+      "Convert any user intent into a Fractal Task and follow the Suggestion -> Planning -> In-Progress -> In-Review -> Finished lifecycle."
+    ],
+    "brandColor": "#10A37F",
+    "logo": "https://pbs.twimg.com/profile_images/2053864981993549824/y04uXNLm_400x400.jpg"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "metabase",
+  "version": "0.1.0",
+  "description": "Read and write any Metabase instance through the official Metabase MCP server. List databases, tables, fields, questions, and dashboards; run saved questions; execute ad-hoc SQL or MBQL queries; create and update questions, dashboards, and cards; export results as CSV, JSON, or XLSX.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/metabase",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/metabase",
+  "license": "MIT",
+  "keywords": [
+    "metabase",
+    "bi",
+    "business-intelligence",
+    "analytics",
+    "dashboards",
+    "sql",
+    "mbql",
+    "queries",
+    "data-warehouse",
+    "mcp",
+    "open-source"
+  ],
+  "interface": {
+    "displayName": "Metabase",
+    "shortDescription": "Query and manage a Metabase instance through the official Metabase MCP server.",
+    "longDescription": "The Metabase skill exposes the official metabase-mcp-server as a single Fractal toolset. It lets the agent list databases, tables, fields, questions, and dashboards on any Metabase instance; search the data model; run saved questions with parameters; execute ad-hoc SQL or MBQL queries against a connected warehouse; create and update questions, dashboards, and dashboard cards; and export results as CSV, JSON, or XLSX. Authentication uses either a Metabase API key (recommended) or a username / password pair. Defaults to read-only-friendly behavior: search before listing, prefer saved questions over ad-hoc SQL, default to LIMIT 1000, and require explicit user confirmation before any write or archive.",
+    "developerName": "Fractal Team",
+    "category": "Data",
+    "capabilities": ["Read", "Write", "Execute", "Network"],
+    "websiteURL": "https://www.metabase.com/",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Use the Metabase skill whenever the task involves querying, inspecting, or modifying content in a Metabase instance.",
+      "Prefer `search` over `list_*` calls to avoid scanning every database, table, or field on a large warehouse.",
+      "Prefer `run_question` over `execute_query` for known questions — saved questions are version-controlled and respect author permissions.",
+      "Use the Metabase API key (`METABASE_API_KEY`) instead of a username / password whenever a key is available."
+    ],
+    "brandColor": "#509EE3",
+    "logo": "https://www.metabase.com/images/logo.svg"
+  }
+}

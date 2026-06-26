@@ -1,0 +1,45 @@
+{
+  "name": "bamboohr",
+  "version": "0.1.0",
+  "description": "Read and write employee records, paid time off, onboarding, custom fields, and HR reports through the official BambooHR MCP server — a thin wrapper over the BambooHR Open API at api.bamboohr.com.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/bamboohr",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/bamboohr",
+  "license": "MIT",
+  "keywords": [
+    "bamboohr",
+    "hr",
+    "hris",
+    "employees",
+    "directory",
+    "pto",
+    "time-off",
+    "onboarding",
+    "headcount",
+    "mcp",
+    "api"
+  ],
+  "interface": {
+    "displayName": "BambooHR",
+    "shortDescription": "Drive the BambooHR Open API through the official MCP server.",
+    "longDescription": "The BambooHR skill exposes the official bamboohr/mcp-server as a single Fractal toolset. It connects to the BambooHR Open API at `https://api.bamboohr.com/api/gateway.php/{subdomain}/v1` using HTTP Basic Authentication (API key as the username) and surfaces every employee, time-off, onboarding, and reporting operation as an MCP tool. The skill ships with three families of tools: core employee lookups and updates (search, get, directory, custom fields), time-off operations (PTO balances, request lifecycle, who-is-out, holidays), and reporting + HR ops (custom reports, headcount, turnover, new hires, terminations, user-defined tables). Authentication is configured through the `BAMBOOHR_API_KEY` and `BAMBOOHR_SUBDOMAIN` environment variables. Read-only by default — every write tool requires explicit user confirmation.",
+    "developerName": "Fractal Team",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write", "Network"],
+    "websiteURL": "https://www.bamboohr.com/",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Use the BambooHR skill whenever the task involves looking up an employee, listing the company directory, checking PTO balances, or running an HR report.",
+      "Resolve names and emails to a BambooHR `employeeId` with `bamboohr_search_employees` before calling any `bamboohr_get_*` tool — those tools require the numeric id.",
+      "Always confirm with the user before calling any tool that writes or mutates HR records (updates, time-off approvals, custom field changes)."
+    ],
+    "brandColor": "#74A148",
+    "logo": "https://www.bamboohr.com/favicon.ico"
+  }
+}
