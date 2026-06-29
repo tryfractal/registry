@@ -26,7 +26,7 @@
   "interface": {
     "displayName": "Slack",
     "shortDescription": "Read and write a Slack workspace through the official Slack MCP server.",
-    "longDescription": "The Slack skill exposes the official @modelcontextprotocol/server-slack as a single Fractal toolset. It runs a bot user against the Slack Web API and gives the agent a typed surface for listing public channels, posting and replying to messages, reacting with emoji, reading channel and thread history, and looking up users. All actions are bounded by the app's installed OAuth scopes and channel membership, with an optional `SLACK_CHANNEL_IDS` allow-list for tighter control. Connect with a bot token (`xoxb-…`), a workspace id (`T…`), and optionally a comma-separated channel list, and the agent can read and write Slack the same way any other bot integration does.",
+    "longDescription": "Your agent can interact with your Slack workspace — reading channels, sending messages, replying in threads, reacting with emoji, and looking up users. No more switching tabs to Slack for quick updates. Just ask your agent what's happening in a channel, send a message to your team, or check recent activity. Everything happens through conversation, scoped to your workspace.",
     "developerName": "Fractal Team",
     "category": "Communication",
     "capabilities": ["Read", "Write", "Network"],
@@ -34,9 +34,9 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use the Slack skill whenever the task involves reading from or writing to a Slack workspace — channels, messages, threads, reactions, or users.",
-      "Resolve channel and user names to opaque IDs (C… and U…) with `slack_list_channels` and `slack_get_users` before calling any write tool.",
-      "Restrict the workspace to a known channel set in shared or CI environments by setting `SLACK_CHANNEL_IDS` to a comma-separated list of channel ids."
+      "Check what's new in the team's Slack channels.",
+      "Send a message to the [channel name] channel for me.",
+      "Find a user and show me their profile information."
     ],
     "brandColor": "#4A154B",
     "logo": "https://svgl.app/library/slack.svg"

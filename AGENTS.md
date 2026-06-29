@@ -372,7 +372,7 @@ Welcome message for the agent. Explain the skill's purpose, capabilities, and an
   "interface": {
     "displayName": "My Skill",
     "shortDescription": "One line for the card.",
-    "longDescription": "Multiple paragraphs for the detail page.",
+    "longDescription": "Non-technical, benefit-focused copy. Maximum 500 characters. Explains what the user gains — simple language, no jargon.",
     "developerName": "Your Name",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
@@ -380,8 +380,9 @@ Welcome message for the agent. Explain the skill's purpose, capabilities, and an
     "privacyPolicyURL": "https://your-site.com/privacy",
     "termsOfServiceURL": "https://your-site.com/terms",
     "defaultPrompt": [
-      "Use My Skill to ...",
-      "Use My Skill to ..."
+      "Help me get started with this skill.",
+      "Give me a quick overview of what I can do here.",
+      "Find something that might need my attention."
     ],
     "brandColor": "#10A37F",
     "logo": "https://your-site.com/logo.png"
@@ -1038,6 +1039,8 @@ The SDK is published on npm and is the same SDK used by Fractal internally. If y
 | ✅ Write `shortDescription` as one line | It's shown on the card | `"Send messages via WhatsApp from your workspace."` |
 | ✅ Document every tool in `SKILL.md` | The agent needs to know when to use them | See `skills/playwright/SKILL.md` |
 | ✅ Build app-shaped skills | Skills should replace a third-party app, not be a prompt | `crm` with contacts/activities/deals + a view + an artifact |
+| ✅ Write `longDescription` in simple, benefit-focused language | It's shown on the marketplace detail page to all users, not just devs | `"Imagine your agent being able to look up anything in your Airtable bases in real time…"` |
+| ✅ Write `defaultPrompt` as user conversation starters (max 3) | These are example prompts the user sends to their agent, not instructions to the agent | `"Help me get started — show me what I have in Airtable."` |
 | ✅ Read the `@fractal-os/plugin` docs before authoring | The SDK is the contract | Read `node_modules/@fractal-os/plugin/README.md` and `AGENTS.md` first |
 | ❌ Don't use uppercase or spaces in the folder | CLI will not find the skill | `MyCoolSkill/` breaks install |
 | ❌ Don't hardcode `https://tryfractal.co` in skills | Breaks local dev | Use env vars or config |
@@ -1045,6 +1048,8 @@ The SDK is published on npm and is the same SDK used by Fractal internally. If y
 | ❌ Don't skip the YAML frontmatter in `SKILL.md` | The agent cannot read the skill without it | `name`, `description`, `metadata.rules` are required |
 | ❌ Don't bump major version without a migration plan | Breaks user workspaces | Open an improvement issue first |
 | ❌ Don't ship a `package.json` inside the skill | Skills are source-only; the workspace owns deps | The SDK is installed at the workspace level, not in the skill |
+| ❌ Don't ship an empty or placeholder `defaultPrompt` | The marketplace shows these as the user's first impression | Fill with 2-3 real, generic sentences the user could actually say |
+| ❌ Don't use placeholders like `[Table Name]` or fake names in `defaultPrompt` | The prompt must make sense as-is to any user | Use generic phrases like "Give me an overview" or "Find something that needs attention" |
 | ❌ Don't ship a "pure-prompt" skill with no value | It does not adapt the workspace | Add at least one collection, view, toolset, or template |
 
 ---
@@ -1070,14 +1075,14 @@ This section is the exhaustive reference. It exists so that an agent can debug o
 | `keywords` | string[] | no | Search tags. Lowercase, hyphens. |
 | `interface.displayName` | string | yes | Human-friendly name. |
 | `interface.shortDescription` | string | yes | One-liner. Shown on the card. |
-| `interface.longDescription` | string | no | Multi-paragraph. Shown on the detail page. |
+| `interface.longDescription` | string | no | Non-technical, benefit-focused copy shown on the detail page. Maximum 500 characters. Must explain what the user gains by installing the skill — simple language, no implementation details, no jargon. Should work for any type of user, not just developers. Can include basic Markdown. |
 | `interface.developerName` | string | no | Display name of the developer/team. |
 | `interface.category` | string | yes | One of: `Productivity`, `Development`, `Communication`, `Data`, `Design`, `DevOps`, `AI`, `Research`, `Finance`, `Marketing`, `Sales`, `Education`. |
 | `interface.capabilities` | string[] | no | Subset of: `Read`, `Write`, `Execute`, `Network`, `Persist`. |
 | `interface.websiteURL` | string | no | Link to the project's website. |
 | `interface.privacyPolicyURL` | string | no | Link to the project's privacy policy. |
 | `interface.termsOfServiceURL` | string | no | Link to the project's terms of service. |
-| `interface.defaultPrompt` | string[] | no | Default prompt suggestions. 2-3 short imperatives, each starting with the skill name. |
+| `interface.defaultPrompt` | string[] | no | Example prompts the user can send to their agent. Maximum 3 items. Must be generic — no placeholders like `[Variable Name]`, no fictional names, no fake IDs. Each prompt should be a complete, natural-language sentence that any user of this skill could say as-is. These are NOT agent instructions; they are conversation starters that showcase what the user can ask. |
 | `interface.brandColor` | string | no | Hex color (`#RRGGBB`). |
 | `interface.composerIcon` | string | no | Path inside the skill (used in the agent composer). |
 | `interface.logo` | string | no | **Absolute URL** to the full logo (PNG/SVG/JPG). |

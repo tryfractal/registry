@@ -1,7 +1,7 @@
 {
   "name": "filesystem",
   "version": "0.1.0",
-  "description": "Secure, sandboxed file system operations via the official @modelcontextprotocol/server-filesystem MCP — read, write, edit, search, move, tree, and manage files within configurable allowed directories.",
+  "description": "Safe project file access for Fractal MCP clients — reads, writes, edits, and manages files within your project directory only.",
   "author": {
     "name": "Fractal",
     "email": "team@tryfractal.co",
@@ -18,13 +18,15 @@
     "directory",
     "mcp",
     "sandbox",
-    "modelcontextprotocol",
-    "edit"
+    "project-files",
+    "chatgpt",
+    "perplexity",
+    "elevenlabs"
   ],
   "interface": {
     "displayName": "Filesystem",
-    "shortDescription": "Sandboxed file read, write, edit, search, and directory management via MCP.",
-    "longDescription": "The Filesystem skill wraps the official @modelcontextprotocol/server-filesystem MCP server. It exposes 13 tools for reading, writing, editing, searching, moving, and managing files and directories within configurable, sandboxed directories. The server enforces directory access control through both command-line arguments and the dynamic MCP Roots protocol. Ideal for agent-driven file manipulation where safety matters.",
+    "shortDescription": "Project file access for AI assistants connected via MCP like ChatGPT, Perplexity, and ElevenLabs Agents.",
+    "longDescription": "When you connect Fractal to an MCP client like ChatGPT, Perplexity, or ElevenLabs Agent, your AI assistant normally can't read or save files on your computer. This skill gives it safe access to your project files — reading code, editing documents, organizing folders, and saving results — all within your project directory. No random file access, no system file changes. Just your project, under your control.",
     "developerName": "Fractal Team",
     "category": "Development",
     "capabilities": ["Read", "Write", "Execute"],
@@ -32,12 +34,11 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use the Filesystem skill for any file read, write, edit, search, move, or directory management task.",
-      "Always call `list_allowed_directories` first to confirm the target path is within the server's sandbox.",
-      "Prefer `edit_file` with `dryRun: true` to preview changes before applying them.",
-      "Use `search_files` with glob patterns and `excludePatterns` to find files efficiently."
+      "Show me what files are in my project directory.",
+      "Create a new file and save the notes from our conversation into it.",
+      "Search my project files for a specific term or function."
     ],
     "brandColor": "#4F46E5",
-    "logo": "https://github.com/modelcontextprotocol/servers/raw/main/src/filesystem/icon.png"
+    "logo": "https://aroundsketch.github.io/Apple-App-Icons/App-Icon/Apple/Files/@PNG.png"
   }
 }

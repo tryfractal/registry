@@ -26,7 +26,7 @@
   "interface": {
     "displayName": "Pinecone",
     "shortDescription": "Query and manage Pinecone vector indexes from the agent via the official MCP server.",
-    "longDescription": "The Pinecone skill exposes the official @pinecone-database/mcp server as a single Fractal toolset. It gives the agent first-class access to both the Pinecone documentation and the user's own serverless indexes with integrated inference. Capabilities include: searching the official Pinecone docs, listing and describing indexes, creating new indexes with a built-in embedding model (e.g. multilingual-e5-large, llama-text-embed-v2), upserting plain-text records, running semantic search with metadata filtering, reranking results with a dedicated reranker, and running cascading queries across multiple indexes with automatic deduplication. The single required configuration is PINECONE_API_KEY. Only indexes with integrated inference are supported; plain raw-vector serverless indexes, the Pinecone Assistant MCP, and the standalone embeddings API are out of scope for this server.",
+    "longDescription": "Your agent can store and search through data using Pinecone's vector database — perfect for building AI applications with semantic search, recommendation systems, and retrieval-augmented generation. Just give your agent text to index or a search query, and it handles the embeddings and vector search automatically. No need to manage embedding pipelines yourself.",
     "developerName": "Fractal Team",
     "category": "Data",
     "capabilities": ["Read", "Write", "Execute", "Network", "Persist"],
@@ -34,9 +34,9 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use the Pinecone skill whenever the task involves querying, indexing, or managing data in a Pinecone vector database.",
-      "Always call `search-docs` first for any Pinecone-specific question — the official documentation is the source of truth.",
-      "Send plain text to upsert-records and search-records on indexes created with create-index-for-model — the integrated-inference pipeline owns embedding."
+      "Search my Pinecone index for content similar to this text.",
+      "Help me index these documents for semantic search.",
+      "Show me the status of my Pinecone indexes."
     ],
     "brandColor": "#0D0D0D",
     "logo": "https://www.pinecone.io/favicon.ico"

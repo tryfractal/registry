@@ -26,7 +26,7 @@
   "interface": {
     "displayName": "Discord",
     "shortDescription": "Send, read, and manage Discord messages, channels, members, and roles from any MCP-compatible agent.",
-    "longDescription": "The Discord skill exposes the @pasympa/discord-mcp server as a single Fractal toolset. Backed by discord.js, it covers the entire Discord Bot API surface: discovery (guilds, channels, server stats), messages (send, read, edit, delete, reply, react, pin, search, embeds, bulk delete), channels (create, edit, move, clone, lock permissions, follow announcements), permissions (overrides, audits, copy), members (list, search, kick, ban, unban, timeout, bulk-ban, prune, nickname), roles (CRUD, assign, hierarchy), forums (channels, posts, tags), webhooks (CRUD, send, edit, fetch, delete), scheduled events (CRUD, subscribers, invite), invites (list, create, delete, get), DMs (send, read, edit, delete, reply, embed), moderation (audit log), and screening (membership form). Destructive bulk operations default to dry-run. Multi-guild by default; pin the server to a specific guild list with DISCORD_ALLOWED_GUILDS. Requires a Discord bot token — see the setup section in the skill manual.",
+    "longDescription": "Your agent can help you manage your Discord server — sending messages, moderating channels, managing roles, setting up webhooks, organizing forums, and scheduling events. Whether you run a community server or just want your agent to send announcements and moderate discussions, everything happens through natural language. No more switching back to Discord for every routine task.",
     "developerName": "Fractal Team",
     "category": "Communication",
     "capabilities": ["Read", "Write", "Execute", "Network"],
@@ -34,10 +34,9 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use the Discord skill whenever the user wants to send, read, search, edit, or delete messages in a Discord server or DM.",
-      "Use the Discord skill to manage channels, threads, roles, and member moderation in a guild.",
-      "Prefer the explicit list-guilds and list-channels tools before sending or moderating — never guess a guild_id or channel_id.",
-      "Bulk and irreversible actions (kick, ban, bulk-ban, prune, bulk-delete, delete-channel) default to dry-run — confirm the dry-run summary with the user before flipping dry_run:false."
+      "Send an announcement to the general channel on my server.",
+      "Show me recent messages and activity in my Discord server.",
+      "Help me set up a new channel with the right permissions."
     ],
     "brandColor": "#5865F2",
     "logo": "https://svgl.app/library/discord.svg"

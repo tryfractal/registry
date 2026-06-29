@@ -28,7 +28,7 @@
   "interface": {
     "displayName": "Redis",
     "shortDescription": "Drive a Redis instance through the official redis-mcp-server.",
-    "longDescription": "The Redis skill exposes the official `redis-mcp-server` (from `redis/mcp-redis` on GitHub, published on PyPI as `redis-mcp-server`) as a single Fractal toolset. It talks to any reachable Redis instance over the native RESP protocol using the `redis://` or `rediss://` URL scheme — local Docker, self-hosted cluster, Redis Cloud, or Azure Managed Redis with EntraID. The toolset surfaces typed tools for every Redis data type (strings, hashes, lists, sets, sorted sets, JSON documents, Redis Streams, and pub/sub channels), plus vector search, SCAN-based key discovery, TTL management, server introspection, and a natural-language lookup of the official Redis docs.",
+    "longDescription": "Your agent can work directly with your Redis databases — reading and writing keys, managing caches, publishing to channels, and handling queues. Whether you need to check cached values, inspect stream data, manage pub/sub channels, or run vector searches, your agent can do it through natural conversation. No more opening redis-cli for every operation.",
     "developerName": "Fractal Team",
     "category": "Data",
     "capabilities": ["Read", "Write", "Execute", "Network", "Persist"],
@@ -36,9 +36,9 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use the Redis skill whenever the task involves caching, queueing, session storage, pub/sub, vector search, or any read/write against a live Redis instance.",
-      "Prefer the typed tool that matches the data shape — `hash` for objects, `list` for queues, `sorted set` for leaderboards, `JSON` for nested documents, `stream` for event logs.",
-      "Use `SCAN` (with a `MATCH` pattern) to enumerate keys; never call `KEYS *` on a production database."
+      "Show me the keys and values stored in my Redis cache.",
+      "Help me inspect what's in this Redis stream or queue.",
+      "Check the memory usage and health of my Redis instance."
     ],
     "brandColor": "#DC382D",
     "logo": "https://svgl.app/library/redis.svg"

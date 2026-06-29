@@ -26,7 +26,7 @@
   "interface": {
     "displayName": "MongoDB",
     "shortDescription": "Drive MongoDB and Atlas from the agent via the official MongoDB MCP server.",
-    "longDescription": "The MongoDB skill exposes the official `mongodb-mcp-server` as a single Fractal toolset. It connects to any local mongod / Docker instance or any Atlas cluster using a standard connection string, and optionally to the Atlas admin API using Service Account credentials. The toolset ships in read-only mode by default and exposes the full database surface (find, aggregate, count, explain, insert / update / delete, schema & index introspection, EJSON export) plus the Atlas admin surface (list / create / inspect / upgrade / pause clusters, manage projects, database users, IP access lists, stream processing workspaces, and load the sample dataset) plus the MongoDB Assistant knowledge base. Destructive tools (drop-database, drop-collection, delete-many, atlas-create-db-user, atlas-create-access-list, etc.) are gated behind user confirmation via MCP elicitation.",
+    "longDescription": "Your agent can work directly with your MongoDB databases — running queries, exploring collections, managing indexes, and even handling Atlas cluster operations. Whether you need to find documents, aggregate data, check schema, or spin up a new Atlas cluster, your agent can do it through natural conversation. No more switching to Compass or the Atlas UI for routine tasks.",
     "developerName": "Fractal Team",
     "category": "Data",
     "capabilities": ["Read", "Write", "Execute", "Network", "Persist"],
@@ -34,9 +34,9 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use the MongoDB skill whenever the task involves querying, inserting, updating, or deleting documents in a MongoDB collection or managing MongoDB Atlas resources.",
-      "Run the server in read-only mode (MDB_MCP_READ_ONLY=true) unless the user has explicitly asked for writes — destructive tools require user confirmation via elicitation.",
-      "Pass connection strings and Atlas API credentials as environment variables (MDB_MCP_CONNECTION_STRING, MDB_MCP_API_CLIENT_ID, MDB_MCP_API_CLIENT_SECRET) — never as command-line arguments."
+      "Show me the collections and indexes in my database.",
+      "Find documents matching this criteria and summarize them.",
+      "Check the performance and status of my Atlas cluster."
     ],
     "brandColor": "#00684A",
     "logo": "https://svgl.app/library/mongodb-icon-light.svg"

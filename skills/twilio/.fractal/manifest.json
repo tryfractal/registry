@@ -34,7 +34,7 @@
   "interface": {
     "displayName": "Twilio",
     "shortDescription": "Search and retrieve the official Twilio API reference and docs.",
-    "longDescription": "The Twilio skill connects to the hosted Twilio MCP server at mcp.twilio.com/docs. It exposes a two-tool search-then-retrieve workflow over Twilio's public OpenAPI specification (1,800+ endpoints across 30+ products) and Twilio, SendGrid, and Segment documentation. Use it to look up the right endpoint and full parameter schema for sending SMS, placing Voice calls, running Verify OTPs, building Twilio Conversations or Flex flows, driving Studio, Sync, TaskRouter, Elastic SIP Trunking, WhatsApp, Lookup, Notify, Proxy, and the newer AI products (Conversation Memory, Conversation Orchestrator, Conversational Intelligence, Twilio Agent Connect). Read-only by design — the server does not execute API calls on the user's behalf. No installation, no Twilio account, no API keys required.",
+    "longDescription": "Your agent can look up the official Twilio API documentation — searching across 1,800+ endpoints across 30+ products including SMS, Voice, WhatsApp, Verify, and more. Whenever you need to know the right API endpoint, parameters, or authentication for a Twilio integration, your agent can find it instantly. No more bookmarking docs pages or guessing API schemas.",
     "developerName": "Fractal Team",
     "category": "Communication",
     "capabilities": ["Read", "Network"],
@@ -42,9 +42,9 @@
     "privacyPolicyURL": "https://www.twilio.com/en-us/legal/privacy",
     "termsOfServiceURL": "https://www.twilio.com/en-us/legal/tos",
     "defaultPrompt": [
-      "Use the Twilio skill whenever the task involves looking up a Twilio API endpoint, parameter, response schema, or product documentation.",
-      "Always start with `twilio__search` to discover the right operation IDs, then pass those IDs into `twilio__retrieve` to fetch the full parameter and response schemas.",
-      "Remember the hosted Twilio MCP server is read-only — to actually send SMS, place calls, or run Verify, use the user's own Twilio REST API integration, not this skill."
+      "Find me the Twilio API endpoint for sending an SMS message.",
+      "Look up how to verify a phone number with Twilio Verify.",
+      "Search the docs for how to set up WhatsApp messaging."
     ],
     "brandColor": "#F22F46",
     "logo": "https://svgl.app/library/twilio.svg"

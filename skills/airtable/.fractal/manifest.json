@@ -30,7 +30,7 @@
   "interface": {
     "displayName": "Airtable",
     "shortDescription": "Read and write Airtable bases, tables, fields, records, and comments through an MCP server.",
-    "longDescription": "The Airtable skill exposes the airtable-mcp-server by domdomegg as a single Fractal toolset. It speaks the official Airtable Web API using a Personal Access Token, so every tool call is a real Airtable operation. Use it to discover bases and schemas, list / search / create / update / delete records, manage tables and fields, and post or read record comments. Perfect for CRMs, project trackers, content calendars, applicant pipelines, and lightweight back-office apps. Authenticate by setting AIRTABLE_API_KEY in the workspace environment.",
+    "longDescription": "Imagine your agent being able to look up anything in your Airtable bases in real time — from open deals and project tasks to customer lists and content calendars. With this skill, your agent can find, create, update, and delete records, inspect your base structure, and even post comments, all in natural language. No more switching tabs or digging through spreadsheets: just ask your agent to check a status, add a row, or move a deal forward, and it happens on the spot.",
     "developerName": "Fractal Team",
     "category": "Productivity",
     "capabilities": ["Read", "Write", "Execute", "Network", "Persist"],
@@ -38,9 +38,9 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use the Airtable skill whenever the task involves querying, searching, creating, updating, or deleting records in an Airtable base.",
-      "Always discover the schema first — call list_bases → list_tables → describe_table before reading or writing records.",
-      "Prefer server-side filterByFormula in list_records over fetching every record and filtering locally."
+      "Help me get started — show me all the bases and tables I have in Airtable.",
+      "Give me a quick summary of what's in each table across my workspace.",
+      "Find something in my Airtable that might need my attention today."
     ],
     "brandColor": "#FFB400",
     "logo": "https://airtable.com/favicon.ico"

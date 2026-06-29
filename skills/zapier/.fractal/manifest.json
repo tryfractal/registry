@@ -32,7 +32,7 @@
   "interface": {
     "displayName": "Zapier",
     "shortDescription": "Connect to 9000+ apps through the Zapier MCP server.",
-    "longDescription": "The Zapier skill connects the agent to Zapier's ecosystem of 9000+ apps and 30000+ actions through the Zapier MCP server. Each tool in the server corresponds to a Zapier action configured at mcp.zapier.com — pick the app, connect your account, and the agent can call it directly. No custom API integration code is needed. Supports all major apps: Slack, Gmail, Google Sheets, Jira, Asana, HubSpot, Discord, GitHub, Linear, Notion, and thousands more. The actual available tools depend on what the user configured.",
+    "longDescription": "Your agent can connect to over 9,000 apps through Zapier — sending Slack messages, creating Google Sheets rows, managing Asana tasks, updating HubSpot deals, and thousands more actions. No custom API code needed: just tell your agent what you want to do across your apps, and it handles the integration through your configured Zapier connections.",
     "developerName": "Fractal Team",
     "category": "Productivity",
     "capabilities": ["Read", "Write", "Execute", "Network"],
@@ -40,10 +40,9 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use Zapier when the user wants to interact with any of the 9000+ integrated apps without writing custom API code.",
-      "Ask what tools the user has configured in their Zapier MCP server before attempting to call any action.",
-      "Chain multiple Zapier actions when the task involves a sequence of operations across different apps.",
-      "Handle permission errors gracefully — suggest re-authenticating the connected app at mcp.zapier.com."
+      "Send a message to Slack about this update.",
+      "Create a new row in my Google Sheet with this data.",
+      "Show me what actions I have configured in my Zapier account."
     ],
     "brandColor": "#FF4A00",
     "logo": "https://svgl.app/library/zapier.svg"

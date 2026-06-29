@@ -23,7 +23,7 @@
   "interface": {
     "displayName": "Context7",
     "shortDescription": "Look up live, version-pinned docs for any library.",
-    "longDescription": "Context7 exposes a single MCP toolset that lets agents resolve any library to a Context7 ID and pull the current, version-pinned documentation and code examples directly from the source. Use it whenever the user asks about a library whose API may have drifted from your training data — Next.js, React, Hono, Zod, Stripe, Prisma, Tailwind, the MCP spec, and thousands more. Backed by the official @upstash/context7-mcp server. Connects to the hosted endpoint by default and switches to a local stdio server when a CONTEXT7_API_KEY is present.",
+    "longDescription": "Your agent can look up the latest documentation and code examples for any library or framework — React, Next.js, Zod, Stripe, Tailwind, and thousands more. Instead of relying on outdated training data, your agent fetches the exact docs for the version you're using, so you get accurate, up-to-date answers about APIs, parameters, and usage patterns. No more guessing if an API has changed since your agent was trained.",
     "developerName": "Fractal Team",
     "category": "Development",
     "capabilities": ["Read", "Network"],
@@ -31,9 +31,9 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use Context7 whenever the user asks about a library, framework, or SDK whose API may have changed since training.",
-      "Always call `resolve-library-id` first, then `get-library-docs` with a focused topic.",
-      "Cite the version reported by Context7 in the final answer."
+      "Look up the latest API docs for the library I'm using.",
+      "Find me a code example for this specific use case in the docs.",
+      "Check if this API has changed in the latest version of the package."
     ],
     "brandColor": "#FF6B35",
     "logo": "https://context7.com/favicon.svg"

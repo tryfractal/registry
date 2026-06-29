@@ -27,7 +27,7 @@
   "interface": {
     "displayName": "Neon",
     "shortDescription": "Manage serverless Postgres on Neon through the official Neon MCP server.",
-    "longDescription": "The Neon skill exposes the official @neondatabase/mcp-server-neon as a single Fractal toolset, connecting to the remote endpoint at https://mcp.neon.tech/mcp over Streamable HTTP. Drive every Neon workflow from natural language: list / create / delete projects and organizations, branch and reset databases, run SQL (single statement or transaction), list tables, describe schemas, run safe two-phase migrations, fetch connection strings, profile slow queries with `EXPLAIN`, provision Neon Auth and the Neon Data API, and look up Neon docs. Authenticate via OAuth (default) or a `NEON_API_KEY` Bearer token. Scope the connection down with `?readonly=true`, `?projectId=<id>`, or `?category=querying&category=schema` for read-only or single-project safety.",
+    "longDescription": "Your agent can manage your Neon Postgres databases — creating projects, branching databases, running SQL queries, applying schema migrations, and fetching connection strings. No more context-switching to the Neon dashboard. Just ask your agent to create a new database branch, run a migration, check query performance, or show you a quick schema overview.",
     "developerName": "Neon + Fractal Team",
     "category": "Data",
     "capabilities": ["Read", "Write", "Execute", "Network", "Persist"],
@@ -35,9 +35,9 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use the Neon skill whenever the task involves a Neon Postgres database — creating projects, branching, running SQL, migrating schemas, or fetching connection strings.",
-      "Always prefer the two-phase migration flow: `prepare_database_migration` on a temporary branch, then `complete_database_migration` to merge.",
-      "Append `?readonly=true` to the MCP URL whenever the task is purely read-only (inspecting schemas, running EXPLAIN, listing slow queries)."
+      "Show me my Neon projects and database branches.",
+      "Run a SQL query and show me the results.",
+      "Help me create a new branch to test a schema migration."
     ],
     "brandColor": "#00E699",
     "logo": "https://svgl.app/library/neon.svg"

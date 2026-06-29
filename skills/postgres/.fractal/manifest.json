@@ -28,7 +28,7 @@
   "interface": {
     "displayName": "PostgreSQL",
     "shortDescription": "Query any PostgreSQL database through the official MCP server.",
-    "longDescription": "The PostgreSQL skill exposes the official @modelcontextprotocol/server-postgres server as a single Fractal toolset. It connects to any Postgres instance over a standard postgresql:// DSN (managed services like Neon, Supabase, RDS, and Cloud SQL included) and surfaces read-only tools for ad-hoc SQL, schema exploration, table/column introspection, and query-plan analysis. All queries run inside a server-enforced READ ONLY transaction, so the agent can safely inspect production data without risk of accidental writes. The toolset is open-source third-party (MIT) and maintained by the Fractal team for the registry.",
+    "longDescription": "Your agent can safely explore and query your PostgreSQL databases — listing tables, inspecting schemas, running ad-hoc SQL, and analyzing query performance. All queries run in read-only mode, so your data stays safe even in production. No more opening your database client for every quick question: just ask your agent what's in a table, how the schema looks, or to find specific records.",
     "developerName": "Fractal Team",
     "category": "Data",
     "capabilities": ["Read", "Network"],
@@ -36,9 +36,9 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use the PostgreSQL skill whenever the task involves querying, exploring, or describing a Postgres database — including running ad-hoc SQL, listing tables, inspecting schemas, or analyzing query plans.",
-      "Always fetch the live schema for every referenced table before writing a query — column names and types must come from the database, not from memory.",
-      "Keep result sets bounded with `LIMIT` and use `EXPLAIN (ANALYZE, BUFFERS, FORMAT JSON)` for query-plan inspection."
+      "Show me the tables and their schemas in my database.",
+      "Find the top 10 most recent records in this table.",
+      "Run a query to answer this business question from my data."
     ],
     "brandColor": "#336791",
     "logo": "https://svgl.app/library/postgresql.svg"

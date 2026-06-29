@@ -27,7 +27,7 @@
   "interface": {
     "displayName": "Resend",
     "shortDescription": "Send email and run campaigns via the official Resend MCP server.",
-    "longDescription": "The Resend skill wraps resend-mcp, the official Model Context Protocol server published by the Resend team. It exposes the full Resend platform as MCP tools: send transactional and marketing email (HTML, plain text, attachments, CC/BCC, reply-to, tags, scheduled delivery), batch send, list / get / cancel / update emails, manage contacts with custom properties and CSV imports, audience segments, subscription topics, broadcast campaigns with scheduling and personalization, sender domains with verification, API keys, webhooks for delivery events, and inbound email with attachment download. Requires a Resend API key (RESEND_API_KEY) and a verified sending domain. Pairs naturally with the chrome skill to verify rendered emails in the user's real browser, or with playwright to drive signup flows end-to-end after creating an audience.",
+    "longDescription": "Your agent can handle all your email needs through Resend — sending transactional emails, managing contacts, running broadcast campaigns, and configuring sender domains. From password resets to newsletter campaigns, your agent can draft, send, and track everything through conversation. No more logging into the Resend dashboard for every send or campaign update.",
     "developerName": "Fractal Team",
     "category": "Communication",
     "capabilities": ["Read", "Write", "Network", "Persist"],
@@ -35,10 +35,9 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use the Resend skill for any email task — transactional sends, batch campaigns, contact management, broadcast scheduling, sender domain configuration, or webhook setup.",
-      "Always confirm with the user (show the payload, ask for a yes) before calling `send` or `batch send` — both are non-undoable and deliver to real recipients.",
-      "Honour topic subscriptions and report suppression as a normal outcome, not a failure.",
-      "For >1000 recipients, create a Broadcast instead of a single batch send — broadcasts can be scheduled, paused, and analytics-tracked."
+      "Send a transactional email to this address with the following content.",
+      "Show me my recent email analytics and delivery stats.",
+      "Help me create a broadcast campaign for my contacts."
     ],
     "brandColor": "#000000",
     "logo": "https://svgl.app/library/resend-icon-black.svg"

@@ -28,7 +28,7 @@
   "interface": {
     "displayName": "Meilisearch",
     "shortDescription": "Drive any Meilisearch instance through the official MCP server.",
-    "longDescription": "The Meilisearch skill exposes the official `meilisearch-mcp` server (PyPI) as a single Fractal toolset. It gives the agent full control over a Meilisearch instance — index creation, deletion, and metrics; bulk document import and retrieval; typo-tolerant and hybrid (keyword + vector) search with filters, facets, and sorting; ranking rules, searchable / filterable / sortable attributes, typo tolerance, and embedder configuration; API key management with granular permissions; task monitoring (enqueue / processing / succeeded / failed / canceled); and system health, version, and statistics. Connects to local Docker, self-hosted, or Meilisearch Cloud instances, and can switch between them at runtime via `update-connection-settings`. Production deployments must set `MEILI_MASTER_KEY`.",
+    "longDescription": "Your agent can manage and query your Meilisearch search engine — creating indexes, adding documents, tuning search settings, and running typo-tolerant searches. Works with your local Docker instance, self-hosted server, or Meilisearch Cloud. No more using the dashboard for every config change: just ask your agent to index new data, check search performance, or adjust ranking rules.",
     "developerName": "Fractal Team",
     "category": "Data",
     "capabilities": ["Read", "Write", "Execute", "Network", "Persist"],
@@ -36,9 +36,9 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use the Meilisearch skill whenever the user wants to search, index, or manage data in Meilisearch — local, self-hosted, or Cloud.",
-      "Always confirm the active instance with `get-connection-settings` (or switch with `update-connection-settings`) before the first read or write of a session.",
-      "Batch document writes in a single `add-documents` call and poll the returned `taskUid` with `get-task` before reading the data back."
+      "Search my documents for this term with typo tolerance.",
+      "Help me index a new set of documents into my search engine.",
+      "Check the health and status of my Meilisearch instance."
     ],
     "brandColor": "#FF5CAA",
     "logo": "https://www.meilisearch.com/logo.png"

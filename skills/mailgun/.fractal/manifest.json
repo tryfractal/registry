@@ -36,7 +36,7 @@
   "interface": {
     "displayName": "Mailgun",
     "shortDescription": "Send transactional email and manage deliverability through the official Mailgun MCP server.",
-    "longDescription": "The Mailgun skill exposes the official `mailgun-mcp-server` (`@mailgun/mcp-server`, Apache 2.0) as a single Fractal toolset. It gives the agent a workflow-oriented interface for sending transactional email, retrieving and resending stored messages, verifying domain DNS, managing click / open / unsubscribe tracking, creating and updating event webhooks and inbound routes, managing mailing lists and members, authoring versioned email templates, querying per-message logs and aggregate sending statistics (by domain, tag, provider, device, country), reviewing bounces / unsubscribes / complaints / allowlist entries, classifying bounces, and inspecting dedicated IP pool configuration. The server authenticates with a `MAILGUN_API_KEY` environment variable that is read by the local server process only and is never exposed to the model. By default every product tag (`send`, `validate`, `optimize`, `inspect`) is registered; pass `--tags <list>` or set `MAILGUN_MCP_TAGS` to scope the toolset to a subset. The server exposes no delete operations by design, which limits the blast radius of prompt-injection-driven mutations.",
+    "longDescription": "Your agent can handle your email operations through Mailgun — sending transactional messages, checking deliverability stats, managing mailing lists, setting up webhooks, and reviewing bounces or complaints. Whether you need to send a password reset email, check if your domain is properly authenticated, or review your email analytics, your agent can do it all through conversation.",
     "developerName": "Fractal Team",
     "category": "Communication",
     "capabilities": ["Read", "Write", "Network"],
@@ -44,9 +44,9 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use the Mailgun skill whenever the task involves sending transactional email, checking deliverability, managing domains, mailing lists, templates, webhooks, or inbound routes, or reviewing bounces, unsubscribes, and complaints.",
-      "Verify the sending domain (SPF / DKIM / MX) with the domain-verification tool before sending any production email.",
-      "Match `MAILGUN_API_REGION` (`us` or `eu`) to the region of the API key, and scope the toolset with `--tags` or `MAILGUN_MCP_TAGS` when the workflow only needs a subset of capability groups."
+      "Check my email deliverability stats and bounce rate.",
+      "Set up a new sending domain and verify its DNS settings.",
+      "Show me recent bounces and unsubscribes."
     ],
     "brandColor": "#F03C42",
     "logo": "https://www.mailgun.com/favicon.ico"

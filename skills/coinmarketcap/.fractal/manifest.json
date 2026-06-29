@@ -34,7 +34,7 @@
   "interface": {
     "displayName": "CoinMarketCap",
     "shortDescription": "Live and historical crypto market data via the official CoinMarketCap MCP server.",
-    "longDescription": "Connects the agent to CoinMarketCap's official hosted Model Context Protocol server (https://mcp.coinmarketcap.com/mcp) and exposes 12 professional tools covering cryptocurrency search, real-time quotes, global market metrics (total market cap, BTC/ETH dominance, Fear & Greed Index, Altcoin Season Index), per-coin and total-market technical analysis (RSI, MACD, SMA, EMA, Fibonacci, support / resistance), coin metadata and latest news, semantic search over the crypto knowledge base, trending narratives with the top tokens inside each, on-chain holder-distribution and whale metrics, derivatives (open interest, funding rates, liquidations), and upcoming macro events that may move the market. Authentication is a single header — set COINMARKETCAP_API_KEY with a key from https://pro.coinmarketcap.com/login. No local install, no subprocess — just a hosted HTTPS endpoint and your CMC Pro API key.",
+    "longDescription": "Stay on top of the crypto market without leaving your chat. Your agent can check real-time prices, market cap, Bitcoin dominance, the Fear & Greed Index, and technical indicators like RSI and moving averages. It can also look up coin details, on-chain holder data, trending narratives, and upcoming macro events that might move the market. Just ask for a quote, a market overview, or what's trending right now.",
     "developerName": "Fractal Team",
     "category": "Data",
     "capabilities": ["Read", "Network"],
@@ -42,9 +42,9 @@
     "privacyPolicyURL": "https://coinmarketcap.com/privacy/",
     "termsOfServiceURL": "https://coinmarketcap.com/terms/",
     "defaultPrompt": [
-      "Use the CoinMarketCap skill whenever the user asks for cryptocurrency prices, market cap, volume, dominance, Fear & Greed, technicals (RSI, MACD, moving averages), holder distribution, trending narratives, or upcoming macro catalysts.",
-      "Always call `search_cryptos` first when a user mentions a coin by name or symbol — most other tools require the numeric CMC ID.",
-      "For market-wide questions, prefer `get_global_metrics_latest` and `get_crypto_marketcap_technical_analysis` over aggregating per-coin quotes."
+      "What's the current price of Bitcoin and how is the overall market doing?",
+      "Show me the Fear & Greed Index and key market metrics.",
+      "What cryptocurrencies are trending right now?"
     ],
     "brandColor": "#0B3D91",
     "logo": "https://s2.coinmarketcap.com/static/cloud/img/coinmarketcap_1.svg"

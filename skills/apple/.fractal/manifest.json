@@ -28,7 +28,7 @@
   "interface": {
     "displayName": "Apple",
     "shortDescription": "Control macOS Messages, Mail, Notes, Calendar, Reminders, Contacts, and Maps via AppleScript.",
-    "longDescription": "The Apple skill wraps jxnl/apple-mcp (forked from supermemoryai/apple-mcp), a Bun-based MCP server that uses AppleScript to drive Apple's native macOS applications. Exposes 8 tools: contacts (search by name), notes (search, list, create), messages (send, read, schedule, unread), mail (unread, search, send with attachments/cc/bcc, mailboxes, accounts), reminders (list, search, open, create, listById), calendar (search, open, list, create events with location/notes/allday), webSearch (DuckDuckGo), and maps (search, save, drop pins, directions, guides). No API keys or environment variables required — inherits the user's iCloud session. Requires bun on PATH + macOS accessibility permissions for the terminal app running the MCP server.",
+    "longDescription": "Imagine your agent being able to interact with your Mac's native apps — sending Messages, drafting emails in Mail, creating Calendar events, jotting Notes, setting Reminders, looking up Contacts, and even using Maps — all through natural language. No API keys, no complicated setup: your agent works with the apps you already use every day. Just ask your agent to send a message, check your calendar, or find a contact, and it happens on your Mac, using your own data.",
     "developerName": "Fractal Team",
     "category": "Productivity",
     "capabilities": ["Read", "Write", "Execute"],
@@ -36,10 +36,9 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use the Apple skill to interact with native macOS apps — Messages, Mail, Notes, Calendar, Reminders, Contacts, and Maps.",
-      "Before any send operation (messages/mail/calendar), confirm the content and recipient with the user.",
-      "Start with read operations (unread messages, upcoming events, recent notes) before making changes.",
-      "For messages, always resolve a contact name to a phone number using the contacts tool before trying to send."
+      "Check my latest emails and unread messages for me.",
+      "Help me find a contact and send them a quick message.",
+      "What's on my calendar today? Any upcoming reminders?"
     ],
     "brandColor": "#A2AAAD",
     "logo": "https://svgl.app/library/apple.svg"

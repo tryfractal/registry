@@ -52,7 +52,7 @@
   "interface": {
     "displayName": "DigitalOcean",
     "shortDescription": "Manage every DigitalOcean product via the official do-mcp server.",
-    "longDescription": "The DigitalOcean skill wraps do-mcp, the official DigitalOcean MCP server that proxies the v2 REST API as structured MCP tools. It exposes every product in a DigitalOcean account: Droplets (list, create, resize, snapshot, restore, power actions, backups, neighbors, kernels, upgrades), App Platform (apps, deployments, logs, specs, tiers, regions), managed databases (Postgres, MySQL, Redis, MongoDB, Kafka, OpenSearch) with backups, pools, replicas, users, firewall rules, trusted sources, online migration, and metrics, Kubernetes (DOKS) clusters and node pools, networking (VPCs, reserved IPs, floating IPs, firewalls, load balancers, CDN, DNS), storage (block volumes and snapshots, Spaces access keys, custom images, account-wide snapshots, snapshot policies), account/billing (balance, history, invoices, OAuth tokens, SSH keys, regions, sizes, tags, uptime checks, alerts). Authenticated via the DIGITALOCEAN_API_TOKEN environment variable. Spaces object operations are not proxied — use the S3-compatible Spaces API directly.",
+    "longDescription": "Your agent becomes your DigitalOcean cloud operator — spinning up Droplets, managing databases, checking billing, deploying apps, and configuring networking. No more context-switching to the DigitalOcean control panel. Just tell your agent to resize a Droplet, run a backup, check your bill, or show you which databases need attention. Everything happens through conversation, with full access to your account.",
     "developerName": "Fractal Team",
     "category": "DevOps",
     "capabilities": ["Read", "Write", "Execute", "Network"],
@@ -60,9 +60,9 @@
     "privacyPolicyURL": "https://www.digitalocean.com/legal/privacy-policy",
     "termsOfServiceURL": "https://www.digitalocean.com/legal/terms-of-service",
     "defaultPrompt": [
-      "Use the DigitalOcean skill whenever the task involves managing Droplets, App Platform apps, managed databases, Kubernetes (DOKS) clusters, networking, storage, or billing in a DigitalOcean account.",
-      "Address resources by tag (`env:prod`, `role:web`) when possible — tag lookups survive renames, name lookups do not.",
-      "Never call any destructive endpoint (`droplet_delete`, `database_delete`, `cluster_delete`, etc.) without first showing the user the exact target ID/name and receiving an explicit confirmation."
+      "Show me an overview of my DigitalOcean account — Droplets, databases, and current bill.",
+      "Help me resize my Droplet or create a new one.",
+      "Check if my managed database needs any maintenance or upgrades."
     ],
     "brandColor": "#0061FE",
     "logo": "https://svgl.app/library/digitalocean.svg"

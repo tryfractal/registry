@@ -29,7 +29,7 @@
   "interface": {
     "displayName": "Playwright",
     "shortDescription": "Drive any browser with the Microsoft Playwright MCP server.",
-    "longDescription": "The Playwright skill exposes the official @playwright/mcp server as a single Fractal toolset. It uses Playwright's accessibility tree (not pixel screenshots) so it works with text-only models and produces deterministic, structured browser interactions. Drives Chromium, Firefox, WebKit, or installed Chrome / Edge. Ships with the devtools, network, storage, and config capability groups enabled out of the box; add `vision`, `pdf`, or `testing` to the toolset args to enable coordinate-based mouse interaction, PDF export, or test-style assertions. Replaces the previous `browser` skill.",
+    "longDescription": "Your agent can control a real browser — navigating sites, clicking buttons, filling forms, scraping content, and taking screenshots. Powered by Microsoft's Playwright, it works across Chromium, Firefox, and WebKit. Use it for automated web testing, scraping data from sites that don't have APIs, filling out online forms, or any task that needs a real browser. Your agent sees the page through its accessibility tree, making interactions precise and reliable.",
     "developerName": "Fractal Team",
     "category": "Development",
     "capabilities": ["Read", "Write", "Execute", "Network"],
@@ -37,9 +37,9 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use the Playwright skill whenever the task involves navigating, clicking, filling forms, scraping, or inspecting any web page.",
-      "Prefer `browser_snapshot` over `browser_take_screenshot` — the accessibility snapshot gives stable element refs you can act on.",
-      "Mock APIs with `browser_route` (network capability) instead of recompiling the app under test."
+      "Go to this URL and summarize what's on the page.",
+      "Fill out this form and submit it for me.",
+      "Scrape the data from this page and organize it."
     ],
     "brandColor": "#2EAD33",
     "logo": "https://svgl.app/library/playwright.svg"

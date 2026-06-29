@@ -28,7 +28,7 @@
   "interface": {
     "displayName": "Shopify",
     "shortDescription": "Full Shopify store management via MCP — products, customers, orders, inventory, and metafields.",
-    "longDescription": "The Shopify skill wraps shopify-mcp by geli2001, which provides 31 tools for direct Shopify store management through the Admin GraphQL API. Manage products (CRUD + variants + options), customers (CRUD + merge + addresses), orders (smart lookup, cancel, close/open, mark as paid, fulfill, refund, draft orders), metafields (get/set/delete on any resource), inventory (set absolute quantities at locations), and tags (add/remove on any resource). All list queries support cursor-based pagination, sorting, and Shopify query syntax filtering. Requires a Shopify custom app with Admin API scopes and either OAuth client credentials or a legacy access token.",
+    "longDescription": "Your agent becomes your Shopify store operator — managing products, processing orders, updating inventory, looking up customers, and handling fulfillment. No more switching to the Shopify admin panel for every task. Just ask your agent to update a product, check an order status, adjust inventory levels, or find a customer — all through natural conversation, directly with your live store data.",
     "developerName": "Fractal Team",
     "category": "Development",
     "capabilities": ["Read", "Write", "Execute", "Network"],
@@ -36,10 +36,9 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use the Shopify skill for any store management task — products, customers, orders, inventory, metafields, and tags.",
-      "Confirm before destructive operations: delete-product, delete-customer, order-cancel, and refund-create are irreversible.",
-      "Use get-product-by-id before manage-product-options or manage-product-variants to get the product GID.",
-      "Check get-metafields before set-metafields to avoid overwriting values you want to keep."
+      "Show me my recent orders and their fulfillment status.",
+      "Update the inventory quantity for this product.",
+      "Find a customer and show me their order history."
     ],
     "brandColor": "#95BF47",
     "logo": "https://svgl.app/library/shopify.svg"

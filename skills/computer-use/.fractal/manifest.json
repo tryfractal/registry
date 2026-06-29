@@ -26,7 +26,7 @@
   "interface": {
     "displayName": "Computer Use",
     "shortDescription": "Give the agent control of the local computer's mouse, keyboard, and screen.",
-    "longDescription": "The Computer Use skill wraps domdomegg/computer-use-mcp, a near-clone of Anthropic's official Computer Use API installable with one `npx` and driven by nut.js. It exposes a single `computer` tool with 11 actions: `key`, `type`, `mouse_move`, `left_click`, `left_click_drag`, `right_click`, `middle_click`, `double_click`, `scroll`, `get_cursor_position`, and `get_screenshot`. Works on macOS, Windows, and Linux (uses `xdotool` on Linux for keyboard layout safety; falls back to `screencapture` on macOS 26+). WARNING: gives the model complete control of the host machine — use only in a sandboxed user account and only when `playwright` (browser) or `chrome` (real Chrome) cannot do the job. Reaches for the entire desktop GUI: clicking icons, opening applications, filling forms, dragging windows, taking screenshots.",
+    "longDescription": "This skill lets your agent physically control your computer — moving the mouse, typing, clicking, and taking screenshots. Use it when your agent needs to interact with a desktop application, fill a form in a program that has no API, or navigate a tool that only has a graphical interface. Think of it as giving your agent a pair of hands for your computer, for those tasks that can only be done visually.",
     "developerName": "Fractal Team",
     "category": "Development",
     "capabilities": ["Read", "Write", "Execute"],
@@ -34,10 +34,9 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use the Computer Use skill only when no browser (playwright / chrome) or API skill can do the job — it gives the model complete control of the host machine.",
-      "Always start with `get_screenshot` and read the red crosshair to derive click coordinates. Never guess pixel positions from memory.",
-      "Prefer keyboard shortcuts over visual targeting. Use 720p resolution for the best results.",
-      "Run inside a sandboxed user account, VM, or disposable profile."
+      "Open the calculator app and do a quick calculation for me.",
+      "Take a screenshot of what's currently on my screen.",
+      "Fill out this form in the application I have open."
     ],
     "brandColor": "#D97757",
     "logo": "https://raw.githubusercontent.com/domdomegg/computer-use-mcp/master/icon.png"

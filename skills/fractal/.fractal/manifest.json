@@ -24,21 +24,17 @@
   "interface": {
     "displayName": "Fractal",
     "shortDescription": "The Organic Operating System for AI agents.",
-    "longDescription": "Fractal is the first Organic Operating System. It turns AI from a reactive chat box into a continuous operational system: persistent memory, adaptive workspaces, agent orchestration, and real execution. Installing this skill makes the agent aware of the full Fractal runtime — instructions, skills, instructions registry, memory, and task lifecycle — so it can act as a first-class citizen inside any Fractal workspace.",
+    "longDescription": "Fractal is the operating system that powers your agent with persistent memory, adaptive workspaces, and real execution capabilities. By installing this skill, your agent becomes aware of the full Fractal runtime — it can remember context across sessions, manage tasks, follow instructions, and coordinate with other agents in your workspace. Think of it as giving your agent a brain that persists, learns, and gets better over time.",
     "developerName": "Fractal Team",
     "category": "Productivity",
-    "capabilities": [
-      "Read",
-      "Write",
-      "Execute"
-    ],
+    "capabilities": ["Read", "Write", "Execute"],
     "websiteURL": "https://tryfractal.co",
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Trigger the fractal skill on every conversation and use it as the native operating system for the agent.",
-      "Use Fractal memories, instructions, and skills registry to keep continuity across sessions and IDEs.",
-      "Convert any user intent into a Fractal Task and follow the Suggestion -> Planning -> In-Progress -> In-Review -> Finished lifecycle."
+      "Remember this context for future conversations.",
+      "Create a task to track this work and follow up on it.",
+      "Help me organize my workspace and instructions for my agents."
     ],
     "brandColor": "#10A37F",
     "logo": "https://pbs.twimg.com/profile_images/2053864981993549824/y04uXNLm_400x400.jpg"

@@ -30,7 +30,7 @@
   "interface": {
     "displayName": "Qdrant",
     "shortDescription": "Semantic memory and vector search backed by the official Qdrant MCP server.",
-    "longDescription": "The Qdrant skill exposes the official `mcp-server-qdrant` as a single Fractal toolset. It turns a Qdrant cluster (Qdrant Cloud, self-hosted, or local on-disk) into a long-term semantic memory that the agent can write to (`qdrant-store`) and read from (`qdrant-find`) using cosine similarity, not exact keyword match. Embeddings are produced locally through FastEmbed, so no external embedding API is required. Default model is `sentence-transformers/all-MiniLM-L6-v2`; configurable through `EMBEDDING_MODEL`. Supports read-only deployments (`QDRANT_READ_ONLY=true`), custom collection names, and per-workload tool descriptions for code-search, document-search, ticket-search, and similar RAG setups. The collection declared in `COLLECTION_NAME` is auto-created on first use, so the toolset is safe to launch against an empty cluster.",
+    "longDescription": "Give your agent a long-term memory that it can search by meaning, not just by keywords. Store notes, documents, code snippets, or conversations, and your agent can retrieve them later based on what they're about, not just what words they contain. Perfect for building a personal knowledge base, RAG pipelines, or giving your agent persistent recall across sessions.",
     "developerName": "Fractal Team",
     "category": "Data",
     "capabilities": ["Read", "Write", "Persist", "Network"],
@@ -38,9 +38,9 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use the Qdrant skill whenever the user wants the agent to remember something across sessions, recall prior context by meaning, or build a semantic / RAG search over their own data.",
-      "Store natural-language summaries in `information` and structured side-data in `metadata`; chunk long documents before persisting them.",
-      "Prefer the configured default collection (`COLLECTION_NAME`) and pin `EMBEDDING_MODEL` to keep stored vectors consistent across runs."
+      "Remember this information for later — store it in my knowledge base.",
+      "Search my stored data for anything related to this topic.",
+      "Find me the notes I saved about this subject."
     ],
     "brandColor": "#244BD3",
     "logo": "https://svgl.app/library/qdrant-icon-light.svg"

@@ -28,7 +28,7 @@
   "interface": {
     "displayName": "GitLab",
     "shortDescription": "Drive any GitLab instance (cloud or self-hosted) through the official MCP server.",
-    "longDescription": "The GitLab skill exposes the official `@modelcontextprotocol/server-gitlab` server as a single Fractal toolset. It speaks the GitLab REST API directly, so the agent can list and search projects, read and push files, manage branches, open and review merge requests, file and triage issues, fork repositories, and run any other action the GitLab API supports — all from structured tool calls. Connects to gitlab.com by default, or to any self-hosted GitLab instance by setting `GITLAB_API_URL`. Authenticated with a personal access token passed through `GITLAB_PERSONAL_ACCESS_TOKEN`; supports both the `npx` install (zero-config) and the `mcp/gitlab` Docker image. MIT-licensed upstream.",
+    "longDescription": "Your agent can work directly with your GitLab projects — browsing code, creating merge requests, managing issues, and running CI pipelines. Works with gitlab.com or your own self-hosted GitLab instance. No more switching between your chat and the GitLab interface: just ask your agent to create a merge request, triage an issue, push a change, or check the pipeline status.",
     "developerName": "Fractal Team",
     "category": "Development",
     "capabilities": ["Read", "Write", "Execute", "Network"],
@@ -36,9 +36,9 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use the GitLab skill whenever the task involves listing, searching, reading, writing, or merging anything on a GitLab project — including self-hosted instances.",
-      "Always pass the project as a numeric `project_id` or a URL-encoded `group%2Fproject` path; never pass a raw URL.",
-      "For multi-file changes, prefer `push_files` (single commit) over looping `create_or_update_file`."
+      "Show me the latest merge requests and their review status.",
+      "Create a new issue in my project to track this bug.",
+      "Check the CI pipeline status for my latest commit."
     ],
     "brandColor": "#FC6D26",
     "logo": "https://svgl.app/library/gitlab.svg"

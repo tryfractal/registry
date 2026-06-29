@@ -30,7 +30,7 @@
   "interface": {
     "displayName": "Upstash",
     "shortDescription": "Drive Upstash Redis, Vector, QStash, Workflow, and Box through the official MCP server.",
-    "longDescription": "The Upstash skill exposes the official `@upstash/mcp-server` (from the `upstash/mcp-server` GitHub repository) as a single Fractal toolset. It authenticates with the account email and an Upstash API key (read-only keys are supported and automatically disable every mutating tool) and surfaces the full Upstash console surface as MCP tools: Redis database lifecycle and per-database data primitives, Upstash Vector index management and similarity search, QStash publish / schedule / logs / DLQ, Upstash Workflow run lifecycle, Upstash Box sandbox lifecycle with snapshot + fan-out cloning, and account / billing introspection. A separate Box API key unlocks the Box tools.",
+    "longDescription": "Your agent can manage all your Upstash services — Redis databases, Vector indexes, QStash message queues, Workflow runs, and Box sandboxes. From provisioning a new Redis database to scheduling a QStash message or running a vector search, everything happens through natural language. No more switching between the Upstash console tabs for every task.",
     "developerName": "Fractal Team",
     "category": "Data",
     "capabilities": ["Read", "Write", "Execute", "Network", "Persist"],
@@ -38,9 +38,9 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use the Upstash skill whenever the task involves provisioning, scaling, backing up, or inspecting an Upstash Redis database; running Redis commands; managing an Upstash Vector index or running a vector search; publishing, scheduling, or debugging QStash messages and webhooks; managing Upstash Workflow runs; or spinning up, snapshotting, or cloning an Upstash Box sandbox.",
-      "Prefer a read-only Upstash API key for read-only tasks — the server automatically disables every mutating tool when started with one.",
-      "Confirm before any irreversible Upstash op (`redis_delete_database`, `vector_delete_index`, `vector_reset`, `qstash_delete_schedule`, `workflow_cancel_run`, `box_delete`) — they are not reversible and are billable."
+      "Show me my Upstash Redis databases and their usage.",
+      "Publish a message to QStash to trigger a workflow.",
+      "Run a vector search across my Upstash Vector index."
     ],
     "brandColor": "#00E9A3",
     "logo": "https://svgl.app/library/upstash.svg"

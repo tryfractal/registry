@@ -29,7 +29,7 @@
   "interface": {
     "displayName": "Sentry",
     "shortDescription": "Investigate production errors, crashes, and stacktraces from Sentry.",
-    "longDescription": "The Sentry skill exposes the official mcp-server-sentry reference server as a single Fractal toolset. It connects to the Sentry REST API with an auth token and gives the agent direct, structured access to Sentry issues and the events behind them. The toolset ships one read tool, `get_sentry_issue`, which fetches an issue by numeric ID or full sentry.io URL and returns its title, status, level, first/last-seen timestamps, event count, and the full formatted multi-exception stacktrace for the most recent event. Authentication is driven by the `SENTRY_AUTH_TOKEN` environment variable; self-hosted Sentry deployments override the host with `SENTRY_BASE_URL`. The underlying server is the Anthropic-maintained reference implementation, MIT-licensed, and the skill is published by the Fractal team for the registry.",
+    "longDescription": "Your agent can help you debug production issues by looking up errors in Sentry — fetching stacktraces, checking error frequency, and helping you triage what needs attention. No more switching to the Sentry dashboard for every crash report. Just give your agent a Sentry issue URL or error ID, and it will pull the full details, stacktrace, and context so you can understand and fix the problem faster.",
     "developerName": "Fractal Team",
     "category": "Development",
     "capabilities": ["Read", "Network"],
@@ -37,9 +37,9 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use the Sentry skill whenever the task involves investigating a production error, crash, exception, or stacktrace that Sentry captured — including looking up an issue by ID or URL, reading its stacktrace, or triaging whether an error is still happening.",
-      "Read `SENTRY_AUTH_TOKEN` from the environment and never echo it back in tool output; a Sentry auth token grants the same read access as the user that minted it.",
-      "When the user hands you a Sentry URL, normalize it to the canonical `https://<org>.sentry.io/issues/<id>/` form (drop any `/events/<id>/` suffix) before passing it to `get_sentry_issue`."
+      "Look up this Sentry issue and show me the stacktrace.",
+      "What errors have been happening most frequently lately?",
+      "Is this production error still occurring or has it been resolved?"
     ],
     "brandColor": "#362D59",
     "logo": "https://svgl.app/library/sentry.svg"

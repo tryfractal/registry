@@ -29,7 +29,7 @@
   "interface": {
     "displayName": "Supabase",
     "shortDescription": "Drive Supabase projects, Postgres, auth, storage, and edge functions via the official MCP server.",
-    "longDescription": "The Supabase skill exposes the official supabase-mcp server as a single Fractal toolset. It connects to the hosted Supabase MCP endpoint (OAuth 2.1) or a local Supabase CLI instance, and surfaces every operation the upstream server supports: project and organization management, database introspection (tables, extensions, migrations), SQL execution, TypeScript type generation from the database schema, edge function lifecycle, storage bucket and config management, database branching (experimental, paid plan), log retrieval by service, security and performance advisors, and live search across the official Supabase documentation. Defaults to project-scoped, read-only mode and is intended as a developer tool, not a customer-facing runtime.",
+    "longDescription": "Your agent can manage your entire Supabase project — querying your Postgres database, managing authentication, uploading files to storage, deploying edge functions, and checking logs. No more switching between the Supabase dashboard tabs for every task. Just ask your agent to run a SQL query, deploy a function, check your storage buckets, or review the latest logs.",
     "developerName": "Fractal Team",
     "category": "Development",
     "capabilities": ["Read", "Write", "Execute", "Network"],
@@ -37,9 +37,9 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use the Supabase skill whenever the task involves inspecting, querying, or mutating a Supabase project, Postgres database, storage bucket, or edge function.",
-      "Apply DDL through `apply_migration` (tracked) and DML through `execute_sql` (untracked). Never run destructive statements without explicit user confirmation.",
-      "Default to project-scoped, read-only mode (`?project_ref=<ref>&read_only=true`) and only enable the `storage` or `branching` feature groups when the user explicitly asks for them."
+      "Show me my Supabase project overview and database tables.",
+      "Run a SQL query against my database.",
+      "Help me deploy a new edge function to my project."
     ],
     "brandColor": "#3FCF8E",
     "logo": "https://svgl.app/library/supabase.svg"

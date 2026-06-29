@@ -27,7 +27,7 @@
   "interface": {
     "displayName": "Metabase",
     "shortDescription": "Query and manage a Metabase instance through the official Metabase MCP server.",
-    "longDescription": "The Metabase skill exposes the official metabase-mcp-server as a single Fractal toolset. It lets the agent list databases, tables, fields, questions, and dashboards on any Metabase instance; search the data model; run saved questions with parameters; execute ad-hoc SQL or MBQL queries against a connected warehouse; create and update questions, dashboards, and dashboard cards; and export results as CSV, JSON, or XLSX. Authentication uses either a Metabase API key (recommended) or a username / password pair. Defaults to read-only-friendly behavior: search before listing, prefer saved questions over ad-hoc SQL, default to LIMIT 1000, and require explicit user confirmation before any write or archive.",
+    "longDescription": "Your agent becomes your analytics assistant — querying your databases, running saved reports, building dashboards, and exporting data. Whether you need a quick sales number, want to check if a dashboard is up to date, or need a CSV export of your data, just ask. No more writing SQL by hand or digging through the Metabase interface for every answer.",
     "developerName": "Fractal Team",
     "category": "Data",
     "capabilities": ["Read", "Write", "Execute", "Network"],
@@ -35,10 +35,9 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use the Metabase skill whenever the task involves querying, inspecting, or modifying content in a Metabase instance.",
-      "Prefer `search` over `list_*` calls to avoid scanning every database, table, or field on a large warehouse.",
-      "Prefer `run_question` over `execute_query` for known questions — saved questions are version-controlled and respect author permissions.",
-      "Use the Metabase API key (`METABASE_API_KEY`) instead of a username / password whenever a key is available."
+      "Run this saved report and show me the results.",
+      "Export the data from this dashboard as a CSV.",
+      "Help me create a new question or chart from my data."
     ],
     "brandColor": "#509EE3",
     "logo": "https://www.metabase.com/images/logo.svg"

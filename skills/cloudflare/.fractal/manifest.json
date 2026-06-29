@@ -34,7 +34,7 @@
   "interface": {
     "displayName": "Cloudflare",
     "shortDescription": "Operate the Cloudflare platform through the official remote MCP server.",
-    "longDescription": "The Cloudflare skill exposes the official remote MCP server (https://mcp.cloudflare.com/mcp) as a single Fractal toolset. It uses Cloudflare's Code Mode pattern — three primitives (`docs`, `search`, `execute`) reach all ~2,500 API endpoints without inflating the agent's context window. Manage DNS records, deploy Workers, upload to R2, query D1 with SQL, write and read KV, deploy Pages projects, build Vectorize indexes, inspect Stream videos, derive Images variants, configure Access applications, manage WAF rules and Load Balancers, purge cache, and run GraphQL Analytics queries — all from the agent. Authenticate by OAuth (recommended) or by passing a Cloudflare API token as a Bearer header. Account tokens should include `Account.Resources: Read` so the server can auto-detect the account id.",
+    "longDescription": "Your agent can manage your entire Cloudflare account — update DNS records, deploy Workers, upload files to R2, query your D1 database, configure WAF rules, purge the cache, and check analytics. From managing domains to deploying serverless functions, everything happens through natural language. No more jumping between the Cloudflare dashboard tabs: just tell your agent what needs to change, and it handles the rest.",
     "developerName": "Fractal Team",
     "category": "DevOps",
     "capabilities": ["Read", "Write", "Execute", "Network", "Persist"],
@@ -42,9 +42,9 @@
     "privacyPolicyURL": "https://www.cloudflare.com/privacypolicy/",
     "termsOfServiceURL": "https://www.cloudflare.com/terms/",
     "defaultPrompt": [
-      "Use the Cloudflare skill whenever the task involves DNS records, Workers, KV, R2, D1, Pages, Vectorize, AI Gateway, Stream, Images, Access, WAF rules, Load Balancers, cache purges, or Cloudflare analytics.",
-      "Always start with the `docs` tool for 'how do I…' questions, then use `search` to discover the right API endpoint, then call it with `execute`.",
-      "Use a least-privilege Cloudflare API token — one scope per job — and rotate it frequently. Never log the raw token."
+      "Check my DNS records and tell me if everything looks correct.",
+      "Help me deploy a update to my Cloudflare Worker.",
+      "Show me the analytics for my site — traffic, cache hits, and security events."
     ],
     "brandColor": "#F38020",
     "logo": "https://svgl.app/library/cloudflare.svg"

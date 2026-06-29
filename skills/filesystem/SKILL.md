@@ -1,27 +1,73 @@
 ---
 name: filesystem
 description: >-
-  Read, write, edit, search, move, and manage files and directories on the
-  local machine through the official @modelcontextprotocol/server-filesystem MCP
-  server. Use this skill when the user wants to read a file's contents, write a
-  new file, edit specific lines in a file, create or list directories, move or
-  rename files, search for files matching a pattern, get a recursive directory
-  tree, inspect file metadata (size, timestamps, permissions), or list which
-  directories the server is allowed to access. Triggers on phrases like "read
-  this file", "write that to a file", "edit line 42", "list the directory",
-  "search for all .ts files", "show me the file tree", "move this file to that
-  folder", or any request to manipulate the local filesystem through a sandboxed
-  MCP server. The server enforces directory access control — only files within
-  the allowed directories can be read or written.
+  Read, write, edit, search, move, and manage files on the user's workspace
+  machine or server through the official @modelcontextprotocol/server-filesystem
+  MCP server. Use this skill when Fractal is connected through an MCP client
+  like ChatGPT, Perplexity, or ElevenLabs Agent — platforms that do not have
+  built-in filesystem tools. The agent gets safe, sandboxed access to the user's
+  project or workspace directory. Triggers on phrases like "read this file",
+  "write that to a file", "show me my project files", "save this to a file",
+  "search my project", or any request to manipulate files when the client
+  lacks native filesystem support. The server enforces directory access
+  control — only files within the allowed directories can be read or written.
 ---
 
 # Filesystem Skill
 
-This skill wraps the **official `@modelcontextprotocol/server-filesystem`** MCP server — an anthropic-maintained reference implementation that provides secure, sandboxed filesystem operations. Every tool enforces that operations stay within explicitly allowed directories, making it safe for agent-driven file manipulation.
+## Purpose
+
+This skill gives your AI assistant safe access to **the user's workspace files** on the machine or server where Fractal is running. Whether the user is developing code, managing documents, or organizing data, you can read, create, edit, and organize files inside their workspace — all within a secure, sandboxed directory.
+
+This is essential when Fractal is connected through an MCP client like **ChatGPT, Perplexity, or ElevenLabs Agent**, since those platforms do not provide built-in tools for file management. It also applies when running Fractal natively and you need filesystem access beyond what the default tools offer.
+
+With this skill, you can:
+- Read and summarize files from the user's workspace
+- Create new files and save conversation results directly to disk
+- Edit existing files with user confirmation
+- Search through directories to find what the user needs
+- Organize and manage the workspace structure
+
+**Security boundary:** You can only access files inside the allowed workspace directory — no system files, no random folders, no unexpected changes. The server rejects any operation outside the sandbox.
+
+## How to Use This Toolset
+
+This skill ships a pre-configured MCP toolset that is automatically available when installed. You do NOT install or start anything manually.
+
+### Accessing the filesystem tools
+
+Fractal provides two ways to interact with this toolset, depending on how the agent is running:
+
+- **Native Fractal app** — use the built-in agent tools `ToolsetsList` and `ToolsetsCall`. These are native AI SDK tools available directly in your tool calling loop. Call `ToolsetsList` with `{ skill: "filesystem" }` to discover available tools, then `toolsets_call` with the tool ID and arguments to execute.
+- **CLI / remote MCP client** (ChatGPT, Perplexity, ElevenLabs, etc.) — use the commands `fractal toolsets list --skill filesystem` to discover tools and `fractal toolsets call --toolset filesystem::mcp --tool <name> --data '{...}'` to execute them.
+
+> **Important:** All paths in tool arguments are relative to the server's allowed directory root. Use `list_allowed_directories` first to know which directory is the root.
+
+### Configuring the workspace directory
+
+By default, the toolset is pre-configured to access `process.cwd()` — the directory where Fractal was started. If the user needs to change which directory is accessible:
+
+1. **Locate the toolset file** — it's at `.fractal/skills/filesystem/toolsets/mcp/index.ts` in the user's Fractal workspace (or the registry source if developing).
+2. **Edit the `args` array** in the `.withConnection()` block — replace `process.cwd()` with the desired directory path (or add multiple directories).
+3. **Restart Fractal** for the change to take effect.
+
+If the user asks to access a different project or add additional directories, follow this same process. Never attempt to work around the directory restriction — the server enforces it.
+
+## Safe File Handling — Rules for User Data
+
+The files you manage belong to the user on their machine or server. Follow these rules strictly:
+
+1. **Read before you write** — always read a file before editing it. Understand its contents before making changes.
+2. **Preview destructive operations** — use `edit_file` with `dryRun: true` first to show the user a diff before applying changes.
+3. **Never overwrite without confirmation** — `write_file` replaces the entire file content. Always check if the file exists with `get_file_info` and ask the user before overwriting.
+4. **Stay inside the sandbox** — the server rejects operations outside allowed directories. Always call `list_allowed_directories` first if unsure where the root is.
+5. **Protect sensitive data** — do not read or expose credentials, tokens, private keys, `.env` files, or any file the user did not explicitly ask about. If you encounter a sensitive file during a search, skip it and do not display its contents.
+6. **Clean up after yourself** — if you create temporary or generated files, offer to remove them when done.
+7. **Ask before moving or deleting** — `move_file` and `write_file` are destructive. Always confirm with the user before reorganizing or removing their files.
 
 ## Toolset
 
-- `mcp` — Filesystem MCP server (`@modelcontextprotocol/server-filesystem`). Launches via `npx -y @modelcontextprotocol/server-filesystem <allowed-dirs...>`. Requires at least one allowed directory. Supports the MCP Roots protocol for dynamic directory updates.
+- `mcp` — Filesystem MCP server (`@modelcontextprotocol/server-filesystem`). Launches through Fractal's toolset system, not manually. 13 tools covering every filesystem primitive. Directory access is configured via the toolset file.
 
 ## Tools reference
 
@@ -44,7 +90,7 @@ This skill wraps the **official `@modelcontextprotocol/server-filesystem`** MCP 
 
 ### Tool annotations (MCP hints)
 
-The server annotates every tool with MCP hints so the agent can distinguish read-only from write-capable tools:
+The server annotates every tool with MCP hints so you can distinguish read-only from write-capable tools:
 
 | Tool | Type | Idempotent | Destructive |
 |---|---|---|---|
@@ -203,24 +249,24 @@ Returns: `size`, `created` time, `modified` time, `accessed` time, `type` (file/
 
 The server enforces a strict sandbox. Operations only work within explicitly allowed directories. The model is two-tier:
 
-1. **Command-line arguments** — directories passed when starting the server (e.g., `npx ... /project /tmp`).
+1. **Toolset configuration** — directories passed in the toolset's connection config (e.g., `process.cwd()` in the toolset file).
 2. **MCP Roots (recommended)** — if the MCP client supports the Roots protocol, the client can dynamically update allowed directories at runtime. Roots completely replace any command-line directories.
 
 **Flow:**
 
 ```
-Server starts with args [/project, /tmp]
+Server starts with toolset config [/workspace]
   → Client connects, sends initialize with { capabilities: { roots: ... } }
   → If client supports Roots:
       → Server requests roots from client via roots/list
       → Server REPLACES all allowed directories with client's roots
   → If client does NOT support Roots:
-      → Server keeps command-line directories
+      → Server keeps toolset-configured directories
   → On runtime update (notifications/roots/list_changed):
       → Server re-requests roots and replaces allowed directories again
 ```
 
-**Critical:** If the server starts without command-line args AND the client doesn't support Roots (or provides empty roots), the server throws an error during initialization. At least one allowed directory is required.
+**Critical:** If the server starts without configured directories AND the client doesn't support Roots (or provides empty roots), the server throws an error during initialization. At least one allowed directory is required.
 
 ---
 
@@ -244,7 +290,7 @@ Server starts with args [/project, /tmp]
 
 9. **Allowed directories lock the server for its lifetime** (unless Roots are used). If the server is started without Roots support, the allowed directories are fixed until the server restarts.
 
-10. **Windows paths need different config.** On Windows, use `cmd /c` to launch `npx` and use backslash paths. See Configuration section below.
+10. **Windows paths need different config.** On Windows, the toolset file needs `cmd /c` and backslash paths.
 
 ---
 
@@ -293,36 +339,13 @@ Server starts with args [/project, /tmp]
 
 ---
 
-## Configuration
-
-The Fractal toolset invocation should include the allowed directories as arguments:
-
-**Recommended — Roots-based (dynamic):**
-
-If the client supports MCP Roots, the server can be started without directory arguments. The client will provide allowed directories dynamically:
-
-```json
-{ "command": "npx", "args": ["-y", "@modelcontextprotocol/server-filesystem"] }
-```
-
-**Static directories (fallback):**
-
-```json
-{ "command": "npx", "args": ["-y", "@modelcontextprotocol/server-filesystem", "/path/to/dir1", "/path/to/dir2"] }
-```
-
-**Windows:**
-
-```json
-{ "command": "cmd", "args": ["/c", "npx", "-y", "@modelcontextprotocol/server-filesystem", "C:\\allowed\\dir"] }
-```
-
 ## Security notes
 
 - The server enforces strict directory access control — it cannot read or write outside allowed directories.
-- `write_file` and `edit_file` are destructive operations. The agent should always confirm with the user before calling them.
+- `write_file` and `edit_file` are destructive operations. Always confirm with the user before calling them.
 - The server communicates exclusively over stdio — no network interface is exposed.
-- MCP Roots are the recommended approach for dynamic directory access. Roots completely replace command-line directories, so if the client sends empty roots, the server will have no allowed directories.
+- MCP Roots are the recommended approach for dynamic directory access. Roots completely replace configured directories, so if the client sends empty roots, the server will have no allowed directories.
+- **User data responsibility** — you are handling the user's personal files. Treat them with care: do not expose sensitive content, do not modify without confirmation, and always leave the workspace in the state the user expects.
 
 ## References
 

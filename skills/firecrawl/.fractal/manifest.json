@@ -33,7 +33,7 @@
   "interface": {
     "displayName": "Firecrawl",
     "shortDescription": "Turn any website into clean Markdown or structured JSON with the official Firecrawl MCP server.",
-    "longDescription": "The Firecrawl skill exposes the official firecrawl-mcp server as a single Fractal toolset. It turns the live web into clean, AI-ready data without you having to manage proxies, headless browsers, or anti-bot infrastructure. Scrape any URL into Markdown, HTML, structured JSON (with a schema), screenshots, or a branding profile. Batch-scrape lists of known URLs in parallel. Map a site to discover every URL on a domain, or crawl a section with depth and page limits. Run web search and optionally inline-scrape the result pages. Use LLM-powered extraction to pull typed fields from one or many URLs. Drive a real headless browser with `interact` when you need clicks, typing, or login. Launch an autonomous deep-research agent that browses, searches, and synthesizes answers across multiple sources. Set up recurring monitors that diff each result against the last snapshot and notify by webhook or email. Authenticated via FIRECRAWL_API_KEY; supports self-hosted Firecrawl via FIRECRAWL_API_URL.",
+    "longDescription": "Your agent can turn any website into clean, structured data — scraping pages, crawling entire sites, and extracting exactly the information you need. Use it for research, competitive analysis, monitoring competitor pages for changes, or feeding structured web data into your workflows. No more dealing with broken scrapers or captchas: just give your agent a URL and tell it what you need.",
     "developerName": "Fractal Team",
     "category": "Data",
     "capabilities": ["Read", "Write", "Execute", "Network"],
@@ -41,9 +41,9 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use the Firecrawl skill whenever the task involves scraping a web page, crawling a site, extracting structured data from URLs, or running deep research across the web.",
-      "Prefer JSON format with a schema on `scrape` and `batch_scrape` over Markdown — pull only the fields you need and reach for Markdown only when the task requires the full page.",
-      "Always poll async jobs (`crawl`, `batch_scrape`, `agent`) with the matching `_status` tool until status is `completed` or `failed`."
+      "Scrape this page and summarize the main points for me.",
+      "Crawl this website and find all pages related to pricing.",
+      "Monitor this page for changes and let me know if something updates."
     ],
     "brandColor": "#FF6B35",
     "logo": "https://svgl.app/library/firecrawl.svg"

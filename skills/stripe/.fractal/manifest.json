@@ -30,7 +30,7 @@
   "interface": {
     "displayName": "Stripe",
     "shortDescription": "Drive the Stripe payments platform with the official Stripe MCP server.",
-    "longDescription": "The Stripe skill exposes the official @stripe/mcp server as a single Fractal toolset. It gives the agent full read/write access to the Stripe API: customers, charges, payment intents, subscriptions, invoices, products, prices, coupons, checkout sessions, payment links, refunds, Connect accounts, transfers, payouts, balances, disputes, webhooks, reports, and reporting runs. The same toolset also searches Stripe's documentation and knowledge base (docs + support articles) and ships an implementation planner that walks the user through common Stripe integration patterns. Use a Stripe Restricted API Key (RAK) to scope the agent to exactly the resources it needs. Local stdio transport by default; Stripe's hosted server at https://mcp.stripe.com is also available.",
+    "longDescription": "Your agent can manage your Stripe payments — creating customers, processing charges, handling refunds, managing subscriptions, generating invoices, and reconciling balances. Whether you need to check a payment, set up a new product, or look up a customer's billing history, your agent can do it all through conversation. No more digging through the Stripe dashboard for every transaction.",
     "developerName": "Fractal Team",
     "category": "Finance",
     "capabilities": ["Read", "Write", "Execute", "Network"],
@@ -38,9 +38,9 @@
     "privacyPolicyURL": "https://tryfractal.co/privacy",
     "termsOfServiceURL": "https://tryfractal.co/terms",
     "defaultPrompt": [
-      "Use the Stripe skill whenever the task involves accepting payments, managing subscriptions, issuing refunds, generating invoices, building Checkout sessions or payment links, or querying anything on the Stripe API.",
-      "Use a Stripe Restricted API Key (RAK) with the minimum scopes the agent needs — never paste a full sk_live_ key into an agent runtime.",
-      "Confirm with the user before any money-moving write (charges, refunds, payouts, subscription cancellations) and prefer the typed tools (create_refund, get_stripe_account_info, stripe_report) over raw stripe_api_write."
+      "Show me my recent payments and revenue for this month.",
+      "Create a new product and set up a subscription price.",
+      "Find a customer and show me their invoice history."
     ],
     "brandColor": "#635BFF",
     "logo": "https://svgl.app/library/stripe.svg"
