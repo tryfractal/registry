@@ -107,6 +107,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 </details>
 
 <details>
+<summary><b>Marketing & Social Media</b></summary>
+
+- **[instagram](./skills/instagram/SKILL.md)** — Post, message, analyze, and manage your Instagram account through the clinstagram CLI (Meta Graph API + instagrapi). → [Marketplace](https://tryfractal.co/marketplace/instagram) · [SKILL.md](./skills/instagram/SKILL.md)
+- **[meta-ads](./skills/meta-ads/SKILL.md)** — Create, manage, and optimize Meta ad campaigns — from creative to conversion tracking to insights — via the official Meta Ads CLI. → [Marketplace](https://tryfractal.co/marketplace/meta-ads) · [SKILL.md](./skills/meta-ads/SKILL.md)
+
+</details>
+
+<details>
 <summary><b>Analytics & BI</b></summary>
 
 - **[metabase](./skills/metabase/SKILL.md)** — Open-source business intelligence platform for dashboards, questions, and SQL exploration. → [Marketplace](https://tryfractal.co/marketplace/metabase) · [SKILL.md](./skills/metabase/SKILL.md)

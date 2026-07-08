@@ -1,0 +1,51 @@
+{
+  "name": "meta-ads",
+  "version": "0.1.0",
+  "description": "Manage Meta advertising end-to-end from your workspace — create, monitor, and optimize campaigns; manage ad sets with targeting and conversion tracking; build ad creatives with images, videos, and dynamic creative optimization; set up Meta Pixels and product catalogs; query performance insights with custom metrics and breakdowns. Powered by the official Meta Ads CLI with structured JSON output and full CRUD across the advertising hierarchy.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/meta-ads",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/meta-ads",
+  "license": "MIT",
+  "keywords": [
+    "meta",
+    "facebook",
+    "instagram-ads",
+    "advertising",
+    "campaigns",
+    "ad-sets",
+    "ad-creatives",
+    "meta-pixel",
+    "conversion-tracking",
+    "product-catalogs",
+    "insights",
+    "performance-marketing",
+    "paid-media",
+    "marketing-api",
+    "advantage-plus",
+    "dynamic-creative",
+    "catalog-ads"
+  ],
+  "interface": {
+    "displayName": "Meta Ads",
+    "shortDescription": "Create, manage, and optimize Meta ad campaigns — from creative to conversion tracking to insights.",
+    "longDescription": "Your agent becomes your paid media operations hub. Create full campaigns from scratch — set objectives, budgets, targeting, and creatives. Launch conversion-optimized ad sets with Meta Pixel tracking. Build ad creatives with images, videos, or dynamic creative optimization that tests combinations automatically. Pull performance insights with custom date ranges, breakdowns by age, gender, or platform, and sort by any metric. Manage product catalogs for Advantage+ catalog ads. Set up and connect Meta Pixels. All through natural conversation — no more digging through Ads Manager for every update.",
+    "developerName": "Fractal Team",
+    "category": "Marketing",
+    "capabilities": ["Read", "Write", "Execute", "Network", "Persist"],
+    "websiteURL": "https://developers.facebook.com/docs/marketing-apis",
+    "privacyPolicyURL": "https://www.facebook.com/privacy/policy",
+    "termsOfServiceURL": "https://www.facebook.com/terms.php",
+    "defaultPrompt": [
+      "Show me how my ad campaigns are performing this week — spend, conversions, and ROAS.",
+      "Create a new traffic campaign with a daily budget of $50 targeting the US.",
+      "Pull my ad insights for the last 30 days broken down by age and gender."
+    ],
+    "brandColor": "#0081FB",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/512px-Facebook_Logo_%282019%29.png"
+  }
+}

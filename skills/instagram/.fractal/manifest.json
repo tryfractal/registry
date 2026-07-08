@@ -1,0 +1,47 @@
+{
+  "name": "instagram",
+  "version": "0.1.0",
+  "description": "Manage Instagram end-to-end from your workspace — post photos, videos, reels, and carousels; read and reply to DMs; view and post stories; pull profile and post analytics; manage comments and followers; and look up user profiles. Powered by the clinstagram CLI (Meta Graph API + instagrapi private API) with structured JSON output and policy-driven backend routing.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/instagram",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/instagram",
+  "license": "MIT",
+  "keywords": [
+    "instagram",
+    "social-media",
+    "posting",
+    "direct-messages",
+    "stories",
+    "analytics",
+    "followers",
+    "comments",
+    "content-creation",
+    "marketing",
+    "meta",
+    "graph-api",
+    "clinstagram"
+  ],
+  "interface": {
+    "displayName": "Instagram",
+    "shortDescription": "Post, message, analyze, and manage your Instagram account from your workspace.",
+    "longDescription": "Turn your workspace into an Instagram command center. Post photos, videos, reels, and carousels. Read and reply to DMs. View stories and check who saw yours. Pull analytics for your profile and posts. Manage followers and comments — all through natural conversation with your agent. No browser automation, no headless Chrome — just the official Meta Graph API and instagrapi private API working together through one CLI.",
+    "developerName": "Fractal Team",
+    "category": "Marketing",
+    "capabilities": ["Read", "Write", "Execute", "Network", "Persist"],
+    "websiteURL": "https://github.com/paperfoot/clinstagram",
+    "privacyPolicyURL": "https://privacycenter.instagram.com/policy",
+    "termsOfServiceURL": "https://help.instagram.com/581066165581870",
+    "defaultPrompt": [
+      "Show me how my Instagram profile is performing this week.",
+      "Post this photo to Instagram with a caption about our new product launch.",
+      "Check my DM inbox and summarize any unread messages that need a reply."
+    ],
+    "brandColor": "#E4405F",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/512px-Instagram_logo_2022.svg.png"
+  }
+}
