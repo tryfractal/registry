@@ -1,0 +1,49 @@
+{
+  "name": "expo",
+  "version": "0.1.0",
+  "description": "Build, deploy, and debug universal Expo and React Native apps with the official Expo MCP server — SDK management, EAS builds, workflows, TestFlight, App Store, Google Play, documentation, and simulator automation.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/expo",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/expo",
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "expo",
+    "react-native",
+    "mobile",
+    "app",
+    "build",
+    "eas",
+    "testflight",
+    "app-store",
+    "play-store",
+    "mcp",
+    "simulator",
+    "ios",
+    "android",
+    "cross-platform",
+    "development"
+  ],
+  "interface": {
+    "displayName": "Expo",
+    "shortDescription": "Build universal Expo & React Native apps with the official MCP server.",
+    "longDescription": "Your agent can build, deploy, and debug Expo and React Native apps end-to-end — from scaffolding a new project with `create-expo-app` to submitting builds to the App Store and Google Play. Powered by Expo's official MCP server, it can read SDK documentation, install libraries with compatible versions, trigger and monitor EAS builds and workflows, pull TestFlight crash data and feedback, fetch App Store and Play Store reviews, and even interact with your iOS Simulator for visual testing. Whether you're adding a new library, debugging a failed build, or shipping to production, this skill gives your agent direct access to the entire Expo ecosystem.",
+    "developerName": "Fractal Team",
+    "category": "Development",
+    "capabilities": ["Read", "Write", "Execute", "Network"],
+    "websiteURL": "https://expo.dev",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Scaffold a new Expo project with tabs, SQLite, and authentication.",
+      "Investigate why my most recent iOS build on EAS failed.",
+      "Show me recent TestFlight crashes and user feedback for my app."
+    ],
+    "brandColor": "#000020",
+    "logo": "https://svgl.app/library/expo.svg"
+  }
+}
