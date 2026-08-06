@@ -95,7 +95,7 @@ Comments provide threaded progress reporting. Agents **must** post comments to r
 | `author`       | `string`  | ✅       | —        | Display name (human or agent label)                   |
 | `authorType`   | `enum`    | ✅       | `"user"` | `"user"` \| `"agent"`                                |
 | `agentId`      | `string?` | cond.    | —        | **Required** when `authorType="agent"`                |
-| `parentId`     | `string?` | —        | —        | Parent comment ID (enables threading)                 |
+| `replyToId`     | `string?` | —        | —        | Comment ID being replied to (enables threading)                 |
 | `attachments`  | `array`   | —        | `[]`     | `[{ uri: string, observation?: string }]`             |
 | `createdAt`    | `string`  | auto     | —        | ISO 8601 timestamp                                    |
 | `updatedAt`    | `string`  | auto     | —        | ISO 8601 timestamp                                    |
@@ -271,7 +271,7 @@ Agents **must** use task comments (not only chat) to report progress. This ensur
 // Correct: threaded reply to another comment
 {
   taskId: "FRA-012",
-  parentId: "comment-uuid-here",
+  replyToId: "comment-uuid-here",
   body: "All tests passing. Marking todo as finished.",
   author: "Atlas",
   authorType: "agent",
