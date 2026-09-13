@@ -315,18 +315,18 @@ Every agent runtime is equipped with:
 
 ---
 
-## 10. The `_reasoning` Field
+## 10. The `reason` Field
 
-Every tool call an agent makes **automatically includes a `_reasoning: string` field** injected into the tool schema. This enforces explainability:
+Every tool call an agent makes **must include a top-level `reason: string` field** in the tool input. This enforces explainability:
 
 ```json
 {
-  "_reasoning": "I am reading this file to understand the current schema before modifying it, ensuring I don't break existing field definitions.",
+  "reason": "I am reading this file to understand the current schema before modifying it, ensuring I don't break existing field definitions.",
   "path": "src/features/auth/auth.interfaces.ts"
 }
 ```
 
-Agents must provide a clear, concise `_reasoning` for every tool call. This is enforced at the schema level — missing reasoning is treated as a malformed tool call.
+Agents must provide a clear, concise `reason` for every tool call. For composite tools, keep it at the top level beside `action`, `inspect`, and `input`; never place it inside `input`. This is enforced at the schema level — missing or blank reason is treated as a malformed tool call.
 
 ---
 
