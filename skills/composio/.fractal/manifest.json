@@ -1,0 +1,48 @@
+{
+  "name": "composio",
+  "version": "0.1.0",
+  "description": "Connect your agent to 1,000+ apps through Composio — managed auth, tool discovery on demand and sandboxed execution for Gmail, Slack, GitHub, Notion, Linear, HubSpot and more.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/composio",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/composio",
+  "license": "MIT",
+  "keywords": [
+    "composio",
+    "mcp",
+    "tool-router",
+    "integrations",
+    "automation",
+    "oauth",
+    "agents",
+    "gmail",
+    "slack",
+    "github",
+    "notion",
+    "linear",
+    "hubspot",
+    "calendar"
+  ],
+  "interface": {
+    "displayName": "Composio",
+    "shortDescription": "1,000+ apps for your agent with managed auth.",
+    "longDescription": "Let your agent work inside the apps you already use — send emails, post on Slack, open GitHub issues, update your CRM, read your calendar. Composio handles sign-in and permissions safely, finds the right action on demand and runs it for you. You approve anything that sends, posts or deletes.",
+    "developerName": "Fractal Team",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write", "Execute", "Network"],
+    "websiteURL": "https://composio.dev",
+    "privacyPolicyURL": "https://tryfractal.co/privacy",
+    "termsOfServiceURL": "https://tryfractal.co/terms",
+    "defaultPrompt": [
+      "Show me which apps I have connected through Composio.",
+      "Connect my Gmail so you can help with my inbox.",
+      "Find the right tool to create a task from this conversation."
+    ],
+    "brandColor": "#0F0F0F",
+    "logo": "https://composio.dev/favicon.ico"
+  }
+}
