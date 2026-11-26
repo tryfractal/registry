@@ -1,49 +1,32 @@
 import { FractalToolset } from "@fractal-os/plugin";
 
 /**
- * Zapier MCP toolset.
- *
- * Connects to the user's Zapier MCP server over SSE. The connection URL
- * is unique per user and must be set via the ZAPIER_MCP_URL environment
- * variable — available from mcp.zapier.com after creating an MCP server.
- *
- * Tools are not hardcoded here because they depend on what the user
- * configured at mcp.zapier.com. The available tools are auto-discovered
- * from the upstream SSE endpoint at load time.
+ * Zapier MCP connection.
+ * Tool definitions are discovered from the provider's remote server at runtime.
  */
 export default FractalToolset.create("mcp")
-  .withDescription(
-    "Zapier MCP — connect the agent to 9000+ apps and 30000+ actions via SSE. Tools are configured at mcp.zapier.com and auto-discovered. Send Slack messages, create Sheets rows, manage Jira/Asana tasks, update HubSpot deals, post Discord messages, and thousands more.",
-  )
+  .withDescription("Connect to Zapier through the provider's HTTP MCP endpoint. Tools are discovered from the live server and depend on the authorized account.")
   .withRules([
-    {
-      type: "always",
-      instruction:
-        "Ask the user what tools they have configured in their Zapier MCP server before attempting any call — the tool list is unique per user.",
-    },
-    {
-      type: "always",
-      instruction:
-        "Include all required details (recipients, content, dates) when calling a Zapier tool. Many actions have mandatory fields.",
-    },
-    {
-      type: "always",
-      instruction:
-        "Summarise what was done after each successful action — 'I posted to #general in Slack' or 'I added a row to your spreadsheet'.",
-    },
-    {
-      type: "always",
-      instruction:
-        "When a tool fails with a permission error, suggest the user re-authenticates the connected app at mcp.zapier.com.",
-    },
-    {
-      type: "never",
-      instruction:
-        "Never hardcode app credentials or authentication tokens — Zapier handles all auth through the connected app accounts configured at mcp.zapier.com.",
-    },
-  ])
+  {
+    "type": "always",
+    "instruction": "Use only tools discovered from this MCP server; do not invent tool names or claim unsupported actions."
+  },
+  {
+    "type": "always",
+    "instruction": "Check the active account, workspace, and target before making changes."
+  },
+  {
+    "type": "never",
+    "instruction": "Never reveal credentials, access tokens, or secret values in chat or tool output."
+  },
+  {
+    "type": "ask",
+    "instruction": "Confirm the exact target before deletion, bulk changes, publication, financial movement, or other consequential actions unless the user has already authorized that specific action."
+  }
+])
   .withConnection({
     type: "mcp-server::http",
-    url: process.env.ZAPIER_MCP_URL ?? "",
+    url: "https://mcp.zapier.com/api/v1/connect",
+    auth: "oauth",
   })
   .build();

@@ -1,6 +1,6 @@
 {
   "name": "zapier",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Connect to 9000+ apps and 30000+ actions through the Zapier MCP server — send Slack messages, create Sheets rows, manage Jira/Asana tasks, update HubSpot deals, post Discord messages, and more, all through natural language.",
   "author": {
     "name": "Fractal",

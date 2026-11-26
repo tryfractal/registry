@@ -1,6 +1,6 @@
 {
   "name": "digitalocean",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Manage a DigitalOcean cloud account through the official do-mcp server — Droplets, App Platform, managed databases, Kubernetes (DOKS), networking, storage, billing, and more, all behind one MCP connection.",
   "author": {
     "name": "Fractal",

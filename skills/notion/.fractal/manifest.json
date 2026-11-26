@@ -1,6 +1,6 @@
 {
   "name": "notion",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Read, search, create, and update Notion pages, databases, data sources, blocks, and comments through the official Notion MCP server. Exposes the full Notion API surface to the agent.",
   "author": {
     "name": "Fractal",

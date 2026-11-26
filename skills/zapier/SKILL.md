@@ -94,6 +94,6 @@ If this variable is not set, the toolset will fail to connect. The user can get 
 - Compare with Zapier Agents: <https://docs.zapier.com/mcp/home#quick-comparison>
 - License: Proprietary (Zapier)
 
-## Hosted MCP connection
+## MCP connection
 
-This skill also includes a `hosted-mcp` toolset at `https://mcp.zapier.com/api/v1/connect`. It uses Fractal's OAuth authorization flow and discovers tools from the provider after connection. The provider must support the MCP OAuth flow used by Fractal; this endpoint was not independently authorized during registry preparation. Use the current `Zapier` connector when its provider-specific setup or guidance is needed, and the hosted toolset when the user wants the provider's remote MCP server.
+This registry entry connects to Zapier's remote MCP endpoint at `https://mcp.zapier.com/api/v1/connect` through Fractal's OAuth flow. Fractal discovers the available tools after authorization; follow the live tool list because it can depend on the connected account. The provider must support this OAuth flow, and this endpoint was not independently authorized during registry preparation.

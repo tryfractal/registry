@@ -1,6 +1,6 @@
 {
   "name": "stripe",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Stripe payments platform powered by the official @stripe/mcp server — create customers, charge cards, refund payments, manage subscriptions and invoices, build Checkout sessions and payment links, look up products and prices, handle Connect accounts, reconcile balances, and search Stripe's documentation and knowledge base, all from the agent.",
   "author": {
     "name": "Fractal",

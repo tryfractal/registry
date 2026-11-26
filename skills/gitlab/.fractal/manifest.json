@@ -1,6 +1,6 @@
 {
   "name": "gitlab",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Official GitLab MCP server — drive gitlab.com or a self-hosted GitLab instance from the agent: list and search projects, read and push files, manage branches, open merge requests, file and triage issues, and fork repositories. Authenticated with a personal access token; no extra installs required.",
   "author": {
     "name": "Fractal",

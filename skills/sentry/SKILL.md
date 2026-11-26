@@ -112,6 +112,6 @@ For a standalone HTTP server, run the underlying server in a long-lived containe
 - Sentry product docs: <https://docs.sentry.io/>
 - License: MIT
 
-## Hosted MCP connection
+## MCP connection
 
-This skill also includes a `hosted-mcp` toolset at `https://mcp.sentry.dev/mcp`. It uses Fractal's OAuth authorization flow and discovers tools from the provider after connection. The provider must support the MCP OAuth flow used by Fractal; this endpoint was not independently authorized during registry preparation. Use the current `Sentry` connector when its provider-specific setup or guidance is needed, and the hosted toolset when the user wants the provider's remote MCP server.
+This registry entry connects to Sentry's remote MCP endpoint at `https://mcp.sentry.dev/mcp` through Fractal's OAuth flow. Fractal discovers the available tools after authorization; follow the live tool list because it can depend on the connected account. The provider must support this OAuth flow, and this endpoint was not independently authorized during registry preparation.

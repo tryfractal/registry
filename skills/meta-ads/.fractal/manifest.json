@@ -1,6 +1,6 @@
 {
   "name": "meta-ads",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Manage Meta advertising end-to-end from your workspace — create, monitor, and optimize campaigns; manage ad sets with targeting and conversion tracking; build ad creatives with images, videos, and dynamic creative optimization; set up Meta Pixels and product catalogs; query performance insights with custom metrics and breakdowns. Powered by the official Meta Ads CLI with structured JSON output and full CRUD across the advertising hierarchy.",
   "author": {
     "name": "Fractal",

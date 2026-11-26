@@ -1,6 +1,6 @@
 {
   "name": "sentry",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Application monitoring, error tracking, and performance observability for production software through the official Model Context Protocol Sentry server. Look up issues by ID or URL, pull the most recent stacktrace, inspect error frequency and last-seen timestamps, and triage crashes and exceptions recorded by Sentry.",
   "author": {
     "name": "Fractal",

@@ -1,15 +1,15 @@
 import { FractalToolset } from "@fractal-os/plugin";
 
 /**
- * Stripe hosted MCP connection.
+ * Meta Ads MCP connection.
  * Tool definitions are discovered from the provider's remote server at runtime.
  */
-export default FractalToolset.create("hosted-mcp")
-  .withDescription("Connect to Stripe through the provider-hosted HTTP MCP endpoint. Tools are discovered from the live server and depend on the authorized account.")
+export default FractalToolset.create("mcp")
+  .withDescription("Connect to Meta Ads through the provider's HTTP MCP endpoint. Tools are discovered from the live server and depend on the authorized account.")
   .withRules([
   {
     "type": "always",
-    "instruction": "Use only tools discovered from this hosted MCP server; do not invent tool names or claim unsupported actions."
+    "instruction": "Use only tools discovered from this MCP server; do not invent tool names or claim unsupported actions."
   },
   {
     "type": "always",
@@ -26,7 +26,7 @@ export default FractalToolset.create("hosted-mcp")
 ])
   .withConnection({
     type: "mcp-server::http",
-    url: "https://mcp.stripe.com",
+    url: "https://mcp.facebook.com/ads",
     auth: "oauth",
   })
   .build();

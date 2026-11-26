@@ -1,6 +1,6 @@
 {
   "name": "algolia",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Algolia search and index management powered by the official algolia/mcp server — run queries, list indices, read and update index settings, batch upsert/delete records, manage A/B tests, inspect analytics, configure query suggestions, recommendations, and federated collections, and read usage metrics.",
   "author": {
     "name": "Fractal",
