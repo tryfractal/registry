@@ -1,0 +1,33 @@
+{
+  "name": "suno",
+  "version": "0.1.0",
+  "description": "Create music and work with songs in your Suno library using the official Suno MCP server.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/suno",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/suno",
+  "license": "MIT",
+  "keywords": ["suno", "music", "audio", "songs", "creative", "mcp"],
+  "interface": {
+    "displayName": "Suno",
+    "shortDescription": "Create music and work with your Suno library through conversation.",
+    "longDescription": "Connect your Suno account to create songs from your ideas and work with music in your library. Describe a mood, style, or lyrics, or ask your agent to help extend or cover a song using the tools available to your account. Music creation uses your Suno credits.",
+    "developerName": "Suno",
+    "category": "Design",
+    "capabilities": ["Read", "Write", "Network"],
+    "websiteURL": "https://suno.com/mcp",
+    "privacyPolicyURL": "https://suno.com/privacy",
+    "termsOfServiceURL": "https://suno.com/terms",
+    "defaultPrompt": [
+      "Create an upbeat instrumental track for my video.",
+      "Help me extend a song in my Suno library.",
+      "Turn my voice memo into a folk song while keeping the melody."
+    ],
+    "brandColor": "#000000",
+    "logo": "https://svgl.app/library/suno.svg"
+  }
+}
