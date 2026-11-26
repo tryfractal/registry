@@ -1,0 +1,36 @@
+{
+  "name": "beehiiv",
+  "version": "0.1.0",
+  "description": "Connect beehiiv to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/beehiiv",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/beehiiv",
+  "license": "MIT",
+  "keywords": [
+    "beehiiv",
+    "marketing",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "beehiiv",
+    "shortDescription": "Use beehiiv MCP tools from your Fractal workspace.",
+    "longDescription": "Connect beehiiv to your Fractal workspace so your agent can work with newsletter posts and subscribers using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "beehiiv",
+    "category": "Marketing",
+    "websiteURL": "https://www.beehiiv.com",
+    "privacyPolicyURL": "https://www.beehiiv.com/privacy",
+    "termsOfServiceURL": "https://www.beehiiv.com/tou",
+    "defaultPrompt": [
+      "Give me an overview of my beehiiv workspace.",
+      "Find anything in beehiiv that needs attention and explain why.",
+      "Help me review newsletter posts and subscribers in beehiiv."
+    ],
+    "logo": "https://avatars.githubusercontent.com/u/73256842?s=256&v=4"
+  }
+}

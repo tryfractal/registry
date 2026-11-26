@@ -1,0 +1,36 @@
+{
+  "name": "profound",
+  "version": "0.1.0",
+  "description": "Connect Profound to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/profound",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/profound",
+  "license": "MIT",
+  "keywords": [
+    "profound",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Profound",
+    "shortDescription": "Use Profound MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Profound to your Fractal workspace so your agent can work with aI search visibility analytics using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Profound",
+    "category": "Data",
+    "websiteURL": "https://www.tryprofound.com",
+    "privacyPolicyURL": "https://www.tryprofound.com/legal/privacy-policy",
+    "termsOfServiceURL": "https://www.tryprofound.com/legal/master-subscription-agreement",
+    "defaultPrompt": [
+      "Give me an overview of my Profound workspace.",
+      "Find anything in Profound that needs attention and explain why.",
+      "Help me review aI search visibility analytics in Profound."
+    ],
+    "logo": "https://static.tryprofound.com/favicons/v1/production/apple-touch-icon.png"
+  }
+}

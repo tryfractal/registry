@@ -1,0 +1,36 @@
+{
+  "name": "exa",
+  "version": "0.1.0",
+  "description": "Connect Exa to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/exa",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/exa",
+  "license": "MIT",
+  "keywords": [
+    "exa",
+    "research",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Exa",
+    "shortDescription": "Use Exa MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Exa to your Fractal workspace so your agent can work with web search for agents using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Exa",
+    "category": "Research",
+    "websiteURL": "https://exa.ai",
+    "privacyPolicyURL": "https://exa.ai/privacy-policy",
+    "termsOfServiceURL": "https://exa.ai/assets/Exa_Labs_Terms_of_Service.pdf",
+    "defaultPrompt": [
+      "Give me an overview of my Exa workspace.",
+      "Find anything in Exa that needs attention and explain why.",
+      "Help me review web search for agents in Exa."
+    ],
+    "logo": "https://exa.ai/images/favicon-32x32.png"
+  }
+}

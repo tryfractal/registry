@@ -1,0 +1,37 @@
+{
+  "name": "dida365",
+  "version": "0.1.0",
+  "description": "Connect DIDA to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/dida365",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/dida365",
+  "license": "MIT",
+  "keywords": [
+    "dida365",
+    "dida",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "DIDA",
+    "shortDescription": "Use DIDA MCP tools from your Fractal workspace.",
+    "longDescription": "Connect DIDA to your Fractal workspace so your agent can work with tasks and lists using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "DIDA",
+    "category": "Productivity",
+    "websiteURL": "https://dida365.com",
+    "privacyPolicyURL": "https://dida365.com/about/privacy",
+    "termsOfServiceURL": "https://dida365.com/about/tos",
+    "defaultPrompt": [
+      "Give me an overview of my DIDA workspace.",
+      "Find anything in DIDA that needs attention and explain why.",
+      "Help me review tasks and lists in DIDA."
+    ],
+    "logo": "https://cncdn.dida365.com/web/static/img/apple-touch-icon-152x152.png"
+  }
+}

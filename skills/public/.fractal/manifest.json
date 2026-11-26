@@ -1,0 +1,36 @@
+{
+  "name": "public",
+  "version": "0.1.0",
+  "description": "Connect Public to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/public",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/public",
+  "license": "MIT",
+  "keywords": [
+    "public",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Public",
+    "shortDescription": "Use Public MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Public to your Fractal workspace so your agent can work with brokerage accounts and trading using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Public",
+    "category": "Data",
+    "websiteURL": "https://public.com",
+    "privacyPolicyURL": "https://public.com/privacy-policy",
+    "termsOfServiceURL": "https://public.com/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my Public workspace.",
+      "Find anything in Public that needs attention and explain why.",
+      "Help me review brokerage accounts and trading in Public."
+    ],
+    "logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9e/3a/fd/9e3afdec-0f26-740b-bc67-2e3c62bf8f97/AppIconProd-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg"
+  }
+}

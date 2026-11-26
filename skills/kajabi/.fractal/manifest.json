@@ -1,0 +1,36 @@
+{
+  "name": "kajabi",
+  "version": "0.1.0",
+  "description": "Connect Kajabi to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/kajabi",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/kajabi",
+  "license": "MIT",
+  "keywords": [
+    "kajabi",
+    "finance",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Kajabi",
+    "shortDescription": "Use Kajabi MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Kajabi to your Fractal workspace so your agent can work with courses and creator business using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Kajabi",
+    "category": "Finance",
+    "websiteURL": "https://www.kajabi.com",
+    "privacyPolicyURL": "https://www.kajabi.com/policies/privacy",
+    "termsOfServiceURL": "https://www.kajabi.com/policies/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Kajabi workspace.",
+      "Find anything in Kajabi that needs attention and explain why.",
+      "Help me review courses and creator business in Kajabi."
+    ],
+    "logo": "https://cdn.prod.website-files.com/693317e747432cd054b3bdc6/693318d5adf6755726c17fae_Dark.png"
+  }
+}

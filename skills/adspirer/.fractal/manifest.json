@@ -1,0 +1,36 @@
+{
+  "name": "adspirer",
+  "version": "0.1.0",
+  "description": "Connect Adspirer to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/adspirer",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/adspirer",
+  "license": "MIT",
+  "keywords": [
+    "adspirer",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Adspirer",
+    "shortDescription": "Use Adspirer MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Adspirer to your Fractal workspace so your agent can work with ad campaign reporting using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Adspirer",
+    "category": "Data",
+    "websiteURL": "https://www.adspirer.com",
+    "privacyPolicyURL": "https://www.adspirer.com/privacy",
+    "termsOfServiceURL": "https://www.adspirer.com/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Adspirer workspace.",
+      "Find anything in Adspirer that needs attention and explain why.",
+      "Help me review ad campaign reporting in Adspirer."
+    ],
+    "logo": "https://www.adspirer.com/apple-icon.png"
+  }
+}

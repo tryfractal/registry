@@ -1,0 +1,36 @@
+{
+  "name": "turso",
+  "version": "0.1.0",
+  "description": "Connect Turso to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/turso",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/turso",
+  "license": "MIT",
+  "keywords": [
+    "turso",
+    "development",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Turso",
+    "shortDescription": "Use Turso MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Turso to your Fractal workspace so your agent can work with turso Cloud databases using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Turso",
+    "category": "Development",
+    "websiteURL": "https://turso.tech",
+    "privacyPolicyURL": "https://turso.tech/privacy-policy",
+    "termsOfServiceURL": "https://turso.tech/terms-of-use",
+    "defaultPrompt": [
+      "Give me an overview of my Turso workspace.",
+      "Find anything in Turso that needs attention and explain why.",
+      "Help me review turso Cloud databases in Turso."
+    ],
+    "logo": "https://avatars.githubusercontent.com/u/139391156?s=256&v=4"
+  }
+}

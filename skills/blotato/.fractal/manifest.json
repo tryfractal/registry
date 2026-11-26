@@ -1,0 +1,36 @@
+{
+  "name": "blotato",
+  "version": "0.1.0",
+  "description": "Connect Blotato to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/blotato",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/blotato",
+  "license": "MIT",
+  "keywords": [
+    "blotato",
+    "marketing",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Blotato",
+    "shortDescription": "Use Blotato MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Blotato to your Fractal workspace so your agent can work with social media publishing using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Blotato",
+    "category": "Marketing",
+    "websiteURL": "https://www.blotato.com",
+    "privacyPolicyURL": "https://www.blotato.com/privacy-policy",
+    "termsOfServiceURL": "https://www.blotato.com/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my Blotato workspace.",
+      "Find anything in Blotato that needs attention and explain why.",
+      "Help me review social media publishing in Blotato."
+    ],
+    "logo": "https://www.blotato.com/favicon.webp"
+  }
+}

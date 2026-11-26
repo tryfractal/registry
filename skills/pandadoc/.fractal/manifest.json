@@ -1,0 +1,36 @@
+{
+  "name": "pandadoc",
+  "version": "0.1.0",
+  "description": "Connect PandaDoc to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/pandadoc",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/pandadoc",
+  "license": "MIT",
+  "keywords": [
+    "pandadoc",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "PandaDoc",
+    "shortDescription": "Use PandaDoc MCP tools from your Fractal workspace.",
+    "longDescription": "Connect PandaDoc to your Fractal workspace so your agent can work with documents, proposals and e-signatures using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "PandaDoc",
+    "category": "Productivity",
+    "websiteURL": "https://www.pandadoc.com",
+    "privacyPolicyURL": "https://www.pandadoc.com/legal/privacy-notice/",
+    "termsOfServiceURL": "https://www.pandadoc.com/legal/master-services-agreement/",
+    "defaultPrompt": [
+      "Give me an overview of my PandaDoc workspace.",
+      "Find anything in PandaDoc that needs attention and explain why.",
+      "Help me review documents, proposals and e-signatures in PandaDoc."
+    ],
+    "logo": "https://developers.pandadoc.com/apple-touch-icon.png?v=b9ba294dfee0"
+  }
+}

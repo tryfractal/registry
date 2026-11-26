@@ -1,0 +1,36 @@
+{
+  "name": "freee",
+  "version": "0.1.0",
+  "description": "Connect freee to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/freee",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/freee",
+  "license": "MIT",
+  "keywords": [
+    "freee",
+    "finance",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "freee",
+    "shortDescription": "Use freee MCP tools from your Fractal workspace.",
+    "longDescription": "Connect freee to your Fractal workspace so your agent can work with accounting, HR, and invoices using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "freee",
+    "category": "Finance",
+    "websiteURL": "https://www.freee.co.jp",
+    "privacyPolicyURL": "https://corp.freee.co.jp/privacy/",
+    "termsOfServiceURL": "https://www.freee.co.jp/terms/",
+    "defaultPrompt": [
+      "Give me an overview of my freee workspace.",
+      "Find anything in freee that needs attention and explain why.",
+      "Help me review accounting, HR, and invoices in freee."
+    ],
+    "logo": "https://avatars.githubusercontent.com/u/13896447?s=256&v=4"
+  }
+}

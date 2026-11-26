@@ -1,0 +1,36 @@
+{
+  "name": "ifttt",
+  "version": "0.1.0",
+  "description": "Connect IFTTT to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/ifttt",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/ifttt",
+  "license": "MIT",
+  "keywords": [
+    "ifttt",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "IFTTT",
+    "shortDescription": "Use IFTTT MCP tools from your Fractal workspace.",
+    "longDescription": "Connect IFTTT to your Fractal workspace so your agent can work with connect apps and devices using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "IFTTT",
+    "category": "Productivity",
+    "websiteURL": "https://ifttt.com",
+    "privacyPolicyURL": "https://ifttt.com/privacy",
+    "termsOfServiceURL": "https://ifttt.com/terms",
+    "defaultPrompt": [
+      "Give me an overview of my IFTTT workspace.",
+      "Find anything in IFTTT that needs attention and explain why.",
+      "Help me review connect apps and devices in IFTTT."
+    ],
+    "logo": "https://ifttt.com/favicon.ico"
+  }
+}

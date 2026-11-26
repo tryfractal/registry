@@ -1,0 +1,37 @@
+{
+  "name": "wordpress",
+  "version": "0.1.0",
+  "description": "Connect WordPress.com to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/wordpress",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/wordpress",
+  "license": "MIT",
+  "keywords": [
+    "wordpress",
+    "wordpress.com",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "WordPress.com",
+    "shortDescription": "Use WordPress.com MCP tools from your Fractal workspace.",
+    "longDescription": "Connect WordPress.com to your Fractal workspace so your agent can work with wordPress.com sites and posts using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "WordPress.com",
+    "category": "Productivity",
+    "websiteURL": "https://wordpress.com",
+    "privacyPolicyURL": "https://automattic.com/privacy/",
+    "termsOfServiceURL": "https://wordpress.com/tos/",
+    "defaultPrompt": [
+      "Give me an overview of my WordPress.com workspace.",
+      "Find anything in WordPress.com that needs attention and explain why.",
+      "Help me review wordPress.com sites and posts in WordPress.com."
+    ],
+    "logo": "https://wordpress.com/favicon.ico"
+  }
+}

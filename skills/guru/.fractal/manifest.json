@@ -1,0 +1,36 @@
+{
+  "name": "guru",
+  "version": "0.1.0",
+  "description": "Connect Guru to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/guru",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/guru",
+  "license": "MIT",
+  "keywords": [
+    "guru",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Guru",
+    "shortDescription": "Use Guru MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Guru to your Fractal workspace so your agent can work with company knowledge search using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Guru",
+    "category": "Productivity",
+    "websiteURL": "https://www.getguru.com",
+    "privacyPolicyURL": "https://www.getguru.com/privacy",
+    "termsOfServiceURL": "https://www.getguru.com/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my Guru workspace.",
+      "Find anything in Guru that needs attention and explain why.",
+      "Help me review company knowledge search in Guru."
+    ],
+    "logo": "https://cdn.prod.website-files.com/5d8d029013ffd80bbb91320d/6216a21ee8829c7531435bc8_Guru_G_Black%202256.png"
+  }
+}

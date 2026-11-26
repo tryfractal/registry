@@ -1,0 +1,36 @@
+{
+  "name": "ahrefs",
+  "version": "0.1.0",
+  "description": "Connect Ahrefs to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/ahrefs",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/ahrefs",
+  "license": "MIT",
+  "keywords": [
+    "ahrefs",
+    "research",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Ahrefs",
+    "shortDescription": "Use Ahrefs MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Ahrefs to your Fractal workspace so your agent can work with sEO and keyword data using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Ahrefs",
+    "category": "Research",
+    "websiteURL": "https://ahrefs.com",
+    "privacyPolicyURL": "https://ahrefs.com/legal/privacy-policy",
+    "termsOfServiceURL": "https://ahrefs.com/legal/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Ahrefs workspace.",
+      "Find anything in Ahrefs that needs attention and explain why.",
+      "Help me review sEO and keyword data in Ahrefs."
+    ],
+    "logo": "https://static.ahrefs.com/apple-touch-icon.png?v=2"
+  }
+}

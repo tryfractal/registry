@@ -1,0 +1,36 @@
+{
+  "name": "21st",
+  "version": "0.1.0",
+  "description": "Connect 21st to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/21st",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/21st",
+  "license": "MIT",
+  "keywords": [
+    "21st",
+    "development",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "21st",
+    "shortDescription": "Use 21st MCP tools from your Fractal workspace.",
+    "longDescription": "Connect 21st to your Fractal workspace so your agent can work with react UI component catalog using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "21st",
+    "category": "Development",
+    "websiteURL": "https://21st.dev",
+    "privacyPolicyURL": "https://21st.dev/privacy",
+    "termsOfServiceURL": "https://21st.dev/terms",
+    "defaultPrompt": [
+      "Give me an overview of my 21st workspace.",
+      "Find anything in 21st that needs attention and explain why.",
+      "Help me review react UI component catalog in 21st."
+    ],
+    "logo": "https://21st.dev/apple-touch-icon.png"
+  }
+}

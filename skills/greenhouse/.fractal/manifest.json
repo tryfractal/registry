@@ -1,0 +1,36 @@
+{
+  "name": "greenhouse",
+  "version": "0.1.0",
+  "description": "Connect Greenhouse to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/greenhouse",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/greenhouse",
+  "license": "MIT",
+  "keywords": [
+    "greenhouse",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Greenhouse",
+    "shortDescription": "Use Greenhouse MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Greenhouse to your Fractal workspace so your agent can work with recruiting and candidates using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Greenhouse",
+    "category": "Productivity",
+    "websiteURL": "https://www.greenhouse.com",
+    "privacyPolicyURL": "https://www.greenhouse.com/privacy-policy",
+    "termsOfServiceURL": "https://www.greenhouse.com/legal",
+    "defaultPrompt": [
+      "Give me an overview of my Greenhouse workspace.",
+      "Find anything in Greenhouse that needs attention and explain why.",
+      "Help me review recruiting and candidates in Greenhouse."
+    ],
+    "logo": "https://cdn.prod.website-files.com/6668a687e71e2722fccb8357/679a83f9b21b5caab0c682c9_GH-logo-web.png"
+  }
+}

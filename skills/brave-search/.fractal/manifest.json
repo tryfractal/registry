@@ -1,0 +1,36 @@
+{
+  "name": "brave-search",
+  "version": "0.1.0",
+  "description": "Connect Brave Search to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/brave-search",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/brave-search",
+  "license": "MIT",
+  "keywords": [
+    "brave-search",
+    "research",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Brave Search",
+    "shortDescription": "Use Brave Search MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Brave Search to your Fractal workspace so your agent can work with private web search using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Brave Search",
+    "category": "Research",
+    "websiteURL": "https://brave.com",
+    "privacyPolicyURL": "https://brave.com/privacy/",
+    "termsOfServiceURL": "https://brave.com/terms-of-use/",
+    "defaultPrompt": [
+      "Give me an overview of my Brave Search workspace.",
+      "Find anything in Brave Search that needs attention and explain why.",
+      "Help me review private web search in Brave Search."
+    ],
+    "logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9e/b3/b2/9eb3b277-5183-0072-1921-39787c42ab35/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg"
+  }
+}

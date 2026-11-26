@@ -1,0 +1,36 @@
+{
+  "name": "clickup",
+  "version": "0.1.0",
+  "description": "Connect ClickUp to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/clickup",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/clickup",
+  "license": "MIT",
+  "keywords": [
+    "clickup",
+    "communication",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "ClickUp",
+    "shortDescription": "Use ClickUp MCP tools from your Fractal workspace.",
+    "longDescription": "Connect ClickUp to your Fractal workspace so your agent can work with tasks, docs and team updates using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "ClickUp",
+    "category": "Communication",
+    "websiteURL": "https://clickup.com",
+    "privacyPolicyURL": "https://clickup.com/terms/privacy",
+    "termsOfServiceURL": "https://clickup.com/terms",
+    "defaultPrompt": [
+      "Give me an overview of my ClickUp workspace.",
+      "Find anything in ClickUp that needs attention and explain why.",
+      "Help me review tasks, docs and team updates in ClickUp."
+    ],
+    "logo": "https://clickup.com/favicons/apple-touch-icon.png"
+  }
+}

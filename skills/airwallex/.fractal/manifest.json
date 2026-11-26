@@ -1,0 +1,36 @@
+{
+  "name": "airwallex",
+  "version": "0.1.0",
+  "description": "Connect Airwallex to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/airwallex",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/airwallex",
+  "license": "MIT",
+  "keywords": [
+    "airwallex",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Airwallex",
+    "shortDescription": "Use Airwallex MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Airwallex to your Fractal workspace so your agent can work with business accounts and cards using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Airwallex",
+    "category": "Productivity",
+    "websiteURL": "https://www.airwallex.com",
+    "privacyPolicyURL": "https://www.airwallex.com/global/terms/privacy-policy",
+    "termsOfServiceURL": "https://www.airwallex.com/global/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Airwallex workspace.",
+      "Find anything in Airwallex that needs attention and explain why.",
+      "Help me review business accounts and cards in Airwallex."
+    ],
+    "logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/90/b5/18/90b5186a-c2cc-d29d-9511-832e2292175a/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
+  }
+}

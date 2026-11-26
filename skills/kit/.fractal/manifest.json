@@ -1,0 +1,36 @@
+{
+  "name": "kit",
+  "version": "0.1.0",
+  "description": "Connect Kit to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/kit",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/kit",
+  "license": "MIT",
+  "keywords": [
+    "kit",
+    "marketing",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Kit",
+    "shortDescription": "Use Kit MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Kit to your Fractal workspace so your agent can work with email newsletters for creators using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Kit",
+    "category": "Marketing",
+    "websiteURL": "https://kit.com",
+    "privacyPolicyURL": "https://kit.com/privacy",
+    "termsOfServiceURL": "https://kit.com/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Kit workspace.",
+      "Find anything in Kit that needs attention and explain why.",
+      "Help me review email newsletters for creators in Kit."
+    ],
+    "logo": "https://kit.com/favicon.ico"
+  }
+}

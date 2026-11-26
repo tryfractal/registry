@@ -1,0 +1,36 @@
+{
+  "name": "extend",
+  "version": "0.1.0",
+  "description": "Connect Extend to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/extend",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/extend",
+  "license": "MIT",
+  "keywords": [
+    "extend",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Extend",
+    "shortDescription": "Use Extend MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Extend to your Fractal workspace so your agent can work with virtual cards and spend using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Extend",
+    "category": "Productivity",
+    "websiteURL": "https://www.paywithextend.com",
+    "privacyPolicyURL": "https://paywithextend.com/privacy",
+    "termsOfServiceURL": "https://paywithextend.com/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Extend workspace.",
+      "Find anything in Extend that needs attention and explain why.",
+      "Help me review virtual cards and spend in Extend."
+    ],
+    "logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d8/85/10/d885108f-802a-1620-923f-08d99dec774b/AppIcon-0-0-1x_U007emarketing-0-3-0-sRGB-85-220.png/512x512bb.jpg"
+  }
+}

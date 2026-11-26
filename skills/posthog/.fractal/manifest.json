@@ -1,0 +1,36 @@
+{
+  "name": "posthog",
+  "version": "0.1.0",
+  "description": "Connect PostHog to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/posthog",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/posthog",
+  "license": "MIT",
+  "keywords": [
+    "posthog",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "PostHog",
+    "shortDescription": "Use PostHog MCP tools from your Fractal workspace.",
+    "longDescription": "Connect PostHog to your Fractal workspace so your agent can work with product analytics and flags using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "PostHog",
+    "category": "Data",
+    "websiteURL": "https://posthog.com",
+    "privacyPolicyURL": "https://posthog.com/privacy",
+    "termsOfServiceURL": "https://posthog.com/terms",
+    "defaultPrompt": [
+      "Give me an overview of my PostHog workspace.",
+      "Find anything in PostHog that needs attention and explain why.",
+      "Help me review product analytics and flags in PostHog."
+    ],
+    "logo": "https://app.posthog.com/static/icons/apple-touch-icon.png"
+  }
+}

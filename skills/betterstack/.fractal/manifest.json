@@ -1,0 +1,37 @@
+{
+  "name": "betterstack",
+  "version": "0.1.0",
+  "description": "Connect Better Stack to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/betterstack",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/betterstack",
+  "license": "MIT",
+  "keywords": [
+    "betterstack",
+    "better-stack",
+    "development",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Better Stack",
+    "shortDescription": "Use Better Stack MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Better Stack to your Fractal workspace so your agent can work with uptime, logs, and incidents using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Better Stack",
+    "category": "Development",
+    "websiteURL": "https://betterstack.com",
+    "privacyPolicyURL": "https://betterstack.com/privacy",
+    "termsOfServiceURL": "https://betterstack.com/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Better Stack workspace.",
+      "Find anything in Better Stack that needs attention and explain why.",
+      "Help me review uptime, logs, and incidents in Better Stack."
+    ],
+    "logo": "https://betterstack.com/assets/favicon-64296699.png"
+  }
+}

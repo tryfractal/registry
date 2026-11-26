@@ -110,3 +110,7 @@ The toolset launches the server via `npx` so it works on any machine with Node 1
 - MCP server source: <https://github.com/modelcontextprotocol/servers/tree/main/src/gitlab>
 - npm package: <https://www.npmjs.com/package/@modelcontextprotocol/server-gitlab>
 - License: MIT
+
+## Hosted MCP connection
+
+This skill also includes a `hosted-mcp` toolset at `https://gitlab.com/api/v4/mcp`. It uses Fractal's OAuth authorization flow and discovers tools from the provider after connection. The provider must support the MCP OAuth flow used by Fractal; this endpoint was not independently authorized during registry preparation. Use the current `GitLab` connector when its provider-specific setup or guidance is needed, and the hosted toolset when the user wants the provider's remote MCP server.

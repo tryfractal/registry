@@ -1,0 +1,36 @@
+{
+  "name": "speko",
+  "version": "0.1.0",
+  "description": "Connect Speko to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/speko",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/speko",
+  "license": "MIT",
+  "keywords": [
+    "speko",
+    "communication",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Speko",
+    "shortDescription": "Use Speko MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Speko to your Fractal workspace so your agent can work with voice AI agents using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Speko",
+    "category": "Communication",
+    "websiteURL": "https://speko.ai",
+    "privacyPolicyURL": "https://speko.ai/privacy-policy",
+    "termsOfServiceURL": "https://speko.ai/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my Speko workspace.",
+      "Find anything in Speko that needs attention and explain why.",
+      "Help me review voice AI agents in Speko."
+    ],
+    "logo": "https://speko.ai/apple-icon.png"
+  }
+}

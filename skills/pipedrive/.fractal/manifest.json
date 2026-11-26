@@ -1,0 +1,36 @@
+{
+  "name": "pipedrive",
+  "version": "0.1.0",
+  "description": "Connect Pipedrive to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/pipedrive",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/pipedrive",
+  "license": "MIT",
+  "keywords": [
+    "pipedrive",
+    "sales",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Pipedrive",
+    "shortDescription": "Use Pipedrive MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Pipedrive to your Fractal workspace so your agent can work with sales CRM deals and contacts using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Pipedrive",
+    "category": "Sales",
+    "websiteURL": "https://www.pipedrive.com",
+    "privacyPolicyURL": "https://www.pipedrive.com/en/privacy",
+    "termsOfServiceURL": "https://www.pipedrive.com/en/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my Pipedrive workspace.",
+      "Find anything in Pipedrive that needs attention and explain why.",
+      "Help me review sales CRM deals and contacts in Pipedrive."
+    ],
+    "logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7d/43/00/7d43004f-75f0-48b0-cd19-469cc0f738f3/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg"
+  }
+}

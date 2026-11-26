@@ -1,0 +1,37 @@
+{
+  "name": "otter",
+  "version": "0.1.0",
+  "description": "Connect Otter.ai to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/otter",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/otter",
+  "license": "MIT",
+  "keywords": [
+    "otter",
+    "otter.ai",
+    "communication",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Otter.ai",
+    "shortDescription": "Use Otter.ai MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Otter.ai to your Fractal workspace so your agent can work with meeting transcripts and notes using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Otter.ai",
+    "category": "Communication",
+    "websiteURL": "https://otter.ai",
+    "privacyPolicyURL": "https://otter.ai/privacy-policy",
+    "termsOfServiceURL": "https://otter.ai/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my Otter.ai workspace.",
+      "Find anything in Otter.ai that needs attention and explain why.",
+      "Help me review meeting transcripts and notes in Otter.ai."
+    ],
+    "logo": "https://cdn.prod.website-files.com/618e9316785b3582a5178502/618e943a80919a98b5e9bf69_apple-icon.png"
+  }
+}

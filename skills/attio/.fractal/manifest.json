@@ -1,0 +1,36 @@
+{
+  "name": "attio",
+  "version": "0.1.0",
+  "description": "Connect Attio to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/attio",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/attio",
+  "license": "MIT",
+  "keywords": [
+    "attio",
+    "sales",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Attio",
+    "shortDescription": "Use Attio MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Attio to your Fractal workspace so your agent can work with cRM records and deals using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Attio",
+    "category": "Sales",
+    "websiteURL": "https://attio.com",
+    "privacyPolicyURL": "https://attio.com/legal/privacy",
+    "termsOfServiceURL": "https://attio.com/legal/services-agreement",
+    "defaultPrompt": [
+      "Give me an overview of my Attio workspace.",
+      "Find anything in Attio that needs attention and explain why.",
+      "Help me review cRM records and deals in Attio."
+    ],
+    "logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4f/b8/5d/4fb85d1f-cdcb-578f-ad1e-376174daaa60/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg"
+  }
+}

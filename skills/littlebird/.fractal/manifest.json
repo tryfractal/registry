@@ -1,0 +1,36 @@
+{
+  "name": "littlebird",
+  "version": "0.1.0",
+  "description": "Connect Littlebird to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/littlebird",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/littlebird",
+  "license": "MIT",
+  "keywords": [
+    "littlebird",
+    "communication",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Littlebird",
+    "shortDescription": "Use Littlebird MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Littlebird to your Fractal workspace so your agent can work with personal work memory using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Littlebird",
+    "category": "Communication",
+    "websiteURL": "https://littlebird.ai",
+    "privacyPolicyURL": "https://littlebird.ai/privacy-policy",
+    "termsOfServiceURL": "https://littlebird.ai/terms-of-use",
+    "defaultPrompt": [
+      "Give me an overview of my Littlebird workspace.",
+      "Find anything in Littlebird that needs attention and explain why.",
+      "Help me review personal work memory in Littlebird."
+    ],
+    "logo": "https://cdn.prod.website-files.com/694043d273dceabab479f631/6a55a1a9ae6577ed7ad07aa1_69603245cff328dc64a18f61_Base%20Icon%20%5BDO%20NOT%20EDIT%5D%206.png"
+  }
+}

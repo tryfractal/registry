@@ -1,0 +1,36 @@
+{
+  "name": "mobbin",
+  "version": "0.1.0",
+  "description": "Connect Mobbin to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/mobbin",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/mobbin",
+  "license": "MIT",
+  "keywords": [
+    "mobbin",
+    "design",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Mobbin",
+    "shortDescription": "Use Mobbin MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Mobbin to your Fractal workspace so your agent can work with real app UI references using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Mobbin",
+    "category": "Design",
+    "websiteURL": "https://mobbin.com",
+    "privacyPolicyURL": "https://mobbin.com/privacy",
+    "termsOfServiceURL": "https://mobbin.com/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Mobbin workspace.",
+      "Find anything in Mobbin that needs attention and explain why.",
+      "Help me review real app UI references in Mobbin."
+    ],
+    "logo": "https://mobbin.com/mobbin-marketing-pages/images/apple-touch-icon.png"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "craft",
+  "version": "0.1.0",
+  "description": "Connect Craft to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/craft",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/craft",
+  "license": "MIT",
+  "keywords": [
+    "craft",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Craft",
+    "shortDescription": "Use Craft MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Craft to your Fractal workspace so your agent can work with notes, docs and tasks using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Craft",
+    "category": "Productivity",
+    "websiteURL": "https://www.craft.do",
+    "privacyPolicyURL": "https://www.craft.do/privacy",
+    "termsOfServiceURL": "https://www.craft.do/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Craft workspace.",
+      "Find anything in Craft that needs attention and explain why.",
+      "Help me review notes, docs and tasks in Craft."
+    ],
+    "logo": "https://www.craft.do/images/favicon-large.png"
+  }
+}

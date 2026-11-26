@@ -1,0 +1,36 @@
+{
+  "name": "aws-knowledge",
+  "version": "0.1.0",
+  "description": "Connect AWS Knowledge to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/aws-knowledge",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/aws-knowledge",
+  "license": "MIT",
+  "keywords": [
+    "aws-knowledge",
+    "development",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "AWS Knowledge",
+    "shortDescription": "Use AWS Knowledge MCP tools from your Fractal workspace.",
+    "longDescription": "Connect AWS Knowledge to your Fractal workspace so your agent can work with aWS documentation lookup using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "AWS Knowledge",
+    "category": "Development",
+    "websiteURL": "https://aws.amazon.com",
+    "privacyPolicyURL": "https://aws.amazon.com/privacy/",
+    "termsOfServiceURL": "https://aws.amazon.com/terms/",
+    "defaultPrompt": [
+      "Give me an overview of my AWS Knowledge workspace.",
+      "Find anything in AWS Knowledge that needs attention and explain why.",
+      "Help me review aWS documentation lookup in AWS Knowledge."
+    ],
+    "logo": "https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"
+  }
+}

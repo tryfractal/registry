@@ -1,0 +1,36 @@
+{
+  "name": "magnific",
+  "version": "0.1.0",
+  "description": "Connect Magnific to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/magnific",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/magnific",
+  "license": "MIT",
+  "keywords": [
+    "magnific",
+    "design",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Magnific",
+    "shortDescription": "Use Magnific MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Magnific to your Fractal workspace so your agent can work with aI image and video tools using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Magnific",
+    "category": "Design",
+    "websiteURL": "https://www.magnific.com",
+    "privacyPolicyURL": "https://www.magnific.com/legal/privacy",
+    "termsOfServiceURL": "https://www.magnific.com/legal/terms-of-use",
+    "defaultPrompt": [
+      "Give me an overview of my Magnific workspace.",
+      "Find anything in Magnific that needs attention and explain why.",
+      "Help me review aI image and video tools in Magnific."
+    ],
+    "logo": "https://media.magnific.com/magnific-favicons/apple-touch-icon.png?w=180&v=2"
+  }
+}

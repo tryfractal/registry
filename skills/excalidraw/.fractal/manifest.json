@@ -1,0 +1,36 @@
+{
+  "name": "excalidraw",
+  "version": "0.1.0",
+  "description": "Connect Excalidraw to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/excalidraw",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/excalidraw",
+  "license": "MIT",
+  "keywords": [
+    "excalidraw",
+    "design",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Excalidraw",
+    "shortDescription": "Use Excalidraw MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Excalidraw to your Fractal workspace so your agent can work with hand-drawn diagrams using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Excalidraw",
+    "category": "Design",
+    "websiteURL": "https://excalidraw.com",
+    "privacyPolicyURL": "https://plus.excalidraw.com/privacy-policy",
+    "termsOfServiceURL": "https://plus.excalidraw.com/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my Excalidraw workspace.",
+      "Find anything in Excalidraw that needs attention and explain why.",
+      "Help me review hand-drawn diagrams in Excalidraw."
+    ],
+    "logo": "https://excalidraw.com/apple-touch-icon.png"
+  }
+}

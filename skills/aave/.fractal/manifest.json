@@ -1,0 +1,36 @@
+{
+  "name": "aave",
+  "version": "0.1.0",
+  "description": "Connect Aave to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/aave",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/aave",
+  "license": "MIT",
+  "keywords": [
+    "aave",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Aave",
+    "shortDescription": "Use Aave MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Aave to your Fractal workspace so your agent can work with aave data and transactions using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Aave",
+    "category": "Data",
+    "websiteURL": "https://aave.com",
+    "privacyPolicyURL": "https://aave.com/privacy",
+    "termsOfServiceURL": "https://aave.com/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Aave workspace.",
+      "Find anything in Aave that needs attention and explain why.",
+      "Help me review aave data and transactions in Aave."
+    ],
+    "logo": "https://aave.com/images/icon-aave.png"
+  }
+}

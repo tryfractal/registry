@@ -1,0 +1,37 @@
+{
+  "name": "incidentio",
+  "version": "0.1.0",
+  "description": "Connect incident.io to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/incidentio",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/incidentio",
+  "license": "MIT",
+  "keywords": [
+    "incidentio",
+    "incident.io",
+    "development",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "incident.io",
+    "shortDescription": "Use incident.io MCP tools from your Fractal workspace.",
+    "longDescription": "Connect incident.io to your Fractal workspace so your agent can work with incidents and on-call using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "incident.io",
+    "category": "Development",
+    "websiteURL": "https://incident.io",
+    "privacyPolicyURL": "https://incident.io/legal/privacy",
+    "termsOfServiceURL": "https://incident.io/legal/terms",
+    "defaultPrompt": [
+      "Give me an overview of my incident.io workspace.",
+      "Find anything in incident.io that needs attention and explain why.",
+      "Help me review incidents and on-call in incident.io."
+    ],
+    "logo": "https://incident.io/apple-touch-icon.png"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "figma",
+  "version": "0.1.0",
+  "description": "Connect Figma to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/figma",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/figma",
+  "license": "MIT",
+  "keywords": [
+    "figma",
+    "design",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Figma",
+    "shortDescription": "Use Figma MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Figma to your Fractal workspace so your agent can work with designs and prototypes using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Figma",
+    "category": "Design",
+    "websiteURL": "https://www.figma.com",
+    "privacyPolicyURL": "https://www.figma.com/privacy/",
+    "termsOfServiceURL": "https://www.figma.com/tos/",
+    "defaultPrompt": [
+      "Give me an overview of my Figma workspace.",
+      "Find anything in Figma that needs attention and explain why.",
+      "Help me review designs and prototypes in Figma."
+    ],
+    "logo": "https://static.figma.com/app/icon/2/icon-256.png"
+  }
+}

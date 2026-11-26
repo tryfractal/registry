@@ -1,0 +1,37 @@
+{
+  "name": "helpscout",
+  "version": "0.1.0",
+  "description": "Connect Help Scout to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/helpscout",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/helpscout",
+  "license": "MIT",
+  "keywords": [
+    "helpscout",
+    "help-scout",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Help Scout",
+    "shortDescription": "Use Help Scout MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Help Scout to your Fractal workspace so your agent can work with support conversations and reports using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Help Scout",
+    "category": "Productivity",
+    "websiteURL": "https://www.helpscout.com",
+    "privacyPolicyURL": "https://www.helpscout.com/company/legal/privacy/",
+    "termsOfServiceURL": "https://www.helpscout.com/company/legal/terms-of-service/",
+    "defaultPrompt": [
+      "Give me an overview of my Help Scout workspace.",
+      "Find anything in Help Scout that needs attention and explain why.",
+      "Help me review support conversations and reports in Help Scout."
+    ],
+    "logo": "https://www.helpscout.com/images/favicon/apple-touch-icon.png"
+  }
+}

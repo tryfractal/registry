@@ -1,0 +1,36 @@
+{
+  "name": "riverside",
+  "version": "0.1.0",
+  "description": "Connect Riverside to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/riverside",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/riverside",
+  "license": "MIT",
+  "keywords": [
+    "riverside",
+    "design",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Riverside",
+    "shortDescription": "Use Riverside MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Riverside to your Fractal workspace so your agent can work with recordings, clips, and transcripts using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Riverside",
+    "category": "Design",
+    "websiteURL": "https://riverside.com",
+    "privacyPolicyURL": "https://riverside.com/privacy-policy",
+    "termsOfServiceURL": "https://riverside.com/terms-conditions",
+    "defaultPrompt": [
+      "Give me an overview of my Riverside workspace.",
+      "Find anything in Riverside that needs attention and explain why.",
+      "Help me review recordings, clips, and transcripts in Riverside."
+    ],
+    "logo": "https://cdn.prod.website-files.com/685be7dcd32275d3830651d3/685be7dcd32275d383065e48_RS_favicon.png"
+  }
+}

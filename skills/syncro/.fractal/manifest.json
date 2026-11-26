@@ -1,0 +1,36 @@
+{
+  "name": "syncro",
+  "version": "0.1.0",
+  "description": "Connect Syncro to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/syncro",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/syncro",
+  "license": "MIT",
+  "keywords": [
+    "syncro",
+    "finance",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Syncro",
+    "shortDescription": "Use Syncro MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Syncro to your Fractal workspace so your agent can work with mSP tickets and assets using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Syncro",
+    "category": "Finance",
+    "websiteURL": "https://syncrosecure.com",
+    "privacyPolicyURL": "https://syncrosecure.com/privacy-policy/",
+    "termsOfServiceURL": "https://syncrosecure.com/terms-of-service/",
+    "defaultPrompt": [
+      "Give me an overview of my Syncro workspace.",
+      "Find anything in Syncro that needs attention and explain why.",
+      "Help me review mSP tickets and assets in Syncro."
+    ],
+    "logo": "https://syncrosecure.com/wp-content/uploads/2024/09/Favicon-300x300.png"
+  }
+}

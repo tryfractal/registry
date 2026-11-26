@@ -1,0 +1,36 @@
+{
+  "name": "ubersuggest",
+  "version": "0.1.0",
+  "description": "Connect Ubersuggest to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/ubersuggest",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/ubersuggest",
+  "license": "MIT",
+  "keywords": [
+    "ubersuggest",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Ubersuggest",
+    "shortDescription": "Use Ubersuggest MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Ubersuggest to your Fractal workspace so your agent can work with sEO keyword research using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Ubersuggest",
+    "category": "Data",
+    "websiteURL": "https://ubersuggest.com",
+    "privacyPolicyURL": "https://npdigital.com/privacy-notice/",
+    "termsOfServiceURL": "https://neilpatel.com/terms/",
+    "defaultPrompt": [
+      "Give me an overview of my Ubersuggest workspace.",
+      "Find anything in Ubersuggest that needs attention and explain why.",
+      "Help me review sEO keyword research in Ubersuggest."
+    ],
+    "logo": "https://ubersuggest.com/apple-icon.png"
+  }
+}

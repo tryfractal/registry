@@ -1,0 +1,36 @@
+{
+  "name": "wix",
+  "version": "0.1.0",
+  "description": "Connect Wix to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/wix",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/wix",
+  "license": "MIT",
+  "keywords": [
+    "wix",
+    "development",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Wix",
+    "shortDescription": "Use Wix MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Wix to your Fractal workspace so your agent can work with wix sites and developer docs using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Wix",
+    "category": "Development",
+    "websiteURL": "https://www.wix.com",
+    "privacyPolicyURL": "https://www.wix.com/about/privacy",
+    "termsOfServiceURL": "https://www.wix.com/about/terms-of-use",
+    "defaultPrompt": [
+      "Give me an overview of my Wix workspace.",
+      "Find anything in Wix that needs attention and explain why.",
+      "Help me review wix sites and developer docs in Wix."
+    ],
+    "logo": "https://www.wix.com/favicon.ico"
+  }
+}

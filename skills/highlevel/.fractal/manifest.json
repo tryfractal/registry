@@ -1,0 +1,36 @@
+{
+  "name": "highlevel",
+  "version": "0.1.0",
+  "description": "Connect HighLevel to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/highlevel",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/highlevel",
+  "license": "MIT",
+  "keywords": [
+    "highlevel",
+    "marketing",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "HighLevel",
+    "shortDescription": "Use HighLevel MCP tools from your Fractal workspace.",
+    "longDescription": "Connect HighLevel to your Fractal workspace so your agent can work with cRM and marketing workspace using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "HighLevel",
+    "category": "Marketing",
+    "websiteURL": "https://www.gohighlevel.com",
+    "privacyPolicyURL": "https://www.gohighlevel.com/privacy-policy",
+    "termsOfServiceURL": "https://www.gohighlevel.com/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my HighLevel workspace.",
+      "Find anything in HighLevel that needs attention and explain why.",
+      "Help me review cRM and marketing workspace in HighLevel."
+    ],
+    "logo": "https://storage.googleapis.com/msgsndr/knES3eSWYIsc5YSZ3YLl/media/62b48689c85eccb36ca941fc.png"
+  }
+}

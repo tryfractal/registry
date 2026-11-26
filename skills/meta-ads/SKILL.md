@@ -209,3 +209,7 @@ For Instagram placements, add `--instagram-actor-id <INSTAGRAM_ACCOUNT_ID>`.
 - **Meta Ads CLI overview:** <https://developers.facebook.com/docs/ads-commerce/ads-ai-connectors/ads-cli/ads-cli-overview>
 - **Meta Marketing API docs:** <https://developers.facebook.com/docs/marketing-apis>
 - **Getting started:** <https://developers.facebook.com/docs/ads-commerce/ads-ai-connectors/ads-cli/setup/get-started>
+
+## Hosted MCP connection
+
+This skill also includes a `hosted-mcp` toolset at `https://mcp.facebook.com/ads`. It uses Fractal's OAuth authorization flow and discovers tools from the provider after connection. The provider must support the MCP OAuth flow used by Fractal; this endpoint was not independently authorized during registry preparation. Use the current `Meta Ads` connector when its provider-specific setup or guidance is needed, and the hosted toolset when the user wants the provider's remote MCP server.

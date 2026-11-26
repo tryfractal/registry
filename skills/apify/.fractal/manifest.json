@@ -1,0 +1,36 @@
+{
+  "name": "apify",
+  "version": "0.1.0",
+  "description": "Connect Apify to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/apify",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/apify",
+  "license": "MIT",
+  "keywords": [
+    "apify",
+    "research",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Apify",
+    "shortDescription": "Use Apify MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Apify to your Fractal workspace so your agent can work with web scraping and automation using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Apify",
+    "category": "Research",
+    "websiteURL": "https://apify.com",
+    "privacyPolicyURL": "https://docs.apify.com/legal/privacy-policy",
+    "termsOfServiceURL": "https://docs.apify.com/legal/general-terms-and-conditions",
+    "defaultPrompt": [
+      "Give me an overview of my Apify workspace.",
+      "Find anything in Apify that needs attention and explain why.",
+      "Help me review web scraping and automation in Apify."
+    ],
+    "logo": "https://apify.com/apple-icon.png?apple-icon.1qabm0kj8blk6.png?dpl=a834cddc87"
+  }
+}

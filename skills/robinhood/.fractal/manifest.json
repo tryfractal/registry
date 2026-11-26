@@ -1,0 +1,36 @@
+{
+  "name": "robinhood",
+  "version": "0.1.0",
+  "description": "Connect Robinhood to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/robinhood",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/robinhood",
+  "license": "MIT",
+  "keywords": [
+    "robinhood",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Robinhood",
+    "shortDescription": "Use Robinhood MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Robinhood to your Fractal workspace so your agent can work with brokerage accounts and agentic trading using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Robinhood",
+    "category": "Data",
+    "websiteURL": "https://robinhood.com",
+    "privacyPolicyURL": "https://robinhood.com/us/en/support/articles/privacy-policy/",
+    "termsOfServiceURL": "https://robinhood.com/us/en/about/legal/",
+    "defaultPrompt": [
+      "Give me an overview of my Robinhood workspace.",
+      "Find anything in Robinhood that needs attention and explain why.",
+      "Help me review brokerage accounts and agentic trading in Robinhood."
+    ],
+    "logo": "https://robinhood.com/favicon.ico"
+  }
+}

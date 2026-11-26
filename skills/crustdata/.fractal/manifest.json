@@ -1,0 +1,36 @@
+{
+  "name": "crustdata",
+  "version": "0.1.0",
+  "description": "Connect Crustdata to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/crustdata",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/crustdata",
+  "license": "MIT",
+  "keywords": [
+    "crustdata",
+    "research",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Crustdata",
+    "shortDescription": "Use Crustdata MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Crustdata to your Fractal workspace so your agent can work with company and people data using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Crustdata",
+    "category": "Research",
+    "websiteURL": "https://crustdata.com",
+    "privacyPolicyURL": "https://crustdata.com/privacy",
+    "termsOfServiceURL": "https://crustdata.com/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Crustdata workspace.",
+      "Find anything in Crustdata that needs attention and explain why.",
+      "Help me review company and people data in Crustdata."
+    ],
+    "logo": "https://framerusercontent.com/images/E8mnzGlBd4YPo1cPiZk7sGel9Y.png"
+  }
+}

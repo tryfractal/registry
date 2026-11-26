@@ -1,0 +1,36 @@
+{
+  "name": "revenuecat",
+  "version": "0.1.0",
+  "description": "Connect RevenueCat to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/revenuecat",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/revenuecat",
+  "license": "MIT",
+  "keywords": [
+    "revenuecat",
+    "finance",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "RevenueCat",
+    "shortDescription": "Use RevenueCat MCP tools from your Fractal workspace.",
+    "longDescription": "Connect RevenueCat to your Fractal workspace so your agent can work with subscriptions, products and paywalls using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "RevenueCat",
+    "category": "Finance",
+    "websiteURL": "https://www.revenuecat.com",
+    "privacyPolicyURL": "https://www.revenuecat.com/privacy",
+    "termsOfServiceURL": "https://www.revenuecat.com/terms",
+    "defaultPrompt": [
+      "Give me an overview of my RevenueCat workspace.",
+      "Find anything in RevenueCat that needs attention and explain why.",
+      "Help me review subscriptions, products and paywalls in RevenueCat."
+    ],
+    "logo": "https://www.revenuecat.com/favicon/favicon-192x192.png"
+  }
+}

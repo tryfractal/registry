@@ -1,0 +1,36 @@
+{
+  "name": "bird",
+  "version": "0.1.0",
+  "description": "Connect Bird to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/bird",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/bird",
+  "license": "MIT",
+  "keywords": [
+    "bird",
+    "communication",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Bird",
+    "shortDescription": "Use Bird MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Bird to your Fractal workspace so your agent can work with email, SMS, and WhatsApp APIs using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Bird",
+    "category": "Communication",
+    "websiteURL": "https://bird.com",
+    "privacyPolicyURL": "https://bird.com/legal/privacy",
+    "termsOfServiceURL": "https://bird.com/legal/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Bird workspace.",
+      "Find anything in Bird that needs attention and explain why.",
+      "Help me review email, SMS, and WhatsApp APIs in Bird."
+    ],
+    "logo": "https://bird.com/favicon-light.png"
+  }
+}

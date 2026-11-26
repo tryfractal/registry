@@ -1,0 +1,36 @@
+{
+  "name": "superme",
+  "version": "0.1.0",
+  "description": "Connect SuperMe to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/superme",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/superme",
+  "license": "MIT",
+  "keywords": [
+    "superme",
+    "research",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "SuperMe",
+    "shortDescription": "Use SuperMe MCP tools from your Fractal workspace.",
+    "longDescription": "Connect SuperMe to your Fractal workspace so your agent can work with advice from experienced people using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "SuperMe",
+    "category": "Research",
+    "websiteURL": "https://www.superme.ai",
+    "privacyPolicyURL": "https://www.superme.ai/privacy",
+    "termsOfServiceURL": "https://www.superme.ai/terms",
+    "defaultPrompt": [
+      "Give me an overview of my SuperMe workspace.",
+      "Find anything in SuperMe that needs attention and explain why.",
+      "Help me review advice from experienced people in SuperMe."
+    ],
+    "logo": "https://www.superme.ai/apple-touch-icon.png"
+  }
+}

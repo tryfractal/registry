@@ -1,0 +1,37 @@
+{
+  "name": "wellnessproject",
+  "version": "0.1.0",
+  "description": "Connect Wellness Project to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/wellnessproject",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/wellnessproject",
+  "license": "MIT",
+  "keywords": [
+    "wellnessproject",
+    "wellness-project",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Wellness Project",
+    "shortDescription": "Use Wellness Project MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Wellness Project to your Fractal workspace so your agent can work with fitness and health data using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Wellness Project",
+    "category": "Data",
+    "websiteURL": "https://wellnessproject.ai",
+    "privacyPolicyURL": "https://wellnessproject.ai/privacy",
+    "termsOfServiceURL": "https://wellnessproject.ai/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Wellness Project workspace.",
+      "Find anything in Wellness Project that needs attention and explain why.",
+      "Help me review fitness and health data in Wellness Project."
+    ],
+    "logo": "https://wellnessproject.ai/apple-icon.png"
+  }
+}

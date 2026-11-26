@@ -1,0 +1,36 @@
+{
+  "name": "higgsfield",
+  "version": "0.1.0",
+  "description": "Connect Higgsfield to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/higgsfield",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/higgsfield",
+  "license": "MIT",
+  "keywords": [
+    "higgsfield",
+    "design",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Higgsfield",
+    "shortDescription": "Use Higgsfield MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Higgsfield to your Fractal workspace so your agent can work with aI images, videos and audio using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Higgsfield",
+    "category": "Design",
+    "websiteURL": "https://higgsfield.ai",
+    "privacyPolicyURL": "https://higgsfield.ai/privacy-policy",
+    "termsOfServiceURL": "https://higgsfield.ai/terms-of-use-agreement",
+    "defaultPrompt": [
+      "Give me an overview of my Higgsfield workspace.",
+      "Find anything in Higgsfield that needs attention and explain why.",
+      "Help me review aI images, videos and audio in Higgsfield."
+    ],
+    "logo": "https://higgsfield.ai/apple-touch-icon.png"
+  }
+}

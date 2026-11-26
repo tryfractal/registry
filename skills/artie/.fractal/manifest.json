@@ -1,0 +1,36 @@
+{
+  "name": "artie",
+  "version": "0.1.0",
+  "description": "Connect Artie to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/artie",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/artie",
+  "license": "MIT",
+  "keywords": [
+    "artie",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Artie",
+    "shortDescription": "Use Artie MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Artie to your Fractal workspace so your agent can work with real-time data pipelines using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Artie",
+    "category": "Data",
+    "websiteURL": "https://www.artie.com",
+    "privacyPolicyURL": "https://www.artie.com/privacy",
+    "termsOfServiceURL": "https://www.artie.com/docs/legal/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my Artie workspace.",
+      "Find anything in Artie that needs attention and explain why.",
+      "Help me review real-time data pipelines in Artie."
+    ],
+    "logo": "https://www.artie.com/apple-icon.png"
+  }
+}

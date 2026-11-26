@@ -1,0 +1,36 @@
+{
+  "name": "deepwiki",
+  "version": "0.1.0",
+  "description": "Connect DeepWiki to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/deepwiki",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/deepwiki",
+  "license": "MIT",
+  "keywords": [
+    "deepwiki",
+    "development",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "DeepWiki",
+    "shortDescription": "Use DeepWiki MCP tools from your Fractal workspace.",
+    "longDescription": "Connect DeepWiki to your Fractal workspace so your agent can work with docs for public GitHub repos using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "DeepWiki",
+    "category": "Development",
+    "websiteURL": "https://deepwiki.com",
+    "privacyPolicyURL": "https://cognition.ai/legal/privacy-policy",
+    "termsOfServiceURL": "https://cognition.ai/legal/platform-terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my DeepWiki workspace.",
+      "Find anything in DeepWiki that needs attention and explain why.",
+      "Help me review docs for public GitHub repos in DeepWiki."
+    ],
+    "logo": "https://avatars.githubusercontent.com/u/163493330?s=128&v=4"
+  }
+}

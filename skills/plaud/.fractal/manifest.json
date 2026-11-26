@@ -1,0 +1,36 @@
+{
+  "name": "plaud",
+  "version": "0.1.0",
+  "description": "Connect Plaud to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/plaud",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/plaud",
+  "license": "MIT",
+  "keywords": [
+    "plaud",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Plaud",
+    "shortDescription": "Use Plaud MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Plaud to your Fractal workspace so your agent can work with recordings, transcripts and summaries using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Plaud",
+    "category": "Productivity",
+    "websiteURL": "https://www.plaud.ai",
+    "privacyPolicyURL": "https://www.plaud.ai/policies/privacy-policy",
+    "termsOfServiceURL": "https://www.plaud.ai/policies/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my Plaud workspace.",
+      "Find anything in Plaud that needs attention and explain why.",
+      "Help me review recordings, transcripts and summaries in Plaud."
+    ],
+    "logo": "https://www.plaud.ai/cdn/shop/files/plaud-fa.png?crop=center&height=180&v=1765790183&width=180"
+  }
+}

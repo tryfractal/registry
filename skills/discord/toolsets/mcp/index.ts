@@ -69,9 +69,16 @@ export default FractalToolset
     type: "mcp-server::stdio",
     command: "npx",
     args: ["-y", "@pasympa/discord-mcp"],
+    setup: {
+      DISCORD_TOKEN: {
+        label: "Bot token",
+        description: "Discord Developer Portal → your application → Bot → Reset Token.",
+        url: "https://discord.com/developers/applications",
+      },
+    },
     env: {
       // Required: bot token from https://discord.com/developers/applications
-      DISCORD_TOKEN: "${env:DISCORD_TOKEN}",
+      DISCORD_TOKEN: "${DISCORD_TOKEN}",
       // Optional: comma-separated guild ID allow-list. Restricts the server to
       // the listed guilds; tool calls targeting any other guild are rejected.
       // Unset = no restriction.

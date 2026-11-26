@@ -1,0 +1,36 @@
+{
+  "name": "datadog-eu",
+  "version": "0.1.0",
+  "description": "Connect Datadog EU to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/datadog-eu",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/datadog-eu",
+  "license": "MIT",
+  "keywords": [
+    "datadog-eu",
+    "development",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Datadog EU",
+    "shortDescription": "Use Datadog EU MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Datadog EU to your Fractal workspace so your agent can work with monitoring, logs and traces using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Datadog EU",
+    "category": "Development",
+    "websiteURL": "https://www.datadoghq.com",
+    "privacyPolicyURL": "https://www.datadoghq.com/legal/privacy/",
+    "termsOfServiceURL": "https://www.datadoghq.com/legal/terms/",
+    "defaultPrompt": [
+      "Give me an overview of my Datadog EU workspace.",
+      "Find anything in Datadog EU that needs attention and explain why.",
+      "Help me review monitoring, logs and traces in Datadog EU."
+    ],
+    "logo": "https://www.datadoghq.com/favicon.ico"
+  }
+}

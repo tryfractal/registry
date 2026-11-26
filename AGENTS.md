@@ -87,7 +87,7 @@ Every MCP-only skill follows the same shape:
 
 | Path | Required | Purpose |
 |---|---|---|
-| `SKILL.md` | yes | Agent-facing manual. YAML frontmatter (`name` + `description` + `metadata.rules`) + Markdown body. Keep the description concise, imperative, and ideally under 1024 characters. |
+| `SKILL.md` | yes | Agent-facing manual. YAML frontmatter (`name` + `description`; `metadata.rules` is optional) + Markdown body. Keep the description concise, imperative, and ideally under 1024 characters. |
 | `.fractal/manifest.json` | yes | The Fractal plugin descriptor (see Section 15). |
 
 #### Optional per-skill subfolders
@@ -253,7 +253,7 @@ There is no canonical "types" file in this repository — the manifest schema is
 
 When adding a new skill, ensure:
 
-- [ ] `skills/<name>/SKILL.md` exists with valid YAML frontmatter (`name`, `description`, `metadata.rules`).
+- [ ] `skills/<name>/SKILL.md` exists with valid YAML frontmatter (`name`, `description`; `metadata.rules` is optional).
 - [ ] `skills/<name>/.fractal/manifest.json` exists and passes the schema in Section 15.
 - [ ] `name` matches the folder name exactly.
 - [ ] `path` is `/skills/<name>`.
@@ -341,10 +341,6 @@ name: my-skill
 description: >
   What the skill does, when to trigger it, and what it can do.
   This description is the agent's first impression — write it carefully.
-metadata:
-  rules:
-    - type: always
-      instruction: "A behavioral rule that fires on every invocation."
 ---
 
 # My Skill
@@ -1045,7 +1041,7 @@ The SDK is published on npm and is the same SDK used by Fractal internally. If y
 | ❌ Don't use uppercase or spaces in the folder | CLI will not find the skill | `MyCoolSkill/` breaks install |
 | ❌ Don't hardcode `https://tryfractal.co` in skills | Breaks local dev | Use env vars or config |
 | ❌ Don't include credentials or tokens in any file | Even in examples | Use placeholders like `<YOUR_API_KEY>` |
-| ❌ Don't skip the YAML frontmatter in `SKILL.md` | The agent cannot read the skill without it | `name`, `description`, `metadata.rules` are required |
+| ❌ Don't skip the YAML frontmatter in `SKILL.md` | The agent cannot read the skill without it | `name` and `description` are required; `metadata.rules` is optional |
 | ❌ Don't bump major version without a migration plan | Breaks user workspaces | Open an improvement issue first |
 | ❌ Don't ship a `package.json` inside the skill | Skills are source-only; the workspace owns deps | The SDK is installed at the workspace level, not in the skill |
 | ❌ Don't ship an empty or placeholder `defaultPrompt` | The marketplace shows these as the user's first impression | Fill with 2-3 real, generic sentences the user could actually say |

@@ -1,0 +1,36 @@
+{
+  "name": "dataforseo",
+  "version": "0.1.0",
+  "description": "Connect DataForSEO to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/dataforseo",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/dataforseo",
+  "license": "MIT",
+  "keywords": [
+    "dataforseo",
+    "research",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "DataForSEO",
+    "shortDescription": "Use DataForSEO MCP tools from your Fractal workspace.",
+    "longDescription": "Connect DataForSEO to your Fractal workspace so your agent can work with sEO and search data using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "DataForSEO",
+    "category": "Research",
+    "websiteURL": "https://dataforseo.com",
+    "privacyPolicyURL": "https://dataforseo.com/privacy-policy/",
+    "termsOfServiceURL": "https://dataforseo.com/terms-of-service/",
+    "defaultPrompt": [
+      "Give me an overview of my DataForSEO workspace.",
+      "Find anything in DataForSEO that needs attention and explain why.",
+      "Help me review sEO and search data in DataForSEO."
+    ],
+    "logo": "https://dataforseo.com/wp-content/uploads/2022/04/cropped-favicon_512-1-192x192.png"
+  }
+}

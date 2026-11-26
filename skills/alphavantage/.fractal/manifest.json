@@ -1,0 +1,37 @@
+{
+  "name": "alphavantage",
+  "version": "0.1.0",
+  "description": "Connect Alpha Vantage to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/alphavantage",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/alphavantage",
+  "license": "MIT",
+  "keywords": [
+    "alphavantage",
+    "alpha-vantage",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Alpha Vantage",
+    "shortDescription": "Use Alpha Vantage MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Alpha Vantage to your Fractal workspace so your agent can work with stock and market data using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Alpha Vantage",
+    "category": "Data",
+    "websiteURL": "https://www.alphavantage.co",
+    "privacyPolicyURL": "https://www.alphavantage.co/privacy/",
+    "termsOfServiceURL": "https://www.alphavantage.co/terms_of_service/",
+    "defaultPrompt": [
+      "Give me an overview of my Alpha Vantage workspace.",
+      "Find anything in Alpha Vantage that needs attention and explain why.",
+      "Help me review stock and market data in Alpha Vantage."
+    ],
+    "logo": "https://www.alphavantage.co/static/img/favicon.ico"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "brightdata",
+  "version": "0.1.0",
+  "description": "Connect Bright Data to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/brightdata",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/brightdata",
+  "license": "MIT",
+  "keywords": [
+    "brightdata",
+    "bright-data",
+    "research",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Bright Data",
+    "shortDescription": "Use Bright Data MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Bright Data to your Fractal workspace so your agent can work with web search and scraping using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Bright Data",
+    "category": "Research",
+    "websiteURL": "https://brightdata.com",
+    "privacyPolicyURL": "https://brightdata.com/privacy",
+    "termsOfServiceURL": "https://brightdata.com/license",
+    "defaultPrompt": [
+      "Give me an overview of my Bright Data workspace.",
+      "Find anything in Bright Data that needs attention and explain why.",
+      "Help me review web search and scraping in Bright Data."
+    ],
+    "logo": "https://brightdata.com/wp-content/themes/brightdata/assets/images/favicon.png"
+  }
+}

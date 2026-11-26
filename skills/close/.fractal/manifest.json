@@ -1,0 +1,36 @@
+{
+  "name": "close",
+  "version": "0.1.0",
+  "description": "Connect Close to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/close",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/close",
+  "license": "MIT",
+  "keywords": [
+    "close",
+    "marketing",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Close",
+    "shortDescription": "Use Close MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Close to your Fractal workspace so your agent can work with sales CRM using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Close",
+    "category": "Marketing",
+    "websiteURL": "https://close.com",
+    "privacyPolicyURL": "https://close.com/privacy",
+    "termsOfServiceURL": "https://close.com/tos",
+    "defaultPrompt": [
+      "Give me an overview of my Close workspace.",
+      "Find anything in Close that needs attention and explain why.",
+      "Help me review sales CRM in Close."
+    ],
+    "logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7f/a9/a1/7fa9a154-25db-df87-4e7e-532e9be4661a/AppIcon-0-0-1x_U007ephone-0-6-0-85-220.png/512x512bb.jpg"
+  }
+}

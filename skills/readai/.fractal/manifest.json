@@ -1,0 +1,37 @@
+{
+  "name": "readai",
+  "version": "0.1.0",
+  "description": "Connect Read AI to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/readai",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/readai",
+  "license": "MIT",
+  "keywords": [
+    "readai",
+    "read-ai",
+    "communication",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Read AI",
+    "shortDescription": "Use Read AI MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Read AI to your Fractal workspace so your agent can work with meeting reports and transcripts using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Read AI",
+    "category": "Communication",
+    "websiteURL": "https://www.read.ai",
+    "privacyPolicyURL": "https://www.read.ai/privacy-policy",
+    "termsOfServiceURL": "https://www.read.ai/termsofservice",
+    "defaultPrompt": [
+      "Give me an overview of my Read AI workspace.",
+      "Find anything in Read AI that needs attention and explain why.",
+      "Help me review meeting reports and transcripts in Read AI."
+    ],
+    "logo": "https://cdn.prod.website-files.com/614e5e239ea0f25fe5b6a797/615f71de842b191ea061fda6_ReadLogomark_256x256.png"
+  }
+}

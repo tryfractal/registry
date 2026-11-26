@@ -1,0 +1,36 @@
+{
+  "name": "heyreach",
+  "version": "0.1.0",
+  "description": "Connect HeyReach to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/heyreach",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/heyreach",
+  "license": "MIT",
+  "keywords": [
+    "heyreach",
+    "marketing",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "HeyReach",
+    "shortDescription": "Use HeyReach MCP tools from your Fractal workspace.",
+    "longDescription": "Connect HeyReach to your Fractal workspace so your agent can work with linkedIn outreach campaigns using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "HeyReach",
+    "category": "Marketing",
+    "websiteURL": "https://www.heyreach.io",
+    "privacyPolicyURL": "https://www.heyreach.io/privacy-policy",
+    "termsOfServiceURL": "https://www.heyreach.io/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my HeyReach workspace.",
+      "Find anything in HeyReach that needs attention and explain why.",
+      "Help me review linkedIn outreach campaigns in HeyReach."
+    ],
+    "logo": "https://cdn.prod.website-files.com/6a295ff72cf042cd2bb5d03a/6a2961149bef90a92f912aea_HQ-Favicon-1000x1000.png"
+  }
+}

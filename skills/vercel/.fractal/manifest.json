@@ -1,0 +1,36 @@
+{
+  "name": "vercel",
+  "version": "0.1.0",
+  "description": "Connect Vercel to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/vercel",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/vercel",
+  "license": "MIT",
+  "keywords": [
+    "vercel",
+    "development",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Vercel",
+    "shortDescription": "Use Vercel MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Vercel to your Fractal workspace so your agent can work with deployments, build logs and projects using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Vercel",
+    "category": "Development",
+    "websiteURL": "https://vercel.com",
+    "privacyPolicyURL": "https://vercel.com/legal/privacy-notice",
+    "termsOfServiceURL": "https://vercel.com/legal/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Vercel workspace.",
+      "Find anything in Vercel that needs attention and explain why.",
+      "Help me review deployments, build logs and projects in Vercel."
+    ],
+    "logo": "https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/apple-touch-icon-256x256.png"
+  }
+}

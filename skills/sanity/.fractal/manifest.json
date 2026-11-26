@@ -1,0 +1,36 @@
+{
+  "name": "sanity",
+  "version": "0.1.0",
+  "description": "Connect Sanity to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/sanity",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/sanity",
+  "license": "MIT",
+  "keywords": [
+    "sanity",
+    "development",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Sanity",
+    "shortDescription": "Use Sanity MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Sanity to your Fractal workspace so your agent can work with content queries and documents using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Sanity",
+    "category": "Development",
+    "websiteURL": "https://www.sanity.io",
+    "privacyPolicyURL": "https://www.sanity.io/legal/privacy",
+    "termsOfServiceURL": "https://www.sanity.io/legal/tos",
+    "defaultPrompt": [
+      "Give me an overview of my Sanity workspace.",
+      "Find anything in Sanity that needs attention and explain why.",
+      "Help me review content queries and documents in Sanity."
+    ],
+    "logo": "https://www.sanity.io/favicon.ico"
+  }
+}

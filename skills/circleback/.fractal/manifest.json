@@ -1,0 +1,36 @@
+{
+  "name": "circleback",
+  "version": "0.1.0",
+  "description": "Connect Circleback to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/circleback",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/circleback",
+  "license": "MIT",
+  "keywords": [
+    "circleback",
+    "communication",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Circleback",
+    "shortDescription": "Use Circleback MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Circleback to your Fractal workspace so your agent can work with meeting notes and transcripts using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Circleback",
+    "category": "Communication",
+    "websiteURL": "https://circleback.ai",
+    "privacyPolicyURL": "https://circleback.ai/privacy",
+    "termsOfServiceURL": "https://circleback.ai/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Circleback workspace.",
+      "Find anything in Circleback that needs attention and explain why.",
+      "Help me review meeting notes and transcripts in Circleback."
+    ],
+    "logo": "https://circleback.ai/apple-touch-icon.png"
+  }
+}

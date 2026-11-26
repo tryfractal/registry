@@ -1,0 +1,34 @@
+{
+  "name": "svelte",
+  "version": "0.1.0",
+  "description": "Connect Svelte to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/svelte",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/svelte",
+  "license": "MIT",
+  "keywords": [
+    "svelte",
+    "development",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Svelte",
+    "shortDescription": "Use Svelte MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Svelte to your Fractal workspace so your agent can work with svelte and SvelteKit docs using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Svelte",
+    "category": "Development",
+    "websiteURL": "https://svelte.dev",
+    "defaultPrompt": [
+      "Give me an overview of my Svelte workspace.",
+      "Find anything in Svelte that needs attention and explain why.",
+      "Help me review svelte and SvelteKit docs in Svelte."
+    ],
+    "logo": "https://svelte.dev/favicon.png"
+  }
+}

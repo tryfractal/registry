@@ -1,0 +1,36 @@
+{
+  "name": "2chat",
+  "version": "0.1.0",
+  "description": "Connect 2Chat to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/2chat",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/2chat",
+  "license": "MIT",
+  "keywords": [
+    "2chat",
+    "communication",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "2Chat",
+    "shortDescription": "Use 2Chat MCP tools from your Fractal workspace.",
+    "longDescription": "Connect 2Chat to your Fractal workspace so your agent can work with whatsApp, SMS, and voice using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "2Chat",
+    "category": "Communication",
+    "websiteURL": "https://2chat.co",
+    "privacyPolicyURL": "https://2chat.co/privacy-policy",
+    "termsOfServiceURL": "https://2chat.co/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my 2Chat workspace.",
+      "Find anything in 2Chat that needs attention and explain why.",
+      "Help me review whatsApp, SMS, and voice in 2Chat."
+    ],
+    "logo": "https://2chat.co/favicon/apple-touch-icon.png"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "mercury",
+  "version": "0.1.0",
+  "description": "Connect Mercury to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/mercury",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/mercury",
+  "license": "MIT",
+  "keywords": [
+    "mercury",
+    "finance",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Mercury",
+    "shortDescription": "Use Mercury MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Mercury to your Fractal workspace so your agent can work with business bank accounts and transactions using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Mercury",
+    "category": "Finance",
+    "websiteURL": "https://mercury.com",
+    "privacyPolicyURL": "https://mercury.com/legal/privacy",
+    "termsOfServiceURL": "https://mercury.com/legal/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Mercury workspace.",
+      "Find anything in Mercury that needs attention and explain why.",
+      "Help me review business bank accounts and transactions in Mercury."
+    ],
+    "logo": "https://mercury.com/apple-icon.png"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "affinity",
+  "version": "0.1.0",
+  "description": "Connect Affinity to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/affinity",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/affinity",
+  "license": "MIT",
+  "keywords": [
+    "affinity",
+    "sales",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Affinity",
+    "shortDescription": "Use Affinity MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Affinity to your Fractal workspace so your agent can work with relationship CRM for dealmaking using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Affinity",
+    "category": "Sales",
+    "websiteURL": "https://www.affinity.co",
+    "privacyPolicyURL": "https://www.affinity.co/legal/privacy-policy",
+    "termsOfServiceURL": "https://www.affinity.co/legal/terms-of-use",
+    "defaultPrompt": [
+      "Give me an overview of my Affinity workspace.",
+      "Find anything in Affinity that needs attention and explain why.",
+      "Help me review relationship CRM for dealmaking in Affinity."
+    ],
+    "logo": "https://cdn.prod.website-files.com/69e63af550c7ba21cdac9029/6a4bc0ce05a6646b5e61fbd1_Light.png"
+  }
+}

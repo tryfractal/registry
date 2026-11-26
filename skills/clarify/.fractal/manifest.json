@@ -1,0 +1,36 @@
+{
+  "name": "clarify",
+  "version": "0.1.0",
+  "description": "Connect Clarify to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/clarify",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/clarify",
+  "license": "MIT",
+  "keywords": [
+    "clarify",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Clarify",
+    "shortDescription": "Use Clarify MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Clarify to your Fractal workspace so your agent can work with industrial data and signals using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Clarify",
+    "category": "Data",
+    "websiteURL": "https://www.clarify.io",
+    "privacyPolicyURL": "https://www.clarify.io/legals/privacy-policy-2021-06-30",
+    "termsOfServiceURL": "https://www.clarify.io/legals/terms-of-service-280421",
+    "defaultPrompt": [
+      "Give me an overview of my Clarify workspace.",
+      "Find anything in Clarify that needs attention and explain why.",
+      "Help me review industrial data and signals in Clarify."
+    ],
+    "logo": "https://cdn.prod.website-files.com/6aa46e94abf07cb2df2e9aef/6ac0ffbae88ea428fe23ff0f_512.png"
+  }
+}

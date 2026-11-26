@@ -1,0 +1,36 @@
+{
+  "name": "cartesia",
+  "version": "0.1.0",
+  "description": "Connect Cartesia to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/cartesia",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/cartesia",
+  "license": "MIT",
+  "keywords": [
+    "cartesia",
+    "design",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Cartesia",
+    "shortDescription": "Use Cartesia MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Cartesia to your Fractal workspace so your agent can work with speech and voices using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Cartesia",
+    "category": "Design",
+    "websiteURL": "https://www.cartesia.ai",
+    "privacyPolicyURL": "https://www.cartesia.ai/legal/privacy",
+    "termsOfServiceURL": "https://www.cartesia.ai/legal/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Cartesia workspace.",
+      "Find anything in Cartesia that needs attention and explain why.",
+      "Help me review speech and voices in Cartesia."
+    ],
+    "logo": "https://www.cartesia.ai/favicon.ico"
+  }
+}

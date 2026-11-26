@@ -1,0 +1,36 @@
+{
+  "name": "evernote",
+  "version": "0.1.0",
+  "description": "Connect Evernote to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/evernote",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/evernote",
+  "license": "MIT",
+  "keywords": [
+    "evernote",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Evernote",
+    "shortDescription": "Use Evernote MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Evernote to your Fractal workspace so your agent can work with notes and notebooks using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Evernote",
+    "category": "Productivity",
+    "websiteURL": "https://evernote.com",
+    "privacyPolicyURL": "https://evernote.com/privacy/policy",
+    "termsOfServiceURL": "https://evernote.com/legal/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my Evernote workspace.",
+      "Find anything in Evernote that needs attention and explain why.",
+      "Help me review notes and notebooks in Evernote."
+    ],
+    "logo": "https://evernote.com/images/evernote-logo-ios.png"
+  }
+}

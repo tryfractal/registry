@@ -1,0 +1,37 @@
+{
+  "name": "ryze",
+  "version": "0.1.0",
+  "description": "Connect Ryze AI to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/ryze",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/ryze",
+  "license": "MIT",
+  "keywords": [
+    "ryze",
+    "ryze-ai",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Ryze AI",
+    "shortDescription": "Use Ryze AI MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Ryze AI to your Fractal workspace so your agent can work with ad campaign analytics using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Ryze AI",
+    "category": "Data",
+    "websiteURL": "https://www.get-ryze.ai",
+    "privacyPolicyURL": "https://www.get-ryze.ai/privacy",
+    "termsOfServiceURL": "https://www.get-ryze.ai/terms-of-use",
+    "defaultPrompt": [
+      "Give me an overview of my Ryze AI workspace.",
+      "Find anything in Ryze AI that needs attention and explain why.",
+      "Help me review ad campaign analytics in Ryze AI."
+    ],
+    "logo": "https://www.get-ryze.ai/favicon.ico"
+  }
+}

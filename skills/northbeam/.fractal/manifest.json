@@ -1,0 +1,36 @@
+{
+  "name": "northbeam",
+  "version": "0.1.0",
+  "description": "Connect Northbeam to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/northbeam",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/northbeam",
+  "license": "MIT",
+  "keywords": [
+    "northbeam",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Northbeam",
+    "shortDescription": "Use Northbeam MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Northbeam to your Fractal workspace so your agent can work with marketing attribution data using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Northbeam",
+    "category": "Data",
+    "websiteURL": "https://www.northbeam.io",
+    "privacyPolicyURL": "https://www.northbeam.io/privacy",
+    "termsOfServiceURL": "https://www.northbeam.io/terms-conditions",
+    "defaultPrompt": [
+      "Give me an overview of my Northbeam workspace.",
+      "Find anything in Northbeam that needs attention and explain why.",
+      "Help me review marketing attribution data in Northbeam."
+    ],
+    "logo": "https://cdn.prod.website-files.com/63ce823acf939e1e64f927c4/63ce8880c8b33a63342faa54_Group%202072747819%20(1).png"
+  }
+}

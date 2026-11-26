@@ -1,0 +1,36 @@
+{
+  "name": "refero",
+  "version": "0.1.0",
+  "description": "Connect Refero to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/refero",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/refero",
+  "license": "MIT",
+  "keywords": [
+    "refero",
+    "design",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Refero",
+    "shortDescription": "Use Refero MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Refero to your Fractal workspace so your agent can work with uI design references using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Refero",
+    "category": "Design",
+    "websiteURL": "https://refero.design",
+    "privacyPolicyURL": "https://doc.refero.design/legal/privacy-policy",
+    "termsOfServiceURL": "https://doc.refero.design/legal/terms-of-use",
+    "defaultPrompt": [
+      "Give me an overview of my Refero workspace.",
+      "Find anything in Refero that needs attention and explain why.",
+      "Help me review uI design references in Refero."
+    ],
+    "logo": "https://refero.design/apple-icon-180x180.png"
+  }
+}

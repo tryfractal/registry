@@ -1,0 +1,36 @@
+{
+  "name": "klaviyo",
+  "version": "0.1.0",
+  "description": "Connect Klaviyo to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/klaviyo",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/klaviyo",
+  "license": "MIT",
+  "keywords": [
+    "klaviyo",
+    "marketing",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Klaviyo",
+    "shortDescription": "Use Klaviyo MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Klaviyo to your Fractal workspace so your agent can work with email and SMS marketing using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Klaviyo",
+    "category": "Marketing",
+    "websiteURL": "https://www.klaviyo.com",
+    "privacyPolicyURL": "https://www.klaviyo.com/legal/privacy-notice",
+    "termsOfServiceURL": "https://www.klaviyo.com/legal/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my Klaviyo workspace.",
+      "Find anything in Klaviyo that needs attention and explain why.",
+      "Help me review email and SMS marketing in Klaviyo."
+    ],
+    "logo": "https://avatars.githubusercontent.com/u/1947230?s=256&v=4"
+  }
+}

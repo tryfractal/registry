@@ -1,0 +1,36 @@
+{
+  "name": "restream",
+  "version": "0.1.0",
+  "description": "Connect Restream to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/restream",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/restream",
+  "license": "MIT",
+  "keywords": [
+    "restream",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Restream",
+    "shortDescription": "Use Restream MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Restream to your Fractal workspace so your agent can work with live streams and recordings using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Restream",
+    "category": "Productivity",
+    "websiteURL": "https://restream.io",
+    "privacyPolicyURL": "https://restream.io/privacy-policy",
+    "termsOfServiceURL": "https://restream.io/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my Restream workspace.",
+      "Find anything in Restream that needs attention and explain why.",
+      "Help me review live streams and recordings in Restream."
+    ],
+    "logo": "https://restream.io/apple-touch-icon.png"
+  }
+}

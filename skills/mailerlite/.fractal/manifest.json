@@ -1,0 +1,36 @@
+{
+  "name": "mailerlite",
+  "version": "0.1.0",
+  "description": "Connect MailerLite to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/mailerlite",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/mailerlite",
+  "license": "MIT",
+  "keywords": [
+    "mailerlite",
+    "marketing",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "MailerLite",
+    "shortDescription": "Use MailerLite MCP tools from your Fractal workspace.",
+    "longDescription": "Connect MailerLite to your Fractal workspace so your agent can work with email marketing using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "MailerLite",
+    "category": "Marketing",
+    "websiteURL": "https://www.mailerlite.com",
+    "privacyPolicyURL": "https://www.mailerlite.com/legal/privacy-policy",
+    "termsOfServiceURL": "https://www.mailerlite.com/legal/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my MailerLite workspace.",
+      "Find anything in MailerLite that needs attention and explain why.",
+      "Help me review email marketing in MailerLite."
+    ],
+    "logo": "https://avatars.githubusercontent.com/u/1104512?s=256&v=4"
+  }
+}

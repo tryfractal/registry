@@ -1,0 +1,37 @@
+{
+  "name": "you",
+  "version": "0.1.0",
+  "description": "Connect You.com to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/you",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/you",
+  "license": "MIT",
+  "keywords": [
+    "you",
+    "you.com",
+    "research",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "You.com",
+    "shortDescription": "Use You.com MCP tools from your Fractal workspace.",
+    "longDescription": "Connect You.com to your Fractal workspace so your agent can work with web search and research using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "You.com",
+    "category": "Research",
+    "websiteURL": "https://you.com",
+    "privacyPolicyURL": "https://you.com/privacy",
+    "termsOfServiceURL": "https://you.com/terms",
+    "defaultPrompt": [
+      "Give me an overview of my You.com workspace.",
+      "Find anything in You.com that needs attention and explain why.",
+      "Help me review web search and research in You.com."
+    ],
+    "logo": "https://you.com/apple-icon.png?apple-icon.04pft1wem7rx8.png"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "planningcenter",
+  "version": "0.1.0",
+  "description": "Connect Planning Center to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/planningcenter",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/planningcenter",
+  "license": "MIT",
+  "keywords": [
+    "planningcenter",
+    "planning-center",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Planning Center",
+    "shortDescription": "Use Planning Center MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Planning Center to your Fractal workspace so your agent can work with church people, services and groups using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Planning Center",
+    "category": "Productivity",
+    "websiteURL": "https://www.planningcenter.com",
+    "privacyPolicyURL": "https://www.planningcenter.com/privacy",
+    "termsOfServiceURL": "https://www.planningcenter.com/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Planning Center workspace.",
+      "Find anything in Planning Center that needs attention and explain why.",
+      "Help me review church people, services and groups in Planning Center."
+    ],
+    "logo": "https://avatars.githubusercontent.com/u/8658275?s=256&v=4"
+  }
+}

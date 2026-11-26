@@ -1,0 +1,36 @@
+{
+  "name": "omneky",
+  "version": "0.1.0",
+  "description": "Connect Omneky to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/omneky",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/omneky",
+  "license": "MIT",
+  "keywords": [
+    "omneky",
+    "design",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Omneky",
+    "shortDescription": "Use Omneky MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Omneky to your Fractal workspace so your agent can work with aI ad creative generation using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Omneky",
+    "category": "Design",
+    "websiteURL": "https://www.omneky.com",
+    "privacyPolicyURL": "https://www.omneky.com/privacy-policy",
+    "termsOfServiceURL": "https://www.omneky.com/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Omneky workspace.",
+      "Find anything in Omneky that needs attention and explain why.",
+      "Help me review aI ad creative generation in Omneky."
+    ],
+    "logo": "https://www.omneky.com/apple-icon.png"
+  }
+}

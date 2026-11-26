@@ -1,0 +1,36 @@
+{
+  "name": "atlassian",
+  "version": "0.1.0",
+  "description": "Connect Atlassian to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/atlassian",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/atlassian",
+  "license": "MIT",
+  "keywords": [
+    "atlassian",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Atlassian",
+    "shortDescription": "Use Atlassian MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Atlassian to your Fractal workspace so your agent can work with jira work items and Confluence pages using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Atlassian",
+    "category": "Productivity",
+    "websiteURL": "https://www.atlassian.com",
+    "privacyPolicyURL": "https://www.atlassian.com/legal/privacy-policy",
+    "termsOfServiceURL": "https://www.atlassian.com/legal/atlassian-customer-agreement",
+    "defaultPrompt": [
+      "Give me an overview of my Atlassian workspace.",
+      "Find anything in Atlassian that needs attention and explain why.",
+      "Help me review jira work items and Confluence pages in Atlassian."
+    ],
+    "logo": "https://www.atlassian.com/favicon.ico"
+  }
+}

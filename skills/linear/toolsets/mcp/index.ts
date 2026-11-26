@@ -65,8 +65,7 @@ export default FractalToolset.create("mcp")
   .withConnection({
     type: "mcp-server::http",
     url: "https://mcp.linear.app/mcp",
-    headers: {
-      Authorization: "Bearer ${env:LINEAR_API_KEY}",
-    },
+    // Linear's MCP server signs in with OAuth: Fractal opens the consent page and stores the tokens in the Vault.
+    auth: "oauth",
   })
   .build();

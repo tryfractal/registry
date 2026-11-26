@@ -1,0 +1,36 @@
+{
+  "name": "tableau",
+  "version": "0.1.0",
+  "description": "Connect Tableau to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/tableau",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/tableau",
+  "license": "MIT",
+  "keywords": [
+    "tableau",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Tableau",
+    "shortDescription": "Use Tableau MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Tableau to your Fractal workspace so your agent can work with tableau Cloud analytics using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Tableau",
+    "category": "Data",
+    "websiteURL": "https://www.tableau.com",
+    "privacyPolicyURL": "https://www.salesforce.com/company/privacy/",
+    "termsOfServiceURL": "https://www.tableau.com/legal",
+    "defaultPrompt": [
+      "Give me an overview of my Tableau workspace.",
+      "Find anything in Tableau that needs attention and explain why.",
+      "Help me review tableau Cloud analytics in Tableau."
+    ],
+    "logo": "https://avatars.githubusercontent.com/u/828667?s=128&v=4"
+  }
+}

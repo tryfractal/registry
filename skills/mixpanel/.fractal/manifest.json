@@ -1,0 +1,36 @@
+{
+  "name": "mixpanel",
+  "version": "0.1.0",
+  "description": "Connect Mixpanel to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/mixpanel",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/mixpanel",
+  "license": "MIT",
+  "keywords": [
+    "mixpanel",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Mixpanel",
+    "shortDescription": "Use Mixpanel MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Mixpanel to your Fractal workspace so your agent can work with product analytics and reports using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Mixpanel",
+    "category": "Data",
+    "websiteURL": "https://mixpanel.com",
+    "privacyPolicyURL": "https://mixpanel.com/legal/privacy-policy/",
+    "termsOfServiceURL": "https://mixpanel.com/legal/terms-of-use/",
+    "defaultPrompt": [
+      "Give me an overview of my Mixpanel workspace.",
+      "Find anything in Mixpanel that needs attention and explain why.",
+      "Help me review product analytics and reports in Mixpanel."
+    ],
+    "logo": "https://framerusercontent.com/images/j6EPdIw4BKPE9dPx3zrTjkkAM14.png"
+  }
+}

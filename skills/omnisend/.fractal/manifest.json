@@ -1,0 +1,36 @@
+{
+  "name": "omnisend",
+  "version": "0.1.0",
+  "description": "Connect Omnisend to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/omnisend",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/omnisend",
+  "license": "MIT",
+  "keywords": [
+    "omnisend",
+    "marketing",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Omnisend",
+    "shortDescription": "Use Omnisend MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Omnisend to your Fractal workspace so your agent can work with email and SMS marketing using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Omnisend",
+    "category": "Marketing",
+    "websiteURL": "https://www.omnisend.com",
+    "privacyPolicyURL": "https://www.omnisend.com/privacy/",
+    "termsOfServiceURL": "https://www.omnisend.com/terms/",
+    "defaultPrompt": [
+      "Give me an overview of my Omnisend workspace.",
+      "Find anything in Omnisend that needs attention and explain why.",
+      "Help me review email and SMS marketing in Omnisend."
+    ],
+    "logo": "https://www.omnisend.com/wp-content/uploads/2022/07/cropped-favi-192x192.png"
+  }
+}

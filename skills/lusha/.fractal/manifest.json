@@ -1,0 +1,36 @@
+{
+  "name": "lusha",
+  "version": "0.1.0",
+  "description": "Connect Lusha to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/lusha",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/lusha",
+  "license": "MIT",
+  "keywords": [
+    "lusha",
+    "research",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Lusha",
+    "shortDescription": "Use Lusha MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Lusha to your Fractal workspace so your agent can work with b2B contact and company data using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Lusha",
+    "category": "Research",
+    "websiteURL": "https://www.lusha.com",
+    "privacyPolicyURL": "https://www.lusha.com/legal/privacy-notice/",
+    "termsOfServiceURL": "https://www.lusha.com/legal/terms_and_conditions-2/",
+    "defaultPrompt": [
+      "Give me an overview of my Lusha workspace.",
+      "Find anything in Lusha that needs attention and explain why.",
+      "Help me review b2B contact and company data in Lusha."
+    ],
+    "logo": "https://www.lusha.com/wp-content/uploads/2020/09/cropped-Favicon-192x192.png"
+  }
+}

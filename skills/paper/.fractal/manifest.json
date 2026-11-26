@@ -1,0 +1,36 @@
+{
+  "name": "paper",
+  "version": "0.1.0",
+  "description": "Connect Paper to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/paper",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/paper",
+  "license": "MIT",
+  "keywords": [
+    "paper",
+    "design",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Paper",
+    "shortDescription": "Use Paper MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Paper to your Fractal workspace so your agent can work with design canvas built on HTML and CSS using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Paper",
+    "category": "Design",
+    "websiteURL": "https://paper.design",
+    "privacyPolicyURL": "https://paper.design/legal/privacy",
+    "termsOfServiceURL": "https://paper.design/legal/tos",
+    "defaultPrompt": [
+      "Give me an overview of my Paper workspace.",
+      "Find anything in Paper that needs attention and explain why.",
+      "Help me review design canvas built on HTML and CSS in Paper."
+    ],
+    "logo": "https://paper.design/apple-touch-icon.png"
+  }
+}

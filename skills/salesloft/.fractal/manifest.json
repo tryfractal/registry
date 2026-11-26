@@ -1,0 +1,36 @@
+{
+  "name": "salesloft",
+  "version": "0.1.0",
+  "description": "Connect Salesloft to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/salesloft",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/salesloft",
+  "license": "MIT",
+  "keywords": [
+    "salesloft",
+    "sales",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Salesloft",
+    "shortDescription": "Use Salesloft MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Salesloft to your Fractal workspace so your agent can work with sales pipeline and cadences using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Salesloft",
+    "category": "Sales",
+    "websiteURL": "https://www.salesloft.com",
+    "privacyPolicyURL": "https://www.salesloft.com/legal/privacy-policies",
+    "termsOfServiceURL": "https://www.salesloft.com/legal/msa",
+    "defaultPrompt": [
+      "Give me an overview of my Salesloft workspace.",
+      "Find anything in Salesloft that needs attention and explain why.",
+      "Help me review sales pipeline and cadences in Salesloft."
+    ],
+    "logo": "https://www.salesloft.com/apple-touch-icon.png"
+  }
+}

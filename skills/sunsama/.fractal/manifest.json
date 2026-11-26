@@ -1,0 +1,36 @@
+{
+  "name": "sunsama",
+  "version": "0.1.0",
+  "description": "Connect Sunsama to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/sunsama",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/sunsama",
+  "license": "MIT",
+  "keywords": [
+    "sunsama",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Sunsama",
+    "shortDescription": "Use Sunsama MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Sunsama to your Fractal workspace so your agent can work with daily planning and tasks using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Sunsama",
+    "category": "Productivity",
+    "websiteURL": "https://www.sunsama.com",
+    "privacyPolicyURL": "https://www.sunsama.com/privacy",
+    "termsOfServiceURL": "https://www.sunsama.com/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Sunsama workspace.",
+      "Find anything in Sunsama that needs attention and explain why.",
+      "Help me review daily planning and tasks in Sunsama."
+    ],
+    "logo": "https://pub-f7ae218077e542729e28e6f8f45a9a40.r2.dev/images/62f64efc18d02fdccc4c7723_favicon.ico"
+  }
+}

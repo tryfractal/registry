@@ -1,0 +1,36 @@
+{
+  "name": "clerk",
+  "version": "0.1.0",
+  "description": "Connect Clerk to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/clerk",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/clerk",
+  "license": "MIT",
+  "keywords": [
+    "clerk",
+    "development",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Clerk",
+    "shortDescription": "Use Clerk MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Clerk to your Fractal workspace so your agent can work with authentication and users using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Clerk",
+    "category": "Development",
+    "websiteURL": "https://clerk.com",
+    "privacyPolicyURL": "https://clerk.com/legal/privacy",
+    "termsOfServiceURL": "https://clerk.com/legal/standard-terms",
+    "defaultPrompt": [
+      "Give me an overview of my Clerk workspace.",
+      "Find anything in Clerk that needs attention and explain why.",
+      "Help me review authentication and users in Clerk."
+    ],
+    "logo": "https://avatars.githubusercontent.com/u/49538330?s=256&v=4"
+  }
+}

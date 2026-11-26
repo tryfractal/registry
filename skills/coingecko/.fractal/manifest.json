@@ -1,0 +1,36 @@
+{
+  "name": "coingecko",
+  "version": "0.1.0",
+  "description": "Connect CoinGecko to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/coingecko",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/coingecko",
+  "license": "MIT",
+  "keywords": [
+    "coingecko",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "CoinGecko",
+    "shortDescription": "Use CoinGecko MCP tools from your Fractal workspace.",
+    "longDescription": "Connect CoinGecko to your Fractal workspace so your agent can work with crypto market data using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "CoinGecko",
+    "category": "Data",
+    "websiteURL": "https://www.coingecko.com",
+    "privacyPolicyURL": "https://www.coingecko.com/en/privacy",
+    "termsOfServiceURL": "https://www.coingecko.com/en/terms",
+    "defaultPrompt": [
+      "Give me an overview of my CoinGecko workspace.",
+      "Find anything in CoinGecko that needs attention and explain why.",
+      "Help me review crypto market data in CoinGecko."
+    ],
+    "logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0a/b6/e7/0ab6e79d-7aee-d6dd-f978-88e5763e5af6/CoinGecko_Liquid_Glass-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg"
+  }
+}

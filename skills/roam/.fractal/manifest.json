@@ -1,0 +1,37 @@
+{
+  "name": "roam",
+  "version": "0.1.0",
+  "description": "Connect Roam Research to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/roam",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/roam",
+  "license": "MIT",
+  "keywords": [
+    "roam",
+    "roam-research",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Roam Research",
+    "shortDescription": "Use Roam Research MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Roam Research to your Fractal workspace so your agent can work with graph notes and pages using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Roam Research",
+    "category": "Productivity",
+    "websiteURL": "https://roamresearch.com",
+    "privacyPolicyURL": "https://roamresearch.com/#/app/help/page/bnQcAUM0i",
+    "termsOfServiceURL": "https://roamresearch.com/#/app/help/page/MHRK1dgTE",
+    "defaultPrompt": [
+      "Give me an overview of my Roam Research workspace.",
+      "Find anything in Roam Research that needs attention and explain why.",
+      "Help me review graph notes and pages in Roam Research."
+    ],
+    "logo": "https://roamresearch.com/assets/astro-192.png"
+  }
+}

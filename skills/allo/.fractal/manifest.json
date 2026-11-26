@@ -1,0 +1,36 @@
+{
+  "name": "allo",
+  "version": "0.1.0",
+  "description": "Connect Allo to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/allo",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/allo",
+  "license": "MIT",
+  "keywords": [
+    "allo",
+    "communication",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Allo",
+    "shortDescription": "Use Allo MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Allo to your Fractal workspace so your agent can work with business phone and SMS using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Allo",
+    "category": "Communication",
+    "websiteURL": "https://www.withallo.com",
+    "privacyPolicyURL": "https://www.withallo.com/privacy-policy",
+    "termsOfServiceURL": "https://www.withallo.com/terms-conditions",
+    "defaultPrompt": [
+      "Give me an overview of my Allo workspace.",
+      "Find anything in Allo that needs attention and explain why.",
+      "Help me review business phone and SMS in Allo."
+    ],
+    "logo": "https://www.withallo.com/favicon.ico"
+  }
+}

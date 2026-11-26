@@ -1,0 +1,37 @@
+{
+  "name": "superhuman",
+  "version": "0.1.0",
+  "description": "Connect Superhuman Mail to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/superhuman",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/superhuman",
+  "license": "MIT",
+  "keywords": [
+    "superhuman",
+    "superhuman-mail",
+    "marketing",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Superhuman Mail",
+    "shortDescription": "Use Superhuman Mail MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Superhuman Mail to your Fractal workspace so your agent can work with email and calendar using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Superhuman Mail",
+    "category": "Marketing",
+    "websiteURL": "https://superhuman.com",
+    "privacyPolicyURL": "https://superhuman.com/legal/privacy-policy",
+    "termsOfServiceURL": "https://superhuman.com/legal/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Superhuman Mail workspace.",
+      "Find anything in Superhuman Mail that needs attention and explain why.",
+      "Help me review email and calendar in Superhuman Mail."
+    ],
+    "logo": "https://superhumanstatic.com/super-funnel/main/public/images/v4/favicons/superhuman-apple-touch-icon.png"
+  }
+}

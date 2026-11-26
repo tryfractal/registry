@@ -1,0 +1,36 @@
+{
+  "name": "mem",
+  "version": "0.1.0",
+  "description": "Connect Mem to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/mem",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/mem",
+  "license": "MIT",
+  "keywords": [
+    "mem",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Mem",
+    "shortDescription": "Use Mem MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Mem to your Fractal workspace so your agent can work with notes and collections using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Mem",
+    "category": "Productivity",
+    "websiteURL": "https://mem.ai",
+    "privacyPolicyURL": "https://mem.ai/privacy",
+    "termsOfServiceURL": "https://mem.ai/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Mem workspace.",
+      "Find anything in Mem that needs attention and explain why.",
+      "Help me review notes and collections in Mem."
+    ],
+    "logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/83/28/66/83286612-9476-6bf1-72a5-db2c6f460175/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg"
+  }
+}

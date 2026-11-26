@@ -14,16 +14,7 @@ description: >-
   of the simulator", "check the expo-router routes", or any request involving
   Expo, EAS, React Native, or mobile app development. Use this skill even if
   the user just says "use Expo" or asks how to build a mobile app.
-metadata:
-  rules:
-    - type: always
-      instruction: "Always use `npx expo install` (not `npm install` or `yarn add`) when adding Expo SDK libraries. Using the wrong package manager can install incompatible versions."
-    - type: always
-      instruction: "Prefer `read_documentation` over guessing Expo API details. The Expo SDK evolves rapidly — always fetch the docs to verify parameters, options, and compatibility before writing code."
-    - type: never
-      instruction: "Never use `expo-cli` (the deprecated global CLI). Always use `npx expo` (the local CLI) for all commands."
-    - type: never
-      instruction: "Never suggest 'ejecting' or 'eject' — the `expo eject` command was removed in SDK 46 (2022). Expo uses Continuous Native Generation (CNG): run `npx expo prebuild` to generate native projects on demand."
+
 ---
 # Expo Skill
 

@@ -1,0 +1,37 @@
+{
+  "name": "fireflies",
+  "version": "0.1.0",
+  "description": "Connect Fireflies.ai to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/fireflies",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/fireflies",
+  "license": "MIT",
+  "keywords": [
+    "fireflies",
+    "fireflies.ai",
+    "communication",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Fireflies.ai",
+    "shortDescription": "Use Fireflies.ai MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Fireflies.ai to your Fractal workspace so your agent can work with meeting transcripts and search using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Fireflies.ai",
+    "category": "Communication",
+    "websiteURL": "https://fireflies.ai",
+    "privacyPolicyURL": "https://fireflies.ai/privacy-policy",
+    "termsOfServiceURL": "https://fireflies.ai/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my Fireflies.ai workspace.",
+      "Find anything in Fireflies.ai that needs attention and explain why.",
+      "Help me review meeting transcripts and search in Fireflies.ai."
+    ],
+    "logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9c/f8/a6/9cf8a6d8-e782-75a0-40b5-6a7e24e49f88/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg"
+  }
+}

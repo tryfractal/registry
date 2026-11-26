@@ -54,7 +54,7 @@ A skill in Fractal is more than a prompt. It can ship a `SKILL.md`, instructions
 | [`filesystem`](./skills/filesystem/) | Sandboxed file read, write, edit, search, tree, and directory management via MCP. | [Fractal](https://tryfractal.co) |
 | [`zapier`](./skills/zapier/) | Connect to 9000+ apps and 30000+ actions via the Zapier MCP server. | [Fractal](https://tryfractal.co) |
 
-These are the seed skills. The registry is open to **anyone** who wants to publish a new one — a developer, a marketing agency, a freelancer, a creator, a small business owner, or anyone else. See [`AGENTS.md`](./AGENTS.md) for end-to-end worked examples covering very different kinds of users.
+This table highlights selected skills. Browse the [marketplace](https://tryfractal.co/marketplace) for the complete catalog, including the new service integrations. The registry is open to **anyone** who wants to publish a skill — a developer, a marketing agency, a freelancer, a creator, a small business owner, or anyone else. See [`AGENTS.md`](./AGENTS.md) for end-to-end worked examples covering very different kinds of users.
 
 ---
 
@@ -136,7 +136,7 @@ registry/
         ├── SKILL.md
         ├── .fractal/manifest.json
         └── toolsets/mcp/                        (MCP toolset for Zapier)
-    └── (29 more MCP-backed skills — see the table above)
+    └── (additional registry skills — see the marketplace)
 ```
 
 Each skill is a self-contained folder. Mandatory files: `SKILL.md` + `.fractal/manifest.json`. Optional subfolders: `references/`, `toolsets/`, `templates/`, `instructions/`, `collections/`, `views/`, `agents/`, `hooks/`, `artifacts/`, `goals/`, `routines/`, `assets/`. Skills never include a `package.json` — the Plugin SDK is installed at the workspace level. See [`AGENTS.md`](./AGENTS.md) for the full reference.

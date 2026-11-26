@@ -1,0 +1,36 @@
+{
+  "name": "fal",
+  "version": "0.1.0",
+  "description": "Connect fal to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/fal",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/fal",
+  "license": "MIT",
+  "keywords": [
+    "fal",
+    "design",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "fal",
+    "shortDescription": "Use fal MCP tools from your Fractal workspace.",
+    "longDescription": "Connect fal to your Fractal workspace so your agent can work with generative media models using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "fal",
+    "category": "Design",
+    "websiteURL": "https://fal.ai",
+    "privacyPolicyURL": "https://fal.ai/legal/privacy-policy",
+    "termsOfServiceURL": "https://fal.ai/legal/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my fal workspace.",
+      "Find anything in fal that needs attention and explain why.",
+      "Help me review generative media models in fal."
+    ],
+    "logo": "https://cdn.prod.website-files.com/6a72ef21c470312422dea9b3/6adae13a70a66b6d479f659e_fal-icon-favicon.png"
+  }
+}

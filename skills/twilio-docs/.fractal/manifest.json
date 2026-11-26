@@ -1,0 +1,36 @@
+{
+  "name": "twilio-docs",
+  "version": "0.1.0",
+  "description": "Connect Twilio Docs to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/twilio-docs",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/twilio-docs",
+  "license": "MIT",
+  "keywords": [
+    "twilio-docs",
+    "development",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Twilio Docs",
+    "shortDescription": "Use Twilio Docs MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Twilio Docs to your Fractal workspace so your agent can work with twilio API documentation using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Twilio Docs",
+    "category": "Development",
+    "websiteURL": "https://www.twilio.com",
+    "privacyPolicyURL": "https://www.twilio.com/en-us/legal/privacy",
+    "termsOfServiceURL": "https://www.twilio.com/en-us/legal/tos",
+    "defaultPrompt": [
+      "Give me an overview of my Twilio Docs workspace.",
+      "Find anything in Twilio Docs that needs attention and explain why.",
+      "Help me review twilio API documentation in Twilio Docs."
+    ],
+    "logo": "https://www.twilio.com/content/dam/twilio-com/core-assets/social/apple-touch-icon.png"
+  }
+}

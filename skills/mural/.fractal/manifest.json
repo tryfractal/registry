@@ -1,0 +1,36 @@
+{
+  "name": "mural",
+  "version": "0.1.0",
+  "description": "Connect Mural to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/mural",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/mural",
+  "license": "MIT",
+  "keywords": [
+    "mural",
+    "design",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Mural",
+    "shortDescription": "Use Mural MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Mural to your Fractal workspace so your agent can work with canvases, stickies and diagrams using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Mural",
+    "category": "Design",
+    "websiteURL": "https://www.mural.co",
+    "privacyPolicyURL": "https://www.mural.co/terms/privacy-statement",
+    "termsOfServiceURL": "https://www.mural.co/terms/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my Mural workspace.",
+      "Find anything in Mural that needs attention and explain why.",
+      "Help me review canvases, stickies and diagrams in Mural."
+    ],
+    "logo": "https://cdn.prod.website-files.com/62e11362da2667ac3d0e6ed5/638f8a64c53eead78bc582a7_Favicon_256x.png"
+  }
+}

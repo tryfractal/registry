@@ -1,0 +1,36 @@
+{
+  "name": "runway",
+  "version": "0.1.0",
+  "description": "Connect Runway to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/runway",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/runway",
+  "license": "MIT",
+  "keywords": [
+    "runway",
+    "design",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Runway",
+    "shortDescription": "Use Runway MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Runway to your Fractal workspace so your agent can work with aI image and video generation using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Runway",
+    "category": "Design",
+    "websiteURL": "https://runway.com",
+    "privacyPolicyURL": "https://runway.com/privacy-policy",
+    "termsOfServiceURL": "https://runway.com/terms-of-use",
+    "defaultPrompt": [
+      "Give me an overview of my Runway workspace.",
+      "Find anything in Runway that needs attention and explain why.",
+      "Help me review aI image and video generation in Runway."
+    ],
+    "logo": "https://runway.com/icon.png"
+  }
+}

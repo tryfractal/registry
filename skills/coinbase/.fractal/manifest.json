@@ -1,0 +1,36 @@
+{
+  "name": "coinbase",
+  "version": "0.1.0",
+  "description": "Connect Coinbase to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/coinbase",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/coinbase",
+  "license": "MIT",
+  "keywords": [
+    "coinbase",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Coinbase",
+    "shortDescription": "Use Coinbase MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Coinbase to your Fractal workspace so your agent can work with crypto prices, portfolios and trading using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Coinbase",
+    "category": "Data",
+    "websiteURL": "https://www.coinbase.com",
+    "privacyPolicyURL": "https://www.coinbase.com/legal/privacy",
+    "termsOfServiceURL": "https://www.coinbase.com/legal/user_agreement",
+    "defaultPrompt": [
+      "Give me an overview of my Coinbase workspace.",
+      "Find anything in Coinbase that needs attention and explain why.",
+      "Help me review crypto prices, portfolios and trading in Coinbase."
+    ],
+    "logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/78/92/8c/78928ca2-63ef-1ae1-4b55-2be4bdc8f2e4/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg"
+  }
+}

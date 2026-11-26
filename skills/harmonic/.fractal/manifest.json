@@ -1,0 +1,36 @@
+{
+  "name": "harmonic",
+  "version": "0.1.0",
+  "description": "Connect Harmonic to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/harmonic",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/harmonic",
+  "license": "MIT",
+  "keywords": [
+    "harmonic",
+    "research",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Harmonic",
+    "shortDescription": "Use Harmonic MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Harmonic to your Fractal workspace so your agent can work with company and investor data using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Harmonic",
+    "category": "Research",
+    "websiteURL": "https://harmonic.ai",
+    "privacyPolicyURL": "https://harmonic.ai/legal/privacy-policy",
+    "termsOfServiceURL": "https://harmonic.ai/legal/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my Harmonic workspace.",
+      "Find anything in Harmonic that needs attention and explain why.",
+      "Help me review company and investor data in Harmonic."
+    ],
+    "logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/84/11/02/8411025a-7712-ec5b-cbe7-9b5039030f94/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg"
+  }
+}

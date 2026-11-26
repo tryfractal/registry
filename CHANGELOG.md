@@ -5,6 +5,12 @@ All notable changes to the **Fractal Registry** (this repository) are documented
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+
+- Add 238 MCP service skills and hosted OAuth toolsets for eight existing integrations.
+
 ## [1.0.0] — 2026-06-26
 
 ### Added

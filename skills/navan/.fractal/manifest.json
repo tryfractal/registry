@@ -1,0 +1,36 @@
+{
+  "name": "navan",
+  "version": "0.1.0",
+  "description": "Connect Navan to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/navan",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/navan",
+  "license": "MIT",
+  "keywords": [
+    "navan",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Navan",
+    "shortDescription": "Use Navan MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Navan to your Fractal workspace so your agent can work with travel and expense data using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Navan",
+    "category": "Data",
+    "websiteURL": "https://navan.com",
+    "privacyPolicyURL": "https://navan.com/privacy",
+    "termsOfServiceURL": "https://navan.com/terms-of-use",
+    "defaultPrompt": [
+      "Give me an overview of my Navan workspace.",
+      "Find anything in Navan that needs attention and explain why.",
+      "Help me review travel and expense data in Navan."
+    ],
+    "logo": "https://navan.com/favicon.ico"
+  }
+}

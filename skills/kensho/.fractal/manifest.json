@@ -1,0 +1,36 @@
+{
+  "name": "kensho",
+  "version": "0.1.0",
+  "description": "Connect Kensho to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/kensho",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/kensho",
+  "license": "MIT",
+  "keywords": [
+    "kensho",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Kensho",
+    "shortDescription": "Use Kensho MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Kensho to your Fractal workspace so your agent can work with s&P Global financial data using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Kensho",
+    "category": "Data",
+    "websiteURL": "https://kensho.com",
+    "privacyPolicyURL": "https://www.spglobal.com/en/privacy/privacy-policy-english",
+    "termsOfServiceURL": "https://www.spglobal.com/en/terms-of-use",
+    "defaultPrompt": [
+      "Give me an overview of my Kensho workspace.",
+      "Find anything in Kensho that needs attention and explain why.",
+      "Help me review s&P Global financial data in Kensho."
+    ],
+    "logo": "https://kensho.com/favicon.ico"
+  }
+}

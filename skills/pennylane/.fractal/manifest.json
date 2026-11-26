@@ -1,0 +1,36 @@
+{
+  "name": "pennylane",
+  "version": "0.1.0",
+  "description": "Connect Pennylane to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/pennylane",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/pennylane",
+  "license": "MIT",
+  "keywords": [
+    "pennylane",
+    "finance",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Pennylane",
+    "shortDescription": "Use Pennylane MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Pennylane to your Fractal workspace so your agent can work with accounting and invoices using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Pennylane",
+    "category": "Finance",
+    "websiteURL": "https://www.pennylane.com",
+    "privacyPolicyURL": "https://www.pennylane.com/fr/legal/privacy",
+    "termsOfServiceURL": "https://www.pennylane.com/fr/conditions-generales",
+    "defaultPrompt": [
+      "Give me an overview of my Pennylane workspace.",
+      "Find anything in Pennylane that needs attention and explain why.",
+      "Help me review accounting and invoices in Pennylane."
+    ],
+    "logo": "https://www.pennylane.com/favicon.ico"
+  }
+}

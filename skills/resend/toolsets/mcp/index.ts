@@ -58,8 +58,16 @@ export default FractalToolset.create("mcp")
     type: "mcp-server::stdio",
     command: "npx",
     args: ["-y", "resend-mcp"],
+    setup: {
+      RESEND_API_KEY: {
+        label: "API key",
+        description: "Resend dashboard → API keys. A key with “Sending access” is enough for email.",
+        url: "https://resend.com/api-keys",
+        placeholder: "re_...",
+      },
+    },
     env: {
-      RESEND_API_KEY: process.env.RESEND_API_KEY ?? "",
+      RESEND_API_KEY: "${RESEND_API_KEY}",
       ...(process.env.SENDER_EMAIL_ADDRESS
         ? { SENDER_EMAIL_ADDRESS: process.env.SENDER_EMAIL_ADDRESS }
         : {}),

@@ -1,0 +1,37 @@
+{
+  "name": "cloud66",
+  "version": "0.1.0",
+  "description": "Connect Cloud 66 to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/cloud66",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/cloud66",
+  "license": "MIT",
+  "keywords": [
+    "cloud66",
+    "cloud-66",
+    "development",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Cloud 66",
+    "shortDescription": "Use Cloud 66 MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Cloud 66 to your Fractal workspace so your agent can work with applications, deploys and servers using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Cloud 66",
+    "category": "Development",
+    "websiteURL": "https://www.cloud66.com",
+    "privacyPolicyURL": "https://www.cloud66.com/privacy",
+    "termsOfServiceURL": "https://www.cloud66.com/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Cloud 66 workspace.",
+      "Find anything in Cloud 66 that needs attention and explain why.",
+      "Help me review applications, deploys and servers in Cloud 66."
+    ],
+    "logo": "https://app.cloud66.com/favicon.ico"
+  }
+}

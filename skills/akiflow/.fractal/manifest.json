@@ -1,0 +1,36 @@
+{
+  "name": "akiflow",
+  "version": "0.1.0",
+  "description": "Connect Akiflow to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/akiflow",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/akiflow",
+  "license": "MIT",
+  "keywords": [
+    "akiflow",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Akiflow",
+    "shortDescription": "Use Akiflow MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Akiflow to your Fractal workspace so your agent can work with tasks and calendar planning using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Akiflow",
+    "category": "Productivity",
+    "websiteURL": "https://akiflow.com",
+    "privacyPolicyURL": "https://akiflow.com/privacy-policy",
+    "termsOfServiceURL": "https://akiflow.com/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my Akiflow workspace.",
+      "Find anything in Akiflow that needs attention and explain why.",
+      "Help me review tasks and calendar planning in Akiflow."
+    ],
+    "logo": "https://framerusercontent.com/images/6iPdkAmt5PSRYjZma5sMZn2QrhM.png"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "mem0",
+  "version": "0.1.0",
+  "description": "Connect Mem0 to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/mem0",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/mem0",
+  "license": "MIT",
+  "keywords": [
+    "mem0",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Mem0",
+    "shortDescription": "Use Mem0 MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Mem0 to your Fractal workspace so your agent can work with memory layer for AI agents using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Mem0",
+    "category": "Productivity",
+    "websiteURL": "https://mem0.ai",
+    "privacyPolicyURL": "https://mem0.ai/privacy",
+    "termsOfServiceURL": "https://mem0.ai/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Mem0 workspace.",
+      "Find anything in Mem0 that needs attention and explain why.",
+      "Help me review memory layer for AI agents in Mem0."
+    ],
+    "logo": "https://app.mem0.ai/apple-icon.png"
+  }
+}

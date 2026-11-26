@@ -1,0 +1,36 @@
+{
+  "name": "ticktick",
+  "version": "0.1.0",
+  "description": "Connect TickTick to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/ticktick",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/ticktick",
+  "license": "MIT",
+  "keywords": [
+    "ticktick",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "TickTick",
+    "shortDescription": "Use TickTick MCP tools from your Fractal workspace.",
+    "longDescription": "Connect TickTick to your Fractal workspace so your agent can work with tasks, lists, habits and focus using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "TickTick",
+    "category": "Productivity",
+    "websiteURL": "https://ticktick.com",
+    "privacyPolicyURL": "https://ticktick.com/privacy",
+    "termsOfServiceURL": "https://ticktick.com/tos",
+    "defaultPrompt": [
+      "Give me an overview of my TickTick workspace.",
+      "Find anything in TickTick that needs attention and explain why.",
+      "Help me review tasks, lists, habits and focus in TickTick."
+    ],
+    "logo": "https://ticktick.com/static/img/apple-touch-icon.png"
+  }
+}

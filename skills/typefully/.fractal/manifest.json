@@ -1,0 +1,36 @@
+{
+  "name": "typefully",
+  "version": "0.1.0",
+  "description": "Connect Typefully to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/typefully",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/typefully",
+  "license": "MIT",
+  "keywords": [
+    "typefully",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Typefully",
+    "shortDescription": "Use Typefully MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Typefully to your Fractal workspace so your agent can work with social post drafts using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Typefully",
+    "category": "Productivity",
+    "websiteURL": "https://typefully.com",
+    "privacyPolicyURL": "https://typefully.com/privacy",
+    "termsOfServiceURL": "https://typefully.com/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Typefully workspace.",
+      "Find anything in Typefully that needs attention and explain why.",
+      "Help me review social post drafts in Typefully."
+    ],
+    "logo": "https://typefully.com/icon/apple-icon.png"
+  }
+}

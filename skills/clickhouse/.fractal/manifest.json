@@ -1,0 +1,37 @@
+{
+  "name": "clickhouse",
+  "version": "0.1.0",
+  "description": "Connect ClickHouse Cloud to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/clickhouse",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/clickhouse",
+  "license": "MIT",
+  "keywords": [
+    "clickhouse",
+    "clickhouse-cloud",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "ClickHouse Cloud",
+    "shortDescription": "Use ClickHouse Cloud MCP tools from your Fractal workspace.",
+    "longDescription": "Connect ClickHouse Cloud to your Fractal workspace so your agent can work with read-only ClickHouse Cloud queries using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "ClickHouse Cloud",
+    "category": "Data",
+    "websiteURL": "https://clickhouse.com",
+    "privacyPolicyURL": "https://clickhouse.com/legal/privacy-policy",
+    "termsOfServiceURL": "https://clickhouse.com/legal/agreements/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my ClickHouse Cloud workspace.",
+      "Find anything in ClickHouse Cloud that needs attention and explain why.",
+      "Help me review read-only ClickHouse Cloud queries in ClickHouse Cloud."
+    ],
+    "logo": "https://clickhouse.com/favicon.ico"
+  }
+}

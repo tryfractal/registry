@@ -1,0 +1,36 @@
+{
+  "name": "hindsight",
+  "version": "0.1.0",
+  "description": "Connect Hindsight to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/hindsight",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/hindsight",
+  "license": "MIT",
+  "keywords": [
+    "hindsight",
+    "finance",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Hindsight",
+    "shortDescription": "Use Hindsight MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Hindsight to your Fractal workspace so your agent can work with memory that learns over time using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Hindsight",
+    "category": "Finance",
+    "websiteURL": "https://hindsight.vectorize.io",
+    "privacyPolicyURL": "https://vectorize.io/privacy",
+    "termsOfServiceURL": "https://vectorize.io/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Hindsight workspace.",
+      "Find anything in Hindsight that needs attention and explain why.",
+      "Help me review memory that learns over time in Hindsight."
+    ],
+    "logo": "https://ui.hindsight.vectorize.io/apple-touch-icon.png"
+  }
+}

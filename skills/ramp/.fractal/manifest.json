@@ -1,0 +1,36 @@
+{
+  "name": "ramp",
+  "version": "0.1.0",
+  "description": "Connect Ramp to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/ramp",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/ramp",
+  "license": "MIT",
+  "keywords": [
+    "ramp",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Ramp",
+    "shortDescription": "Use Ramp MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Ramp to your Fractal workspace so your agent can work with spend, cards, and bills using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Ramp",
+    "category": "Data",
+    "websiteURL": "https://ramp.com",
+    "privacyPolicyURL": "https://ramp.com/legal/privacy-policy",
+    "termsOfServiceURL": "https://ramp.com/legal/platform-agreement",
+    "defaultPrompt": [
+      "Give me an overview of my Ramp workspace.",
+      "Find anything in Ramp that needs attention and explain why.",
+      "Help me review spend, cards, and bills in Ramp."
+    ],
+    "logo": "https://ramp.com/apple-touch-icon.png"
+  }
+}

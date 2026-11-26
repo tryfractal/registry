@@ -1,0 +1,36 @@
+{
+  "name": "openart",
+  "version": "0.1.0",
+  "description": "Connect OpenArt to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/openart",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/openart",
+  "license": "MIT",
+  "keywords": [
+    "openart",
+    "design",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "OpenArt",
+    "shortDescription": "Use OpenArt MCP tools from your Fractal workspace.",
+    "longDescription": "Connect OpenArt to your Fractal workspace so your agent can work with aI images and videos using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "OpenArt",
+    "category": "Design",
+    "websiteURL": "https://openart.ai",
+    "privacyPolicyURL": "https://openart.ai/privacy/",
+    "termsOfServiceURL": "https://openart.ai/terms/",
+    "defaultPrompt": [
+      "Give me an overview of my OpenArt workspace.",
+      "Find anything in OpenArt that needs attention and explain why.",
+      "Help me review aI images and videos in OpenArt."
+    ],
+    "logo": "https://openart.ai/pageforge-assets/favicon/apple-touch-icon.png"
+  }
+}

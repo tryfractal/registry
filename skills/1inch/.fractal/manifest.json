@@ -1,0 +1,36 @@
+{
+  "name": "1inch",
+  "version": "0.1.0",
+  "description": "Connect 1inch to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/1inch",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/1inch",
+  "license": "MIT",
+  "keywords": [
+    "1inch",
+    "development",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "1inch",
+    "shortDescription": "Use 1inch MCP tools from your Fractal workspace.",
+    "longDescription": "Connect 1inch to your Fractal workspace so your agent can work with aPI docs and SDK examples using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "1inch",
+    "category": "Development",
+    "websiteURL": "https://business.1inch.com",
+    "privacyPolicyURL": "https://business.1inch.com/portal/privacy-policy",
+    "termsOfServiceURL": "https://business.1inch.com/portal/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my 1inch workspace.",
+      "Find anything in 1inch that needs attention and explain why.",
+      "Help me review aPI docs and SDK examples in 1inch."
+    ],
+    "logo": "https://business.1inch.com/favicon/apple-touch-icon.png"
+  }
+}

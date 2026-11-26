@@ -1,0 +1,36 @@
+{
+  "name": "withings",
+  "version": "0.1.0",
+  "description": "Connect Withings to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/withings",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/withings",
+  "license": "MIT",
+  "keywords": [
+    "withings",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Withings",
+    "shortDescription": "Use Withings MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Withings to your Fractal workspace so your agent can work with health measurements using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Withings",
+    "category": "Data",
+    "websiteURL": "https://www.withings.com",
+    "privacyPolicyURL": "https://www.withings.com/en-us/policies/privacy-policy",
+    "termsOfServiceURL": "https://www.withings.com/en-us/policies/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my Withings workspace.",
+      "Find anything in Withings that needs attention and explain why.",
+      "Help me review health measurements in Withings."
+    ],
+    "logo": "https://www.withings.com/cdn/shop/files/favicon_www_withings_com_64x64_213c642c-0ccc-4d46-ab87-f3e7cf7ec36d.png"
+  }
+}

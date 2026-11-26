@@ -1,0 +1,36 @@
+{
+  "name": "webflow",
+  "version": "0.1.0",
+  "description": "Connect Webflow to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/webflow",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/webflow",
+  "license": "MIT",
+  "keywords": [
+    "webflow",
+    "design",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Webflow",
+    "shortDescription": "Use Webflow MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Webflow to your Fractal workspace so your agent can work with sites and CMS content using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Webflow",
+    "category": "Design",
+    "websiteURL": "https://webflow.com",
+    "privacyPolicyURL": "https://webflow.com/legal/privacy",
+    "termsOfServiceURL": "https://webflow.com/legal/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Webflow workspace.",
+      "Find anything in Webflow that needs attention and explain why.",
+      "Help me review sites and CMS content in Webflow."
+    ],
+    "logo": "https://cdn.prod.website-files.com/686294e263eb7e215bd232f7/686d53d0446d4237b2f38c5f_webclip.png"
+  }
+}

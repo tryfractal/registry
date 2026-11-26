@@ -69,6 +69,7 @@ export default FractalToolset.create("mcp")
   .withConnection({
     type: "mcp-server::http",
     url: "https://mcp.cloudflare.com/mcp",
+    auth: "oauth",
     headers: {
       // Optional: provide a Cloudflare API token here for non-OAuth auth.
       // Prefer OAuth when possible — the MCP client opens the browser and

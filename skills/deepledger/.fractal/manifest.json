@@ -1,0 +1,36 @@
+{
+  "name": "deepledger",
+  "version": "0.1.0",
+  "description": "Connect DeepLedger to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/deepledger",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/deepledger",
+  "license": "MIT",
+  "keywords": [
+    "deepledger",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "DeepLedger",
+    "shortDescription": "Use DeepLedger MCP tools from your Fractal workspace.",
+    "longDescription": "Connect DeepLedger to your Fractal workspace so your agent can work with bookkeeping for QuickBooks and Xero using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "DeepLedger",
+    "category": "Productivity",
+    "websiteURL": "https://deepledger.ai",
+    "privacyPolicyURL": "https://deepledger.ai/privacy",
+    "termsOfServiceURL": "https://deepledger.ai/terms",
+    "defaultPrompt": [
+      "Give me an overview of my DeepLedger workspace.",
+      "Find anything in DeepLedger that needs attention and explain why.",
+      "Help me review bookkeeping for QuickBooks and Xero in DeepLedger."
+    ],
+    "logo": "https://deepledger.ai/favicon.ico"
+  }
+}

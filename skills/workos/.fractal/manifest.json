@@ -1,0 +1,36 @@
+{
+  "name": "workos",
+  "version": "0.1.0",
+  "description": "Connect WorkOS to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/workos",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/workos",
+  "license": "MIT",
+  "keywords": [
+    "workos",
+    "development",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "WorkOS",
+    "shortDescription": "Use WorkOS MCP tools from your Fractal workspace.",
+    "longDescription": "Connect WorkOS to your Fractal workspace so your agent can work with auth and SSO administration using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "WorkOS",
+    "category": "Development",
+    "websiteURL": "https://workos.com",
+    "privacyPolicyURL": "https://workos.com/legal/privacy",
+    "termsOfServiceURL": "https://workos.com/legal/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my WorkOS workspace.",
+      "Find anything in WorkOS that needs attention and explain why.",
+      "Help me review auth and SSO administration in WorkOS."
+    ],
+    "logo": "https://workos.com/favicon.ico"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "convex",
+  "version": "0.1.0",
+  "description": "Connect Convex to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/convex",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/convex",
+  "license": "MIT",
+  "keywords": [
+    "convex",
+    "development",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Convex",
+    "shortDescription": "Use Convex MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Convex to your Fractal workspace so your agent can work with convex app setup guidance using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Convex",
+    "category": "Development",
+    "websiteURL": "https://www.convex.dev",
+    "privacyPolicyURL": "https://www.convex.dev/legal/privacy",
+    "termsOfServiceURL": "https://www.convex.dev/legal/tos",
+    "defaultPrompt": [
+      "Give me an overview of my Convex workspace.",
+      "Find anything in Convex that needs attention and explain why.",
+      "Help me review convex app setup guidance in Convex."
+    ],
+    "logo": "https://www.convex.dev/favicon.ico"
+  }
+}

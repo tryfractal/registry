@@ -1,0 +1,37 @@
+{
+  "name": "searchatlas",
+  "version": "0.1.0",
+  "description": "Connect Search Atlas to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/searchatlas",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/searchatlas",
+  "license": "MIT",
+  "keywords": [
+    "searchatlas",
+    "search-atlas",
+    "research",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Search Atlas",
+    "shortDescription": "Use Search Atlas MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Search Atlas to your Fractal workspace so your agent can work with sEO, content, and ads data using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Search Atlas",
+    "category": "Research",
+    "websiteURL": "https://searchatlas.com",
+    "privacyPolicyURL": "https://searchatlas.com/privacy-policy/",
+    "termsOfServiceURL": "https://searchatlas.com/terms-of-use/",
+    "defaultPrompt": [
+      "Give me an overview of my Search Atlas workspace.",
+      "Find anything in Search Atlas that needs attention and explain why.",
+      "Help me review sEO, content, and ads data in Search Atlas."
+    ],
+    "logo": "https://searchatlas.com/favicon.ico"
+  }
+}

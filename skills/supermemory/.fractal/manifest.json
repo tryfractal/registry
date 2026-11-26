@@ -1,0 +1,36 @@
+{
+  "name": "supermemory",
+  "version": "0.1.0",
+  "description": "Connect Supermemory to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/supermemory",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/supermemory",
+  "license": "MIT",
+  "keywords": [
+    "supermemory",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Supermemory",
+    "shortDescription": "Use Supermemory MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Supermemory to your Fractal workspace so your agent can work with memory across conversations using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Supermemory",
+    "category": "Productivity",
+    "websiteURL": "https://supermemory.ai",
+    "privacyPolicyURL": "https://supermemory.ai/privacy/",
+    "termsOfServiceURL": "https://supermemory.ai/terms/",
+    "defaultPrompt": [
+      "Give me an overview of my Supermemory workspace.",
+      "Find anything in Supermemory that needs attention and explain why.",
+      "Help me review memory across conversations in Supermemory."
+    ],
+    "logo": "https://supermemory.ai/apple-touch-icon.png"
+  }
+}

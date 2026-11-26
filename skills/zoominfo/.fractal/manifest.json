@@ -1,0 +1,36 @@
+{
+  "name": "zoominfo",
+  "version": "0.1.0",
+  "description": "Connect ZoomInfo to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/zoominfo",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/zoominfo",
+  "license": "MIT",
+  "keywords": [
+    "zoominfo",
+    "research",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "ZoomInfo",
+    "shortDescription": "Use ZoomInfo MCP tools from your Fractal workspace.",
+    "longDescription": "Connect ZoomInfo to your Fractal workspace so your agent can work with b2B company and contact data using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "ZoomInfo",
+    "category": "Research",
+    "websiteURL": "https://www.zoominfo.com",
+    "privacyPolicyURL": "https://www.zoominfo.com/legal/privacy-policy",
+    "termsOfServiceURL": "https://www.zoominfo.com/legal/terms-of-use",
+    "defaultPrompt": [
+      "Give me an overview of my ZoomInfo workspace.",
+      "Find anything in ZoomInfo that needs attention and explain why.",
+      "Help me review b2B company and contact data in ZoomInfo."
+    ],
+    "logo": "https://www.zoominfo.com/favicon.ico"
+  }
+}

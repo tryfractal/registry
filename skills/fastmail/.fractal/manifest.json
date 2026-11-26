@@ -1,0 +1,36 @@
+{
+  "name": "fastmail",
+  "version": "0.1.0",
+  "description": "Connect Fastmail to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/fastmail",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/fastmail",
+  "license": "MIT",
+  "keywords": [
+    "fastmail",
+    "communication",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Fastmail",
+    "shortDescription": "Use Fastmail MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Fastmail to your Fractal workspace so your agent can work with mail, calendar, and contacts using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Fastmail",
+    "category": "Communication",
+    "websiteURL": "https://www.fastmail.com",
+    "privacyPolicyURL": "https://www.fastmail.com/policies/privacy/",
+    "termsOfServiceURL": "https://www.fastmail.com/policies/terms-of-service/",
+    "defaultPrompt": [
+      "Give me an overview of my Fastmail workspace.",
+      "Find anything in Fastmail that needs attention and explain why.",
+      "Help me review mail, calendar, and contacts in Fastmail."
+    ],
+    "logo": "https://www.fastmail.com/apple-touch-icon.png"
+  }
+}

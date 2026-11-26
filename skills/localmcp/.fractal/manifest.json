@@ -1,0 +1,37 @@
+{
+  "name": "localmcp",
+  "version": "0.1.0",
+  "description": "Connect LMCP to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/localmcp",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/localmcp",
+  "license": "MIT",
+  "keywords": [
+    "localmcp",
+    "lmcp",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "LMCP",
+    "shortDescription": "Use LMCP MCP tools from your Fractal workspace.",
+    "longDescription": "Connect LMCP to your Fractal workspace so your agent can work with apps on your computer using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "LMCP",
+    "category": "Productivity",
+    "websiteURL": "https://www.local-mcp.com",
+    "privacyPolicyURL": "https://www.local-mcp.com/en/privacy",
+    "termsOfServiceURL": "https://www.local-mcp.com/en/tos",
+    "defaultPrompt": [
+      "Give me an overview of my LMCP workspace.",
+      "Find anything in LMCP that needs attention and explain why.",
+      "Help me review apps on your computer in LMCP."
+    ],
+    "logo": "https://www.local-mcp.com/icon-192.png"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "smartlead",
+  "version": "0.1.0",
+  "description": "Connect Smartlead to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/smartlead",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/smartlead",
+  "license": "MIT",
+  "keywords": [
+    "smartlead",
+    "marketing",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Smartlead",
+    "shortDescription": "Use Smartlead MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Smartlead to your Fractal workspace so your agent can work with cold email campaigns using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Smartlead",
+    "category": "Marketing",
+    "websiteURL": "https://www.smartlead.ai",
+    "privacyPolicyURL": "https://www.smartlead.ai/privacy-policy",
+    "termsOfServiceURL": "https://www.smartlead.ai/new-terms-and-conditions",
+    "defaultPrompt": [
+      "Give me an overview of my Smartlead workspace.",
+      "Find anything in Smartlead that needs attention and explain why.",
+      "Help me review cold email campaigns in Smartlead."
+    ],
+    "logo": "https://cdn.prod.website-files.com/6204a703ff61516512c04f55/6a6af43a690fcb45072c8410_512.png"
+  }
+}

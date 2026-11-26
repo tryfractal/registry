@@ -1,0 +1,36 @@
+{
+  "name": "cobrain",
+  "version": "0.1.0",
+  "description": "Connect Cobrain to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/cobrain",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/cobrain",
+  "license": "MIT",
+  "keywords": [
+    "cobrain",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Cobrain",
+    "shortDescription": "Use Cobrain MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Cobrain to your Fractal workspace so your agent can work with shared memory for your AI agents using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Cobrain",
+    "category": "Productivity",
+    "websiteURL": "https://cobrain.space",
+    "privacyPolicyURL": "https://cobrain.space/privacy",
+    "termsOfServiceURL": "https://cobrain.space/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Cobrain workspace.",
+      "Find anything in Cobrain that needs attention and explain why.",
+      "Help me review shared memory for your AI agents in Cobrain."
+    ],
+    "logo": "https://cobrain.space/apple-icon.png"
+  }
+}

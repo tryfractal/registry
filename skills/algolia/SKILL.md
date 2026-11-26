@@ -140,3 +140,7 @@ For write access, add `ALGOLIA_WRITE_API_KEY` to the same `env` block. To lock t
 - API reference: <https://www.algolia.com/doc/api-reference/>
 - OpenAPI spec: <https://api-specs.algolia.com/?download=1>
 - License: MIT
+
+## Hosted MCP connection
+
+This skill also includes a `hosted-mcp` toolset at `https://mcp.algolia.com/mcp`. It uses Fractal's OAuth authorization flow and discovers tools from the provider after connection. The provider must support the MCP OAuth flow used by Fractal; this endpoint was not independently authorized during registry preparation. Use the current `Algolia` connector when its provider-specific setup or guidance is needed, and the hosted toolset when the user wants the provider's remote MCP server.

@@ -1,0 +1,36 @@
+{
+  "name": "statsig",
+  "version": "0.1.0",
+  "description": "Connect Statsig to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/statsig",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/statsig",
+  "license": "MIT",
+  "keywords": [
+    "statsig",
+    "development",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Statsig",
+    "shortDescription": "Use Statsig MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Statsig to your Fractal workspace so your agent can work with feature gates and experiments using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Statsig",
+    "category": "Development",
+    "websiteURL": "https://statsig.com",
+    "privacyPolicyURL": "https://statsig.com/privacy",
+    "termsOfServiceURL": "https://statsig.com/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Statsig workspace.",
+      "Find anything in Statsig that needs attention and explain why.",
+      "Help me review feature gates and experiments in Statsig."
+    ],
+    "logo": "https://statsig.com/images/favicons/favicon256.png"
+  }
+}

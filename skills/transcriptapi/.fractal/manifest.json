@@ -1,0 +1,36 @@
+{
+  "name": "transcriptapi",
+  "version": "0.1.0",
+  "description": "Connect TranscriptAPI to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/transcriptapi",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/transcriptapi",
+  "license": "MIT",
+  "keywords": [
+    "transcriptapi",
+    "research",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "TranscriptAPI",
+    "shortDescription": "Use TranscriptAPI MCP tools from your Fractal workspace.",
+    "longDescription": "Connect TranscriptAPI to your Fractal workspace so your agent can work with youTube transcripts using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "TranscriptAPI",
+    "category": "Research",
+    "websiteURL": "https://transcriptapi.com",
+    "privacyPolicyURL": "https://transcriptapi.com/privacy",
+    "termsOfServiceURL": "https://transcriptapi.com/terms",
+    "defaultPrompt": [
+      "Give me an overview of my TranscriptAPI workspace.",
+      "Find anything in TranscriptAPI that needs attention and explain why.",
+      "Help me review youTube transcripts in TranscriptAPI."
+    ],
+    "logo": "https://transcriptapi.com/brand/logo-180.png"
+  }
+}

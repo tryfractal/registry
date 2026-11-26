@@ -1,0 +1,36 @@
+{
+  "name": "etoro",
+  "version": "0.1.0",
+  "description": "Connect eToro to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/etoro",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/etoro",
+  "license": "MIT",
+  "keywords": [
+    "etoro",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "eToro",
+    "shortDescription": "Use eToro MCP tools from your Fractal workspace.",
+    "longDescription": "Connect eToro to your Fractal workspace so your agent can work with portfolio and market data using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "eToro",
+    "category": "Data",
+    "websiteURL": "https://www.etoro.com",
+    "privacyPolicyURL": "https://www.etoro.com/customer-service/privacy/",
+    "termsOfServiceURL": "https://www.etoro.com/customer-service/terms-conditions/",
+    "defaultPrompt": [
+      "Give me an overview of my eToro workspace.",
+      "Find anything in eToro that needs attention and explain why.",
+      "Help me review portfolio and market data in eToro."
+    ],
+    "logo": "https://www.etoro.com/wp-content/uploads/favicons/favicon.ico"
+  }
+}

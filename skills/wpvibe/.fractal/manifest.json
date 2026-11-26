@@ -1,0 +1,36 @@
+{
+  "name": "wpvibe",
+  "version": "0.1.0",
+  "description": "Connect WPVibe to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/wpvibe",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/wpvibe",
+  "license": "MIT",
+  "keywords": [
+    "wpvibe",
+    "marketing",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "WPVibe",
+    "shortDescription": "Use WPVibe MCP tools from your Fractal workspace.",
+    "longDescription": "Connect WPVibe to your Fractal workspace so your agent can work with self-hosted WordPress management using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "WPVibe",
+    "category": "Marketing",
+    "websiteURL": "https://wpvibe.ai",
+    "privacyPolicyURL": "https://wpvibe.ai/privacy/",
+    "termsOfServiceURL": "https://wpvibe.ai/terms/",
+    "defaultPrompt": [
+      "Give me an overview of my WPVibe workspace.",
+      "Find anything in WPVibe that needs attention and explain why.",
+      "Help me review self-hosted WordPress management in WPVibe."
+    ],
+    "logo": "https://wpvibe.ai/wp-content/uploads/2026/06/cropped-favicon-transparent-192x192.png"
+  }
+}

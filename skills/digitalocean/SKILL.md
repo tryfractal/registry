@@ -228,3 +228,7 @@ For team or org-wide access, prefer an OAuth app via the OAuth API rather than a
 - OpenAPI spec: <https://developers.digitalocean.com/documentation/v2/>
 - Control panel: <https://cloud.digitalocean.com/>
 - License: MIT
+
+## Hosted MCP connection
+
+This skill also includes a `hosted-mcp` toolset at `https://mcp.digitalocean.com/mcp`. It uses Fractal's OAuth authorization flow and discovers tools from the provider after connection. The provider must support the MCP OAuth flow used by Fractal; this endpoint was not independently authorized during registry preparation. Use the current `DigitalOcean` connector when its provider-specific setup or guidance is needed, and the hosted toolset when the user wants the provider's remote MCP server.

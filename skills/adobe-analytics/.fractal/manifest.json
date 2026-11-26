@@ -1,0 +1,36 @@
+{
+  "name": "adobe-analytics",
+  "version": "0.1.0",
+  "description": "Connect Adobe Analytics to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/adobe-analytics",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/adobe-analytics",
+  "license": "MIT",
+  "keywords": [
+    "adobe-analytics",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Adobe Analytics",
+    "shortDescription": "Use Adobe Analytics MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Adobe Analytics to your Fractal workspace so your agent can work with web analytics reports and segments using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Adobe Analytics",
+    "category": "Data",
+    "websiteURL": "https://business.adobe.com/products/analytics/adobe-analytics.html",
+    "privacyPolicyURL": "https://www.adobe.com/privacy/policy.html",
+    "termsOfServiceURL": "https://www.adobe.com/legal/terms.html",
+    "defaultPrompt": [
+      "Give me an overview of my Adobe Analytics workspace.",
+      "Find anything in Adobe Analytics that needs attention and explain why.",
+      "Help me review web analytics reports and segments in Adobe Analytics."
+    ],
+    "logo": "https://www.adobe.com/favicon.ico"
+  }
+}

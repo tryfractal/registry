@@ -1,0 +1,36 @@
+{
+  "name": "readwise",
+  "version": "0.1.0",
+  "description": "Connect Readwise to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/readwise",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/readwise",
+  "license": "MIT",
+  "keywords": [
+    "readwise",
+    "research",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Readwise",
+    "shortDescription": "Use Readwise MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Readwise to your Fractal workspace so your agent can work with highlights and saved reading using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Readwise",
+    "category": "Research",
+    "websiteURL": "https://readwise.io",
+    "privacyPolicyURL": "https://readwise.io/privacy-policy",
+    "termsOfServiceURL": "https://readwise.io/terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my Readwise workspace.",
+      "Find anything in Readwise that needs attention and explain why.",
+      "Help me review highlights and saved reading in Readwise."
+    ],
+    "logo": "https://readwise.io/favicon.ico"
+  }
+}

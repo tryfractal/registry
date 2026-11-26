@@ -1,0 +1,36 @@
+{
+  "name": "buffer",
+  "version": "0.1.0",
+  "description": "Connect Buffer to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/buffer",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/buffer",
+  "license": "MIT",
+  "keywords": [
+    "buffer",
+    "marketing",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Buffer",
+    "shortDescription": "Use Buffer MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Buffer to your Fractal workspace so your agent can work with social media scheduling using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Buffer",
+    "category": "Marketing",
+    "websiteURL": "https://buffer.com",
+    "privacyPolicyURL": "https://buffer.com/legal#privacy-policy",
+    "termsOfServiceURL": "https://buffer.com/legal#terms",
+    "defaultPrompt": [
+      "Give me an overview of my Buffer workspace.",
+      "Find anything in Buffer that needs attention and explain why.",
+      "Help me review social media scheduling in Buffer."
+    ],
+    "logo": "https://buffer.com/icons/apple-touch-icon.png"
+  }
+}

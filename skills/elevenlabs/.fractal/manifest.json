@@ -1,0 +1,36 @@
+{
+  "name": "elevenlabs",
+  "version": "0.1.0",
+  "description": "Connect ElevenLabs to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/elevenlabs",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/elevenlabs",
+  "license": "MIT",
+  "keywords": [
+    "elevenlabs",
+    "design",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "ElevenLabs",
+    "shortDescription": "Use ElevenLabs MCP tools from your Fractal workspace.",
+    "longDescription": "Connect ElevenLabs to your Fractal workspace so your agent can work with speech, voices and voice agents using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "ElevenLabs",
+    "category": "Design",
+    "websiteURL": "https://elevenlabs.io",
+    "privacyPolicyURL": "https://elevenlabs.io/privacy-policy",
+    "termsOfServiceURL": "https://elevenlabs.io/terms-of-use",
+    "defaultPrompt": [
+      "Give me an overview of my ElevenLabs workspace.",
+      "Find anything in ElevenLabs that needs attention and explain why.",
+      "Help me review speech, voices and voice agents in ElevenLabs."
+    ],
+    "logo": "https://elevenlabs.io/favicon.ico"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "snaptrade",
+  "version": "0.1.0",
+  "description": "Connect SnapTrade to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/snaptrade",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/snaptrade",
+  "license": "MIT",
+  "keywords": [
+    "snaptrade",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "SnapTrade",
+    "shortDescription": "Use SnapTrade MCP tools from your Fractal workspace.",
+    "longDescription": "Connect SnapTrade to your Fractal workspace so your agent can work with brokerage portfolio data using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "SnapTrade",
+    "category": "Data",
+    "websiteURL": "https://snaptrade.com",
+    "privacyPolicyURL": "https://snaptrade.com/privacy-policy",
+    "termsOfServiceURL": "https://snaptrade.com/terms-and-conditions",
+    "defaultPrompt": [
+      "Give me an overview of my SnapTrade workspace.",
+      "Find anything in SnapTrade that needs attention and explain why.",
+      "Help me review brokerage portfolio data in SnapTrade."
+    ],
+    "logo": "https://snaptrade.com/favicon.ico"
+  }
+}

@@ -40,5 +40,13 @@ export default FractalToolset.create("mcp")
     type: "mcp-server::http",
     url: "https://connect.composio.dev/mcp",
     headers: { "x-consumer-api-key": "${COMPOSIO_API_KEY}" },
+    setup: {
+      COMPOSIO_API_KEY: {
+        label: "API key",
+        description: "Composio dashboard → Settings → API keys (consumer key).",
+        url: "https://dashboard.composio.dev",
+        placeholder: "ck_...",
+      },
+    },
   })
   .build();

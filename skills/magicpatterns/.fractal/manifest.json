@@ -1,0 +1,37 @@
+{
+  "name": "magicpatterns",
+  "version": "0.1.0",
+  "description": "Connect Magic Patterns to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/magicpatterns",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/magicpatterns",
+  "license": "MIT",
+  "keywords": [
+    "magicpatterns",
+    "magic-patterns",
+    "design",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Magic Patterns",
+    "shortDescription": "Use Magic Patterns MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Magic Patterns to your Fractal workspace so your agent can work with aI UI prototypes using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Magic Patterns",
+    "category": "Design",
+    "websiteURL": "https://www.magicpatterns.com",
+    "privacyPolicyURL": "https://www.magicpatterns.com/docs/documentation/legal/privacy",
+    "termsOfServiceURL": "https://www.magicpatterns.com/docs/documentation/legal/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Magic Patterns workspace.",
+      "Find anything in Magic Patterns that needs attention and explain why.",
+      "Help me review aI UI prototypes in Magic Patterns."
+    ],
+    "logo": "https://www.magicpatterns.com/apple-icon.png"
+  }
+}

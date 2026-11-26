@@ -1,0 +1,36 @@
+{
+  "name": "tinyfish",
+  "version": "0.1.0",
+  "description": "Connect TinyFish to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/tinyfish",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/tinyfish",
+  "license": "MIT",
+  "keywords": [
+    "tinyfish",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "TinyFish",
+    "shortDescription": "Use TinyFish MCP tools from your Fractal workspace.",
+    "longDescription": "Connect TinyFish to your Fractal workspace so your agent can work with web search and browsing using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "TinyFish",
+    "category": "Productivity",
+    "websiteURL": "https://www.tinyfish.ai",
+    "privacyPolicyURL": "https://www.tinyfish.ai/privacy-policy",
+    "termsOfServiceURL": "https://www.tinyfish.ai/terms",
+    "defaultPrompt": [
+      "Give me an overview of my TinyFish workspace.",
+      "Find anything in TinyFish that needs attention and explain why.",
+      "Help me review web search and browsing in TinyFish."
+    ],
+    "logo": "https://www.tinyfish.ai/favicon-for-app/apple-icon.png"
+  }
+}

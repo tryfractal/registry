@@ -1,0 +1,37 @@
+{
+  "name": "raindrop",
+  "version": "0.1.0",
+  "description": "Connect Raindrop.io to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/raindrop",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/raindrop",
+  "license": "MIT",
+  "keywords": [
+    "raindrop",
+    "raindrop.io",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Raindrop.io",
+    "shortDescription": "Use Raindrop.io MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Raindrop.io to your Fractal workspace so your agent can work with bookmarks and highlights using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Raindrop.io",
+    "category": "Productivity",
+    "websiteURL": "https://raindrop.io",
+    "privacyPolicyURL": "https://help.raindrop.io/privacy",
+    "termsOfServiceURL": "https://help.raindrop.io/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Raindrop.io workspace.",
+      "Find anything in Raindrop.io that needs attention and explain why.",
+      "Help me review bookmarks and highlights in Raindrop.io."
+    ],
+    "logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/49/b9/ba/49b9baac-3b05-16fa-3fc4-5cf90840efb0/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg"
+  }
+}

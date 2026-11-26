@@ -1,0 +1,36 @@
+{
+  "name": "cloudinary",
+  "version": "0.1.0",
+  "description": "Connect Cloudinary to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/cloudinary",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/cloudinary",
+  "license": "MIT",
+  "keywords": [
+    "cloudinary",
+    "design",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Cloudinary",
+    "shortDescription": "Use Cloudinary MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Cloudinary to your Fractal workspace so your agent can work with image and video assets using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Cloudinary",
+    "category": "Design",
+    "websiteURL": "https://cloudinary.com",
+    "privacyPolicyURL": "https://cloudinary.com/privacy",
+    "termsOfServiceURL": "https://cloudinary.com/tou",
+    "defaultPrompt": [
+      "Give me an overview of my Cloudinary workspace.",
+      "Find anything in Cloudinary that needs attention and explain why.",
+      "Help me review image and video assets in Cloudinary."
+    ],
+    "logo": "https://cloudinary.com/favicon.ico"
+  }
+}

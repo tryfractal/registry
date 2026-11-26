@@ -1,0 +1,36 @@
+{
+  "name": "calendly",
+  "version": "0.1.0",
+  "description": "Connect Calendly to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/calendly",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/calendly",
+  "license": "MIT",
+  "keywords": [
+    "calendly",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Calendly",
+    "shortDescription": "Use Calendly MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Calendly to your Fractal workspace so your agent can work with scheduling and availability using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Calendly",
+    "category": "Productivity",
+    "websiteURL": "https://calendly.com",
+    "privacyPolicyURL": "https://calendly.com/legal/privacy-notice",
+    "termsOfServiceURL": "https://calendly.com/legal/customer-terms-conditions",
+    "defaultPrompt": [
+      "Give me an overview of my Calendly workspace.",
+      "Find anything in Calendly that needs attention and explain why.",
+      "Help me review scheduling and availability in Calendly."
+    ],
+    "logo": "https://calendly.com/media/favicon/apple-touch-icon.png"
+  }
+}

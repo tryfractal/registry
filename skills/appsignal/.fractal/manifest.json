@@ -1,0 +1,36 @@
+{
+  "name": "appsignal",
+  "version": "0.1.0",
+  "description": "Connect AppSignal to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/appsignal",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/appsignal",
+  "license": "MIT",
+  "keywords": [
+    "appsignal",
+    "development",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "AppSignal",
+    "shortDescription": "Use AppSignal MCP tools from your Fractal workspace.",
+    "longDescription": "Connect AppSignal to your Fractal workspace so your agent can work with errors, performance and logs using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "AppSignal",
+    "category": "Development",
+    "websiteURL": "https://www.appsignal.com",
+    "privacyPolicyURL": "https://www.appsignal.com/privacy-policy",
+    "termsOfServiceURL": "https://www.appsignal.com/terms",
+    "defaultPrompt": [
+      "Give me an overview of my AppSignal workspace.",
+      "Find anything in AppSignal that needs attention and explain why.",
+      "Help me review errors, performance and logs in AppSignal."
+    ],
+    "logo": "https://www.appsignal.com/favicon.ico"
+  }
+}

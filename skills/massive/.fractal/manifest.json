@@ -1,0 +1,36 @@
+{
+  "name": "massive",
+  "version": "0.1.0",
+  "description": "Connect Massive to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/massive",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/massive",
+  "license": "MIT",
+  "keywords": [
+    "massive",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Massive",
+    "shortDescription": "Use Massive MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Massive to your Fractal workspace so your agent can work with stock and crypto market data using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Massive",
+    "category": "Data",
+    "websiteURL": "https://massive.com",
+    "privacyPolicyURL": "https://massive.com/legal/privacy",
+    "termsOfServiceURL": "https://massive.com/legal/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Massive workspace.",
+      "Find anything in Massive that needs attention and explain why.",
+      "Help me review stock and crypto market data in Massive."
+    ],
+    "logo": "https://massive.com/brands/favicon-massive.png"
+  }
+}

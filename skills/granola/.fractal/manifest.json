@@ -1,0 +1,36 @@
+{
+  "name": "granola",
+  "version": "0.1.0",
+  "description": "Connect Granola to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/granola",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/granola",
+  "license": "MIT",
+  "keywords": [
+    "granola",
+    "communication",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Granola",
+    "shortDescription": "Use Granola MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Granola to your Fractal workspace so your agent can work with meeting notes search using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Granola",
+    "category": "Communication",
+    "websiteURL": "https://www.granola.ai",
+    "privacyPolicyURL": "https://docs.granola.ai/help-center/policies/privacy-policy",
+    "termsOfServiceURL": "https://docs.granola.ai/help-center/policies/terms-of-service/application-terms-of-service",
+    "defaultPrompt": [
+      "Give me an overview of my Granola workspace.",
+      "Find anything in Granola that needs attention and explain why.",
+      "Help me review meeting notes search in Granola."
+    ],
+    "logo": "https://www.granola.ai/favicon/apple-touch-icon.png"
+  }
+}

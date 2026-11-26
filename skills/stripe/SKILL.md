@@ -136,3 +136,7 @@ With explicit opt-in, the Stripe MCP server can be extended with **Treasury** to
 - API reference: <https://docs.stripe.com/api>
 - OpenAPI spec: <https://github.com/stripe/openapi>
 - License: MIT
+
+## Hosted MCP connection
+
+This skill also includes a `hosted-mcp` toolset at `https://mcp.stripe.com`. It uses Fractal's OAuth authorization flow and discovers tools from the provider after connection. The provider must support the MCP OAuth flow used by Fractal; this endpoint was not independently authorized during registry preparation. Use the current `Stripe` connector when its provider-specific setup or guidance is needed, and the hosted toolset when the user wants the provider's remote MCP server.

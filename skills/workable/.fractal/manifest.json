@@ -1,0 +1,36 @@
+{
+  "name": "workable",
+  "version": "0.1.0",
+  "description": "Connect Workable to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/workable",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/workable",
+  "license": "MIT",
+  "keywords": [
+    "workable",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Workable",
+    "shortDescription": "Use Workable MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Workable to your Fractal workspace so your agent can work with hiring pipeline and HR using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Workable",
+    "category": "Productivity",
+    "websiteURL": "https://www.workable.com",
+    "privacyPolicyURL": "https://www.workable.com/privacy",
+    "termsOfServiceURL": "https://www.workable.com/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Workable workspace.",
+      "Find anything in Workable that needs attention and explain why.",
+      "Help me review hiring pipeline and HR in Workable."
+    ],
+    "logo": "https://www.workable.com/static/apple-touch-icon.png"
+  }
+}

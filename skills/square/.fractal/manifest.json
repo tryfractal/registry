@@ -1,0 +1,36 @@
+{
+  "name": "square",
+  "version": "0.1.0",
+  "description": "Connect Square to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/square",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/square",
+  "license": "MIT",
+  "keywords": [
+    "square",
+    "finance",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Square",
+    "shortDescription": "Use Square MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Square to your Fractal workspace so your agent can work with payments, orders, and catalog using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Square",
+    "category": "Finance",
+    "websiteURL": "https://squareup.com",
+    "privacyPolicyURL": "https://squareup.com/us/en/legal/general/privacy",
+    "termsOfServiceURL": "https://squareup.com/us/en/legal/general/ua",
+    "defaultPrompt": [
+      "Give me an overview of my Square workspace.",
+      "Find anything in Square that needs attention and explain why.",
+      "Help me review payments, orders, and catalog in Square."
+    ],
+    "logo": "https://squareup.com/favicon.ico"
+  }
+}

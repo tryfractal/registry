@@ -1,0 +1,36 @@
+{
+  "name": "ibkr",
+  "version": "0.1.0",
+  "description": "Connect IBKR to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/ibkr",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/ibkr",
+  "license": "MIT",
+  "keywords": [
+    "ibkr",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "IBKR",
+    "shortDescription": "Use IBKR MCP tools from your Fractal workspace.",
+    "longDescription": "Connect IBKR to your Fractal workspace so your agent can work with brokerage account data using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "IBKR",
+    "category": "Data",
+    "websiteURL": "https://www.interactivebrokers.com",
+    "privacyPolicyURL": "https://www.interactivebrokers.com/en/accounts/legalDocuments/privacy.php",
+    "termsOfServiceURL": "https://www.interactivebrokers.com/en/accounts/forms-and-disclosures-client-agreements.php",
+    "defaultPrompt": [
+      "Give me an overview of my IBKR workspace.",
+      "Find anything in IBKR that needs attention and explain why.",
+      "Help me review brokerage account data in IBKR."
+    ],
+    "logo": "https://www.interactivebrokers.com/images/web/favicons/home-screen-icon-192x192.png"
+  }
+}

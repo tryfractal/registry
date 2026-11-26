@@ -1,0 +1,36 @@
+{
+  "name": "intercom",
+  "version": "0.1.0",
+  "description": "Connect Intercom to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/intercom",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/intercom",
+  "license": "MIT",
+  "keywords": [
+    "intercom",
+    "productivity",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Intercom",
+    "shortDescription": "Use Intercom MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Intercom to your Fractal workspace so your agent can work with customer support conversations using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Intercom",
+    "category": "Productivity",
+    "websiteURL": "https://www.intercom.com",
+    "privacyPolicyURL": "https://www.intercom.com/legal/privacy",
+    "termsOfServiceURL": "https://www.intercom.com/legal/terms-and-policies",
+    "defaultPrompt": [
+      "Give me an overview of my Intercom workspace.",
+      "Find anything in Intercom that needs attention and explain why.",
+      "Help me review customer support conversations in Intercom."
+    ],
+    "logo": "https://www.intercom.com/intercom-marketing-site/favicons/favicon.ico"
+  }
+}

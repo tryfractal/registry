@@ -1,0 +1,36 @@
+{
+  "name": "amplitude",
+  "version": "0.1.0",
+  "description": "Connect Amplitude to Fractal through its MCP server and access the operations exposed to the connected account.",
+  "author": {
+    "name": "Fractal",
+    "email": "team@tryfractal.co",
+    "url": "https://tryfractal.co"
+  },
+  "homepage": "https://tryfractal.co/marketplace/amplitude",
+  "repository": "https://github.com/tryfractal/registry",
+  "path": "/skills/amplitude",
+  "license": "MIT",
+  "keywords": [
+    "amplitude",
+    "data",
+    "mcp",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Amplitude",
+    "shortDescription": "Use Amplitude MCP tools from your Fractal workspace.",
+    "longDescription": "Connect Amplitude to your Fractal workspace so your agent can work with product analytics using the tools exposed by the service. Available actions depend on the live MCP server and the connected account’s permissions.",
+    "developerName": "Amplitude",
+    "category": "Data",
+    "websiteURL": "https://amplitude.com",
+    "privacyPolicyURL": "https://amplitude.com/privacy",
+    "termsOfServiceURL": "https://amplitude.com/terms",
+    "defaultPrompt": [
+      "Give me an overview of my Amplitude workspace.",
+      "Find anything in Amplitude that needs attention and explain why.",
+      "Help me review product analytics in Amplitude."
+    ],
+    "logo": "https://avatars.githubusercontent.com/u/2291562?s=256&v=4"
+  }
+}
